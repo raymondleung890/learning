@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="三日娛樂行業吊掛課程筆記繁體中文版網頁版，含完整 64 頁文字及原頁圖像。">
+<title>三日娛樂行業吊掛課程筆記｜網頁版</title>
+<style>
+:root{--blue:#1658b3;--deep:#0d3c88;--ink:#01295f;--beacon:#015fee;--white:#fff;--line:#e5e7eb;--black:#000;--yellow:#ffc400;--max:1440px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--black);font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",Inter,Arial,sans-serif;background:#fff;line-height:1.65}a{color:inherit}button,input{font:inherit}
+.hero{background:var(--blue);color:#fff;min-height:92vh;position:relative;overflow:hidden}.topbar{max-width:var(--max);margin:auto;padding:24px 36px;display:flex;justify-content:space-between;align-items:center;gap:24px}.brand{display:flex;align-items:center;gap:12px}.brand strong{font:700 25px/1 Arial,sans-serif}.brand i{width:1px;height:28px;background:#fff;display:block}.brand span{font-size:13px;line-height:1.25}.top-actions{display:flex;gap:18px;align-items:center}.pill{border:0;border-radius:9999px;padding:12px 20px;background:#fff;color:var(--blue);font-weight:700;text-decoration:none}.ghost{text-decoration:none;font-weight:700}
+.hero-inner{max-width:var(--max);margin:auto;padding:72px 36px 92px;display:grid;grid-template-columns:minmax(0,2.1fr) minmax(280px,.8fr);gap:48px;align-items:end}.eyebrow{font-weight:700;letter-spacing:.15em;font-size:13px}h1{font-family:Impact,"Arial Narrow",sans-serif;font-size:clamp(64px,10.5vw,151px);line-height:.88;letter-spacing:-.025em;margin:22px 0 34px;text-transform:uppercase;font-weight:400}.hero-cn{font-size:clamp(22px,2.6vw,36px);font-weight:700;margin:0}.hero-side{font-size:18px;padding-bottom:18px}.hero-side .meta{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid rgba(255,255,255,.45);margin-top:30px}.hero-side .meta div{padding:16px 0;border-bottom:1px solid rgba(255,255,255,.35)}.hero-side .meta b{display:block;font-size:28px}.gear{position:absolute;pointer-events:none;opacity:.92}.helmet{right:9%;top:16%;width:180px;height:110px;border:18px solid white;border-bottom:0;border-radius:100px 100px 0 0;transform:rotate(-10deg)}.helmet:after{content:"";position:absolute;left:-32px;right:-32px;bottom:-17px;height:18px;background:#fff}.hook{left:58%;bottom:10%;width:74px;height:118px;border:18px solid white;border-top-color:transparent;border-radius:0 0 48px 48px;transform:rotate(18deg)}.marquee{border-top:1px solid rgba(255,255,255,.35);padding:22px 0;white-space:nowrap;overflow:hidden;font-family:Impact,"Arial Narrow",sans-serif;font-size:clamp(24px,3vw,42px)}.marquee span{display:inline-block;padding-left:2%;animation:move 28s linear infinite}@keyframes move{to{transform:translateX(-50%)}}.hazard{height:5px;background:repeating-linear-gradient(135deg,var(--yellow) 0 14px,var(--ink) 14px 28px)}
+.reader-tools{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}.tools-inner{max-width:var(--max);margin:auto;padding:12px 36px;display:flex;gap:12px;align-items:center}.search{flex:1;border:1px solid var(--line);padding:12px 14px;border-radius:0;min-width:0}.toolbtn{border:1px solid var(--blue);background:#fff;color:var(--blue);border-radius:9999px;padding:10px 16px;font-weight:700;cursor:pointer}.progress{height:3px;background:var(--blue);width:0}
+.layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:290px minmax(0,1fr);gap:48px;padding:60px 36px 100px}aside{position:sticky;top:86px;align-self:start;max-height:calc(100vh - 110px);overflow:auto;border-top:4px solid var(--blue)}aside h2{font:400 44px/1 Impact,"Arial Narrow",sans-serif;margin:22px 0}nav a{display:grid;grid-template-columns:34px 1fr;gap:10px;padding:10px 0;border-top:1px solid var(--line);text-decoration:none;font-size:14px}nav a span{color:var(--blue);font-weight:700}nav a b{font-weight:500}.download{display:block;margin-top:24px;text-align:center}
+.chapter{margin:0 0 96px;scroll-margin-top:90px}.chapter-head{display:grid;grid-template-columns:90px 1fr auto;gap:22px;align-items:end;padding-bottom:22px;border-bottom:2px solid #000;margin-bottom:28px}.chapter-no{font:400 64px/.8 Impact,"Arial Narrow",sans-serif;color:var(--blue)}.chapter-head p{font-size:12px;letter-spacing:.15em;margin:0 0 6px;color:var(--blue);font-weight:700}.chapter-head h2{font-size:32px;line-height:1.2;margin:0}.chapter-head h3{font:400 24px/1.2 Impact,"Arial Narrow",sans-serif;margin:7px 0 0;letter-spacing:.02em}.chapter-range{font-size:13px;font-weight:700;color:var(--blue)}
+.page-card{border:1px solid var(--line);padding:28px;margin:0 0 18px;scroll-margin-top:88px}.page-kicker{display:flex;justify-content:space-between;color:var(--blue);font-size:12px;font-weight:700;letter-spacing:.08em;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:22px}.page-kicker a{letter-spacing:0;text-decoration:none}.page-text{font-size:16px}.page-text h4{font-size:21px;line-height:1.35;margin:28px 0 12px}.page-text p{margin:0 0 16px;white-space:normal}details{margin-top:24px;border-top:1px solid var(--line);padding-top:16px}summary{cursor:pointer;color:var(--blue);font-weight:700}details img{display:block;width:min(100%,760px);height:auto;margin:18px auto 0;border:1px solid var(--line)}mark{background:#fff0a8;padding:0 2px}
+.no-results{display:none;padding:40px;border:2px solid var(--blue);font-size:20px}footer{background:var(--deep);color:#fff;padding:56px 36px}footer .inner{max-width:var(--max);margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:40px}footer h2{font:400 42px/1 Impact,"Arial Narrow",sans-serif;margin:0 0 16px}footer p{margin:0;max-width:720px}
+@media(max-width:900px){.hero-inner{grid-template-columns:1fr}.hero-side{max-width:640px}.gear{opacity:.45}.layout{grid-template-columns:1fr;padding-inline:20px}aside{position:relative;top:0;max-height:none}nav{columns:2}.chapter-head{grid-template-columns:70px 1fr}.chapter-range{grid-column:2}.topbar,.hero-inner,.tools-inner{padding-left:20px;padding-right:20px}footer .inner{grid-template-columns:1fr}}
+@media(max-width:560px){.brand span,.ghost{display:none}h1{font-size:58px}nav{columns:1}.chapter-head h2{font-size:25px}.chapter-head h3{font-size:19px}.page-card{padding:20px}.tools-inner{flex-wrap:wrap}.search{flex-basis:100%}}
+@media print{.top-actions,.marquee,.hazard,.reader-tools,aside,details,.page-kicker a{display:none!important}.hero{min-height:auto}.layout{display:block;padding:20px}.page-card{break-inside:avoid;border-color:#bbb}.chapter{break-before:page}}
+
+/* Interactive 3D + precision search */
+.hero-model{position:relative;margin-top:28px;border:1px solid rgba(255,255,255,.55);min-height:330px;overflow:hidden;background:linear-gradient(145deg,rgba(1,41,95,.45),rgba(1,95,238,.18))}
+.hero-model model-viewer{width:100%;height:330px;background:transparent;--poster-color:transparent}
+.model-label{position:absolute;left:16px;top:14px;z-index:2;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.model-help{position:absolute;right:14px;bottom:12px;z-index:2;font-size:12px;background:#fff;color:var(--blue);padding:7px 11px;border-radius:9999px;font-weight:700}
+.model-fallback{position:absolute;inset:auto 16px 16px 16px;text-align:center;color:#fff;font-weight:700}
+.search-shell{position:relative;flex:1;min-width:0}.search{width:100%}.search-status{font-size:13px;font-weight:700;color:var(--blue);white-space:nowrap}.search-results{position:absolute;left:0;right:0;top:calc(100% + 8px);z-index:40;background:#fff;border:1px solid var(--line);max-height:min(62vh,560px);overflow:auto;display:none}.search-results.open{display:block}.result-item{display:block;width:100%;border:0;border-bottom:1px solid var(--line);background:#fff;text-align:left;padding:14px 16px;cursor:pointer}.result-item:hover,.result-item.active{background:#eef5ff}.result-meta{display:flex;justify-content:space-between;gap:12px;color:var(--blue);font-size:12px;font-weight:700;margin-bottom:5px}.result-snippet{font-size:14px;line-height:1.45;color:#111}.result-snippet mark{background:#ffe477}.search-nav{display:flex;gap:6px}.search-nav .toolbtn{padding:9px 12px}.page-card.search-hit{border-color:var(--blue);box-shadow:inset 4px 0 0 var(--blue)}.page-card.current-hit{outline:3px solid var(--yellow);outline-offset:2px}.chapter-filter{border:1px solid var(--line);padding:11px 12px;background:#fff;color:#111;max-width:230px}.interaction-tip{position:fixed;right:20px;bottom:20px;z-index:30;background:var(--ink);color:#fff;padding:12px 16px;border-radius:9999px;font-size:13px;font-weight:700;transform:translateY(120px);transition:.3s}.interaction-tip.show{transform:translateY(0)}
+@media(max-width:900px){.hero-model{max-width:680px}.search-status{display:none}.chapter-filter{max-width:none;flex:1}}
+@media(max-width:560px){.hero-model,.hero-model model-viewer{min-height:280px;height:280px}.search-shell{flex-basis:100%}.chapter-filter{width:100%}.search-nav{margin-left:auto}}
+
+</style>
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</head>
+<body id="top">
+<header class="hero"><div class="topbar"><div class="brand"><strong>sitesafe</strong><i></i><span>娛樂行業吊掛訓練<br>Entertainment Rigging Training</span></div><div class="top-actions"><a class="pill" href="#chapter-1">開始閱讀 Start Reading</a><a class="ghost" href="assets/three-day-rigging-notes-zh-tw.pdf">PDF ↗</a></div></div><div class="gear helmet"></div><div class="gear hook"></div><div class="hero-inner"><div><div class="eyebrow">TOTAL TRAINING · 繁體中文譯本 · 第二版</div><h1>RIGGED.<br>READY.<br>SAFE.</h1><p class="hero-cn">三日娛樂行業吊掛課程筆記</p></div><div class="hero-side"><p>完整網頁版保留 PDF 全部 64 頁內容。每頁提供可搜尋文字，並附原始頁面影像，方便核對圖表、插圖與排版。</p><div class="meta"><div><b>64</b>PDF 頁面</div><div><b>21</b>內容單元</div><div><b>全文</b>精準搜尋</div><div><b>3D</b>互動模型</div></div><div class="hero-model"><div class="model-label">Interactive 3D · DUCK</div><model-viewer id="duckModel" src="assets/duck.glb" alt="Duck 3D model" camera-controls touch-action="pan-y" auto-rotate rotation-per-second="18deg" shadow-intensity="1" exposure="1" environment-image="neutral" interaction-prompt="auto"><div class="model-fallback" slot="poster">載入 3D 模型中…</div></model-viewer><div class="model-help">拖曳旋轉 · 滾輪縮放</div></div></div></div><div class="marquee"><span>健康與安全 HEALTH &amp; SAFETY · 風險評估 RISK ASSESSMENT · LOLER · PUWER · 桁架 TRUSS · 電鏈吊機 CHAIN HOISTS · 繩索與繩結 ROPES &amp; KNOTS · 高空工作 WORK AT HEIGHT · PPE · 救援 RESCUE · 健康與安全 HEALTH &amp; SAFETY · 風險評估 RISK ASSESSMENT · LOLER · PUWER · 桁架 TRUSS · 電鏈吊機 CHAIN HOISTS ·</span></div></header><div class="hazard"></div>
+<div class="reader-tools"><div class="tools-inner"><div class="search-shell"><input id="search" class="search" type="search" autocomplete="off" aria-label="全文搜尋" placeholder="精準搜尋：輸入詞組或多個關鍵字，例如「卸扣 角度」"><div class="search-results" id="searchResults" role="listbox"></div></div><select id="chapterFilter" class="chapter-filter" aria-label="篩選章節"><option value="">全部章節</option></select><span class="search-status" id="searchStatus">輸入關鍵字開始搜尋</span><div class="search-nav"><button class="toolbtn" id="prevHit" title="上一筆">↑</button><button class="toolbtn" id="nextHit" title="下一筆">↓</button></div><button class="toolbtn" id="expand">展開原頁</button><button class="toolbtn" onclick="window.print()">列印</button></div><div class="progress" id="progress"></div></div><div class="interaction-tip" id="interactionTip">已跳到搜尋結果</div>
+<div class="layout"><aside><h2>CONTENTS</h2><nav><a href="#chapter-1"><span>01</span><b>封面</b></a><a href="#chapter-2"><span>02</span><b>目錄</b></a><a href="#chapter-3"><span>03</span><b>前言</b></a><a href="#chapter-4"><span>04</span><b>課程大綱</b></a><a href="#chapter-5"><span>05</span><b>多項選擇測驗</b></a><a href="#chapter-6"><span>06</span><b>健康與安全法例</b></a><a href="#chapter-7"><span>07</span><b>2015 年建造（設計及管理）規例</b></a><a href="#chapter-8"><span>08</span><b>風險評估</b></a><a href="#chapter-9"><span>09</span><b>工作設備提供及使用規例</b></a><a href="#chapter-10"><span>10</span><b>起重作業及起重設備規例</b></a><a href="#chapter-11"><span>11</span><b>起重原理、力與計算</b></a><a href="#chapter-12"><span>12</span><b>桁架</b></a><a href="#chapter-13"><span>13</span><b>電鏈吊機及摩打</b></a><a href="#chapter-14"><span>14</span><b>繩索與繩結</b></a><a href="#chapter-15"><span>15</span><b>鋼絲繩、吊索及端接</b></a><a href="#chapter-16"><span>16</span><b>起重配件</b></a><a href="#chapter-17"><span>17</span><b>吊掛作業</b></a><a href="#chapter-18"><span>18</span><b>2005 年高空工作規例</b></a><a href="#chapter-19"><span>19</span><b>娛樂行業的高空工作</b></a><a href="#chapter-20"><span>20</span><b>個人防護裝備</b></a><a href="#chapter-21"><span>21</span><b>救援、PPE 檢查及參考資料</b></a></nav><a class="pill download" href="assets/three-day-rigging-notes-zh-tw.pdf" download>下載原始 PDF</a></aside><main><div class="no-results" id="noResults">找不到符合的內容。</div><section class="chapter" id="chapter-1" data-title="封面 COVER">
+      <header class="chapter-head"><div class="chapter-no">01</div><div><p>COURSE NOTE CHAPTER</p><h2>封面</h2><h3>COVER</h3></div><div class="chapter-range">PDF 01–02</div></header>
+      <div class="chapter-pages"><article class="page-card" id="page-1" data-page="1">
+      <div class="page-kicker"><span>PDF PAGE 01</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><h4>三日娛樂行業 吊掛課程筆記 THREE DAY RIGGING</h4>
+<h4>FOR THE ENTERTAINMENT INDUSTRY</h4>
+<p>繁體中文譯本 ・ 第二版</p>
+<h4>TOTAL TRAINING 課程筆記 ── 僅供個人學習用途</h4></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-01.png" alt="PDF 第 1 頁原始頁面"></details>
+    </article><article class="page-card" id="page-2" data-page="2">
+      <div class="page-kicker"><span>PDF PAGE 02</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>譯本說明</p>
+<p>本書譯自 Total Training《Three Day Rigging for the Entertainment Industry》課程筆記第 二版(版本 2017.04;修訂日期:02.10、03.12、07.13、11.13、12.15、03.17)。 原書為掃描版本,文字經 OCR 識別後翻譯為繁體中文。圖表、照片及插圖以(圖)標示;原書掃描質 素欠佳、OCR 無法辨識之處以(⋯⋯)標示。章節標題後保留原書頁碼,方便對照原書。</p>
+<p>原書版權屬 Total Training 所有。本刊物發放予參加 Total Training 吊掛課程嘅學員。本譯本僅 供個人學習用途,不得複製或傳播。</p>
+<p>譯本排版:舞台黑幕設計 ・ 2026</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-02.png" alt="PDF 第 2 頁原始頁面"></details>
+    </article></div>
+    </section><section class="chapter" id="chapter-2" data-title="目錄 CONTENTS">
+      <header class="chapter-head"><div class="chapter-no">02</div><div><p>COURSE NOTE CHAPTER</p><h2>目錄</h2><h3>CONTENTS</h3></div><div class="chapter-range">PDF 03–04</div></header>
+      <div class="chapter-pages"><article class="page-card" id="page-3" data-page="3">
+      <div class="page-kicker"><span>PDF PAGE 03</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><h4>目錄</h4>
+<p>1 前言                                  1</p>
+<p>2 課程大綱                                2</p>
+<p>3 多項選擇測驗                              3</p>
+<p>4 健康與安全法例                             5</p>
+<h4>5 2015 年建造(設計及管理)規例(CDM)              8</h4>
+<p>6 風險評估                                10</p>
+<h4>7 工作設備提供及使用規例(PUWER)                  12</h4>
+<h4>8 起重作業及起重設備規例(LOLER)                  13</h4>
+<p>9 起重原理、力與計算                           18</p>
+<p>10 桁架                                 21</p>
+<p>11 電鏈吊機及摩打                            27</p>
+<p>12 繩索與繩結                              30</p>
+<p>13 鋼絲繩、吊索及端接                          32</p>
+<p>14 起重配件                               37</p>
+<p>15 吊掛作業                               41</p>
+<p>16 2005 年高空工作規例                       43</p>
+<p>17 娛樂行業嘅高空工作                          46</p>
+<p>18 個人防護裝備                             48</p>
+<p>19 救援                                 54</p>
+<h4>20 PPE 檢查                             57</h4>
+<p>21 延伸閱讀及參考資料                          59</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-03.png" alt="PDF 第 3 頁原始頁面"></details>
+    </article><article class="page-card" id="page-4" data-page="4">
+      <div class="page-kicker"><span>PDF PAGE 04</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>22 實用繩結                      60</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-04.png" alt="PDF 第 4 頁原始頁面"></details>
+    </article></div>
+    </section><section class="chapter" id="chapter-3" data-title="前言 FOREWORD">
+      <header class="chapter-head"><div class="chapter-no">03</div><div><p>COURSE NOTE CHAPTER</p><h2>前言</h2><h3>FOREWORD</h3></div><div class="chapter-range">PDF 05–05</div></header>
+      <div class="chapter-pages"><article class="page-card" id="page-5" data-page="5">
+      <div class="page-kicker"><span>PDF PAGE 05</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><h4>前言</h4>
+<h4>FOREWORD ─── 原書第 6 頁 ───</h4>
+<p>前言(FOREWORD) 重要資訊 本課程並非旨在成為「合資格人士」(competent person)課程。 短期培訓不能被視為足以產生「勝任能力」(competence)。 勝任能力係經由經驗同技能隨時間發展而達致。因此,呢個短期課程絕不可被視為一項最終成就。 所提供嘅資訊僅供參考之用。佢並非旨在取代專業意見或判斷,亦唔會就特定情況提供法律或其他 意見。 呢啲筆記以「現狀」(as is)基礎提供,並喺法律允許嘅範圍內,排除任何有關適合特定用途嘅默示保 證。 呢啲筆記旨在支援參加由 Total Training 提供嘅吊掛培訓嘅人士,並可提供國家吊掛證書(Na‑ tional Rigging Certificate)第 2 級及第 3 級評核所需嘅核心知識。 我哋會盡一切努力令筆記保持最新,但喺可能導致損失或損害嘅情況下,使用者應喺依賴任何資訊 之前,先取得獨立核實或意見。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-05.png" alt="PDF 第 5 頁原始頁面"></details>
+    </article></div>
+    </section><section class="chapter" id="chapter-4" data-title="課程大綱 SYLLABUS">
+      <header class="chapter-head"><div class="chapter-no">04</div><div><p>COURSE NOTE CHAPTER</p><h2>課程大綱</h2><h3>SYLLABUS</h3></div><div class="chapter-range">PDF 06–06</div></header>
+      <div class="chapter-pages"><article class="page-card" id="page-6" data-page="6">
+      <div class="page-kicker"><span>PDF PAGE 06</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><h4>課程大綱</h4>
+<h4>SYLLABUS ─── 原書第 8 頁 ───</h4>
+<p>「三日娛樂行業吊掛」課程大綱 (SYLLABUS FOR ’3 DAY RIGGING FOR THE ENTERTAIN‑ MENT INDUSTRY’ COURSE) 入職簡介及高空工作醫療自我證明 開課多項選擇測驗 意識(Awareness) 個人責任 ⸺ 1974 年工作健康與安全法(Health and Safety at Work etc. Act 1974) 風險評估、1998 年 PUWER 及 LOLER 規例 2005 年高空工作規例 理論(Theory) 起重原理 ⸺ 槓桿、樑、滑輪及起吊角度 點荷載與均佈荷載,吊掛/起重點嘅識別 實習(Practical) 高空工作及防墮理論 使用鋁桁架作為防墮錨點嘅危險 高空工作 PPE 嘅基本使用 前檢查 使用 C7100/C71AAA 安全帶、A10/A10V 頭盔及 L59 雙叉 Absorbica 勢能吸收挽索,連 同錨點吊索及符合 EN795B 嘅水平救生繩 使用 Grillon L52‑2 工作定位挽索 使用垂直防墮繩及符 合 EN 353‑2 嘅 ASAP 防墮器 吊索使用(Slinging)⸺ 籃式(basket)與勒式(choke)⸺「鋼索」與圓形吊索(roundsling) 使用 稱人結(bowline)及「開放籃式」技術 標記吊點位置 使用吊索及卸扣懸掛手拉鏈條葫蘆或電鏈摩打 裝配簡單兩腿橋式吊掛(2 leg bridles) 吊機上電及操作 通用桁架嘅組裝及簡單吊索固定 起重檢查清單 起吊及調平桁架 使用符合 BSEN 13411 嘅鋼絲繩夾及楔形插座 製作 Reutlinger 鋼絲繩端接 裝設後備懸吊(secondary suspensions) 估算擬起吊嘅荷載 拆卸、包裝及儲存設備 吊索、卸扣、鏈條及吊環嘅使用前檢查 重做開課多項選擇測驗。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-06.png" alt="PDF 第 6 頁原始頁面"></details>
+    </article></div>
+    </section><section class="chapter" id="chapter-5" data-title="多項選擇測驗 MULTIPLE CHOICE TEST">
+      <header class="chapter-head"><div class="chapter-no">05</div><div><p>COURSE NOTE CHAPTER</p><h2>多項選擇測驗</h2><h3>MULTIPLE CHOICE TEST</h3></div><div class="chapter-range">PDF 07–08</div></header>
+      <div class="chapter-pages"><article class="page-card" id="page-7" data-page="7">
+      <div class="page-kicker"><span>PDF PAGE 07</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>多項選擇測驗</p>
+<h4>MULTIPLE CHOICE TEST ─── 原書第 10 頁 ───</h4>
+<p>多項選擇測驗(MULTIPLE CHOICE TEST) (圈選 A、B、C、D 或 E,每答對一題得 5%,全部 20 題答對 = 100%) 例題:「HSE」代表乜嘢? A 健康、安全與環境(HEALTH SAFETY AND ENVIRONMENT) B (答 案)健康與安全執行局(HEALTH AND SAFETY EXECUTIVE) C 健康與安全教育(HEALTH AND SAFETY EDUCATION) D 危害安全執法(HAZARD SAFETY ENFORCEMENT) E 健康與安全執 法(HEALTH AND SAFETY ENFORCEMENT) 1 法例規定每件起重設備上必須標示乜嘢? A 序號 B CE 標誌 C 安全工作負荷(SWL) D 製造商 E 斷裂負荷 2 乜嘢係「LOLER」? A HSE 就活動/表演吊掛訂立嘅規則 B 有關起重設備安全嘅歐洲法律 C 規 管起重設備必須點樣使用同保養嘅英國規例 D 英國吊掛作業實務守則 E 1998 年版嘅工作健康與 安全法 3 D 形卸扣(Dee shackle)連接吊索腿嘅最大角度係幾多? A 30° B 60° C 0° D 120° E 180° 4 根據法例,電鏈摩打必須由合資格人士進行徹底檢驗: A 每 12 個月一次,除非用於載人 B 每次使 用時 C 每 6 個月一次 D 每日 E 由風險評估決定 5 如果吊索用「勒式」(choked),安全工作負荷會有幾多折減? A 20% B 80% C 50% D 無 E 視乎 吊索而定 6 弓形卸扣(bow shackle)嘅「受力點」(bearing points)喺邊度? A 銷中央及弓部中央 B 弓部中 央及銷嘅兩側 C 只係弓部兩側 D 銷中央及弓部兩側 45° E 平均分佈喺弓部及銷上 7 喺 6mm 直徑鋼絲繩上製作繩眼端接需要幾多個鋼絲繩夾,以及應該點樣安裝? A 六個繩夾,平均 分佈,方向交替 B 六個繩夾,至少相隔一個繩夾闊度,全部同一方向 C 三個繩夾,相隔六個繩徑,U 形 螺栓喺繩嘅「死端」(dead)一邊 D 三個繩夾,至少相隔一個繩夾闊度,U 形喺繩嘅「活端」(live)一 邊 E 四個繩夾,交替安裝,盡量貼近繩眼 8 棄置一件起重設備之前,你應該做啲乜? A 銷毀測試證書 B 移除設備上嘅序號 C 通知設備擁有人 D 令佢無法再被使用 E 銷毀證書並移除設備上嘅序號 9 你會點樣搵出一段桁架可以承受嘅最大荷載? A 計算荷載並對照荷載表 B 檢查桁架上嘅 SWL 銘 牌 C 問供應商 D 打電話畀製造商 E 對照設計跨度檢查荷載,參考荷載表及/或製造商資料</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-07.png" alt="PDF 第 7 頁原始頁面"></details>
+    </article><article class="page-card" id="page-8" data-page="8">
+      <div class="page-kicker"><span>PDF PAGE 08</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>─── 原書第 11 頁 ───</p>
+<p>10 吊掛桁架時,當吊索喺卸扣位置嘅夾角係 90° 時,你會對桁架施加幾多壓縮(擠壓)力? A 100% B 200% C 50% D 150% E 70% 11 當等腿橋式吊掛(equal leg bridle)嘅夾角係 90°,而荷載係 1000 公斤時,每條吊掛樑承受幾多 力? A 500 公斤 B 700 公斤 C 1000 公斤 D 1400 公斤 E 2000 公斤 12 如果我喺一條新繩上打一個單結(overhand knot),條繩會削弱幾多? A 10% B 20% C 30% D 50% E 75% 13 如果吊機制動器(brake)喺現場打滑,邊個負責喺現場首先處理呢件事? A 吊機供應商 B 吊機擁 有人 C 簽署最新測試證書嘅人 D 使用緊佢嘅人 E 場地或建築物擁有人 14 邊個有法律責任進行風險評估? A 設備使用者 B 設備安裝者 C 使用設備人員嘅僱主 D 進行工作 所在建築物嘅擁有人 E HSE/地方當局 15 起吊荷載之前,最重要知道嘅係乜嘢? A 佢嘅重量 B 吊索角度 C 吊點係咪「橋式」 D 荷載會懸 吊幾耐 E 吊點嘅安全工作負荷 16 一段吊機鏈條上,邊種缺陷最嚴重? A 扭曲嘅鏈環 B 崩缺一角嘅鏈環 C 磨損嘅鏈環 D 拉長嘅鏈 環 E 以上全部同樣嚴重 17 向上拉摩打鏈條時,以下邊項最唔重要? A 吊掛員知道綁緊嘅係乜 B 吊掛索具狀態良好 C 吊點 位置正確 D 個繩結 E 繩索狀態良好 18 一個 1000 公斤電鏈摩打連 20 米鏈條大約有幾重? A 35 公斤 B 45 公斤 C 55 公斤 D 65 公斤 E 75 公斤 19 全新鋁合金排架通(scaffold tube)3 米跨度嘅最大容許中點荷載係幾多? A 30 公斤 B 40 公斤 C 50 公斤 D 60 公斤 E 70 公斤 20 新歐洲電鏈吊機嘅控制電路電壓係幾多? A 110v B 48v C 400v D 230v E 24v</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-08.png" alt="PDF 第 8 頁原始頁面"></details>
+    </article></div>
+    </section><section class="chapter" id="chapter-6" data-title="健康與安全法例 HEALTH AND SAFETY LAW">
+      <header class="chapter-head"><div class="chapter-no">06</div><div><p>COURSE NOTE CHAPTER</p><h2>健康與安全法例</h2><h3>HEALTH AND SAFETY LAW</h3></div><div class="chapter-range">PDF 09–11</div></header>
+      <div class="chapter-pages"><article class="page-card" id="page-9" data-page="9">
+      <div class="page-kicker"><span>PDF PAGE 09</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>健康與安全法例</p>
+<h4>HEALTH AND SAFETY LAW ─── 原書第 12 頁 ───</h4>
+<p>健康與安全法例(HEALTH AND SAFETY LAW) 涵蓋英國所有工作活動嘅主要法例係 1974 年工作健康與安全法(Health and Safety at Work etc. Act 1974,簡稱 HSaW)。 HSaW 法案將健康與安全事宜嘅責任加諸所有在職人士身上。呢個包括僱員、自僱人士同散工,以 及僱主同管理層 ⸺ 直至董事會層面。 法案要求所有在職人士喺合理可行嘅範圍內,確保自己以及可能受佢哋作為或不作為影響嘅其他人 嘅健康與安全。 第 2 條要求僱主: 提供及維持安全而無健康風險嘅設備同工作制度。 確保喺使用、搬運、儲存及 運輸物品時嘅安全及無風險。 提供及維持一個安全、無健康風險嘅工作環境,以及一個安全嘅工 作地點,連同安全嘅進出通道。 提供任何必需嘅法律要求資訊,以確保其僱員嘅健康與安全。 提供 足夠嘅監督及培訓,以確保其僱員嘅健康與安全。 如僱用超過 5 名僱員,須制定書面健康與安全政 策。 僱主必須確定執行該政策嘅組織架構同安排,並令僱員知悉。 第 3 條要求僱主及自僱人士: 以正當及安全嘅方式經營業務,不得將非其僱用人士嘅健康與安全置 於風險之中。如存在風險,必須向僱員提供有關風險嘅資訊。 第 4 條對控制用作工作場所嘅非住宅處所嘅人士施加責任,確保佢哋唔會危及喺入面工作嘅人。呢 個延伸至設備同物質、進出通道以至處所本身。 第 6 條對製造商、供應商、設計師及進口商施加責任: 任何工作上使用嘅物品,須檢查該物品已經 過測試及檢驗,確保按照指示使用時係安全,並須提供有關安全使用嘅資訊。 第 7 及第 8 條要求僱員: 對自己以及可能受佢哋喺工作中嘅作為或疏忽影響嘅其他人嘅健康與安 全,行使合理嘅謹慎;並喺必要範圍內與僱主合作,使僱主能夠履行其法律責任。 僱員不得故意或罔 顧後果地干擾或濫用任何為健康、安全或福利而提供嘅設施。 ─── 原書第 13 頁 ───</p>
+<p>第 36 條訂明: 凡因另一人嘅過失而導致罪行發生,該另一人即屬犯罪,不論首名人士是否被控該罪 行。 第 37 條描述: 凡罪行由公司(法人團體)干犯,任何董事、經理或高級人員如同意或縱容該罪行,或因 其疏忽而促成該罪行,即屬另行犯罪。 第 40 條規定,被告必須證明自己無罪,方法係證明佢已做咗一切可以合理要求佢做嘅可行措施。 「自僱」(’Self employment’) 法律將自僱人士視為僱主。如果一名僱主僱用啲人喺佢指示下 工作,而呢啲人以自僱人士身份繳納入息稅同國民保險,喺健康與安全法例嘅層面上,佢哋一般仍會 被視為僱員。 如果你提供服務、有一份服務合約、或者你喺冇監督嘅情況下用自己嘅工具/設備工作、按 Schedule D 自行繳納入息稅、自行繳納國民保險,並且持有公眾責任(PL)保險,你就係⋯⋯(接 下頁) (第 13 頁續)⋯⋯喺保險層面上,你就好可能係一個「真正純勞務分包商」(bona fide labour only subcontractor),屬於真正自僱;但即使咁,如果你冇承擔任何「創業風險」,喺管理健康、安 全與福利嘅層面上,你好可能仍會被當作僱員。 如果你同管理公司、活動公司或製作公司簽約做巡演、演出季或音樂節(尤其係如果對方提供住 宿、膳食或交通),你幾乎一定係僱員。決定性因素可能係你有冇自己購買公眾責任保險(PL)。僱</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-09.png" alt="PDF 第 9 頁原始頁面"></details>
+    </article><article class="page-card" id="page-10" data-page="10">
+      <div class="page-kicker"><span>PDF PAGE 10</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>主如為自由工作者提供健康與安全措施或保險,可能會喺不知不覺間令佢哋喺執法機關眼中變成僱 員。 如果你自備工具、安全帶或防墮設備,務必確保你能夠提供文件證明其適用性及檢查紀錄。因此, 持有正確標準嘅安全帶、安全靴、安全帽就加倍重要。如果支付你費用嘅人提供任何呢啲裝備,你 可能令自己變成「受僱」而非「自僱」。 僱主應檢查你自備嘅任何設備符合所需標準、喺佢哋嘅項目或場地上使用係安全,以及你已受過使 用培訓。 ─── 原書第 14 頁 ───</p>
+<p>培訓(TRAINING) 1974 年工作健康與安全法要求僱主確保為僱員提供足夠培訓。 1999 年工作健康與安全管理規例(Management of Health and Safety at Work Regulations 1999)要求僱主喺招聘/入職階段、僱員接觸任何新增或增加嘅風險之前,或調職使用不同設備或工 序時,為僱員提供足夠培訓。 培訓應包括: ‧ 使用工作設備所涉及嘅健康與安全各方面 ‧ 工作設備嘅使用限制 ‧ 使用工作設備時可能出現 嘅問題 ‧ 點樣處理呢啲困難 ‧ 運用任何使用該設備嘅經驗去預測及控制風險 ‧ 令所有人知悉風 險同現行嘅控制措施 培訓應考慮相關人員嘅個人能力,並須重複足夠次數以保持成效。 培訓必須喺工作時間內進行,並喺有需要時考慮某啲行業嘅特定規例或要求。 安全「文化」(Safety ”culture”) 要令安全文化蓬勃發展,有幾個關鍵元素需要具備。 公司高層管理必須「認同」佢哋有責任控制工作環境,並確保政策恰當、足夠及獲得執行。分擔責 任係達致呢個目標嘅唯一方法。 管理層同主管需要感到獲得授權,並被告知佢哋有權喺前線層面推行及執行公司健康與安全政策。 佢哋應以身作則。「照我講嘅做,唔好學我做」(Do as I say, not as I do)從來都唔係好政策。 僱員(及其他人)需要感到被包括在內,並明白規則嘅存在係有原因、原因係乜嘢,以及佢哋必須遵 守。佢哋應參與決策,令影響佢哋嘅決定唔會喺無知情況下作出,同時仍能捕捉不安全嘅做法或有 關安全嘅假設,以便糾正。 經理同主管需要: 1. 清楚自己職務說明中有關管理健康與安全嘅責任。 2. 有信心喺自己範疇內作 出改善,並將健康與安全訊息「向下游」傳達。 3. 了解工作性質,對可能存在嘅危害有經驗,並識得 按照公司政策充分控制佢哋。 ─── 原書第 15 頁 ───</p>
+<p>健康與安全法例嘅執法(HEALTH AND SAFETY LEGISLATION ENFORCEMENT) 喺英國,執行健康與安全法例嘅責任由健康與安全執行局(HSE)同相關地方當局(環境衞生部門)分 擔。 地方當局被界定為執法機關嘅處所,喺 1998 年健康與安全(執法機關)規例(Health and Safety (Enforcing Authority) Regulations 1998)中有所界定,以減少重複巡查嘅需要。 該規例將劇院(以及室內體育館)嘅執法責任由 HSE 轉移至地方當局。 酒店或會議中心等處所嘅安 排可能略有不同,因為佢哋嘅主要活動可能唔會被視為「休閒」或「建造」。 如你需要聯絡任何一個機關,可先向場地或建築物管理層查詢平時邊個機關負責巡查該處所。如果 咁樣都幫唔到,可致電地方當局環境衞生部門解釋情況。 機構內嘅健康與安全責任(HEALTH AND SAFETY RESPONSIBILITY IN AN ORGANISATION) (架構圖)</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-10.png" alt="PDF 第 10 頁原始頁面"></details>
+    </article><article class="page-card" id="page-11" data-page="11">
+      <div class="page-kicker"><span>PDF PAGE 11</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>董事總經理、行政總裁、董事、高級經理: 制定安全政策 承擔整體責任 建立及推廣安全文化 了解 自身責任 經理、工頭、隊長: 清楚安全政策內容 具備經驗及技能以: 預測及控制危害 進行風險評估 通知及 監督員工 了解自身責任 「指定人士」(appointed persons)⸺ 內部或外聘: 健康與安全顧問 醫療/健康監察 檢查或徹底 檢驗工作設備(包括起重設備)嘅人員 工會/安全代表 急救員/消防管理員 僱員、「純勞務分包」人員: 須receive足夠培訓: 工作技能 危害及 PPE 資訊 意外報告及緊急程 序 了解自身責任 ─── 原書第 16 頁 ───</p>
+<p>1999 年工作健康與安全管理規例 (THE MANAGEMENT OF HEALTH AND SAFETY AT WORK REGULATIONS 1999) 管理安全嘅主要要求之一係控制風險。使用風險評估係呢個規例嘅要求。 任何僱主或自僱人士必須為其業務內所有工作活動進行風險評估。呢個包括對僱員嘅風險,以及對 任何可能受僱主業務影響嘅其他人嘅風險。 僱用 5 名或以上僱員嘅僱主必須記錄評估中任何重大發現。 僱主須執行規例附表 1 所載嘅「保護 層級」(hierarchy of protection)或預防原則: ‧ 透過消除風險嚟避免風險 ‧ 評估剩餘風險,然後從源頭對抗呢啲風險,方法係: ‧ 令工作適應個 人、工作場所嘅設計、工作設備嘅選擇及生產方法。目的係紓緩單調、預定節奏嘅工作,並減少工 序對健康嘅影響 ‧ 配合技術進步作出調整;以較低危險嘅方法或工序取代 ‧ 制定涵蓋工作組織、 條件、工時、社交關係及任何其他影響工作環境因素嘅預防政策 ‧ 集體保護措施優先於個人保護 措施 ‧ 向僱員發出適當指示 規例訂明,由僱主委任嘅「合資格」人士最好係該僱主僱用嘅人,而非獨立承辦商。 使用內部技能唔可以阻止僱主喺內部欠缺適當勝任能力時聘請外間專家。 僱員或僱主委任嘅合資格人士嘅錯誤或遺漏,不能作為僱主被檢控違反健康與安全法例時嘅抗辯理 由。 每名僱主必須設有措施,以便適當聯絡緊急服務、救援、醫療護理或急救。CDM 2015 規例修訂咗 1996 年建造(健康、安全及福利)規例。 對自僱人士嘅任何重大風險,或對任何可能受自僱人士作為(或不作為)影響嘅人嘅任何風險,均應予 以記錄。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-11.png" alt="PDF 第 11 頁原始頁面"></details>
+    </article></div>
+    </section><section class="chapter" id="chapter-7" data-title="2015 年建造（設計及管理）規例 CDM 2015">
+      <header class="chapter-head"><div class="chapter-no">07</div><div><p>COURSE NOTE CHAPTER</p><h2>2015 年建造（設計及管理）規例</h2><h3>CDM 2015</h3></div><div class="chapter-range">PDF 12–13</div></header>
+      <div class="chapter-pages"><article class="page-card" id="page-12" data-page="12">
+      <div class="page-kicker"><span>PDF PAGE 12</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><h4>2015 年建造(設計及管理)規例(CDM)</h4>
+<h4>CONSTRUCTION, DESIGN AND MANAGEMENT REGULATIONS 2015 ─── 原書第 18 頁 ───</h4>
+<p>2015 年建造(設計及管理)規例 (CONSTRUCTION, DESIGN AND MANAGEMENT REGULA‑ TIONS (CDM) 2015) 呢啲規例原本係為建築地盤而設,但因為「建造工程」嘅定義非常廣泛,娛樂行業同其他較明顯受 影響嘅行業一樣被納入其中。 重點係 CDM 2015 對製作過程中某啲人士施加責任,並要求制定一份文件,識別呢啲負有責任嘅 人。文件必須載有資料,詳述製作將如何安全管理、承辦商與場地之間有乜嘢協調安排、參與製作 人員嘅健康、安全與福利,以及製作所聘用人員嘅勝任能力。 HSE 於 2015 年 3 月嘅聲明: HSE 將繼續喺業內採取以風險為本、合乎比例嘅執法方針。呢個方針會承認業界現有嘅管理安排 同程序,呢啲安排已經用嚟保護工人及其他受工作活動影響嘅人免受健康與安全風險。 HSE 針對較高風險行業及表現欠佳者進行主動介入嘅政策,喺 CDM 2015 於 2015 年 4 月生效後 亦會繼續。HSE 喺娛樂行業嘅主動巡查計劃,將僅限於少數涉及較高風險臨時拆裝結構(TDS)搭建 及拆卸嘅活動。 喺娛樂行業好多製作同較小規模活動相關嘅建造活動中,風險一般被認為較低,CDM 管理條文嘅相 關性有限,唔會超出其他健康與安全法例嘅要求。喺呢啲小型建造項目確有介入時,重點會係考慮 風險管理嘅成效,而非 CDM 行政安排嘅合規性。呢個方針同樣適用於任何地方進行嘅小型建造項 目,無論係農場、工廠定住宅。 對於較大型、較複雜及較高風險嘅建造項目,CDM 所要求嘅管理及協調安排會較為相關,因此會連 同其他健康與安全要求一併考慮。 要將建造業 CDM 責任人翻譯成典型娛樂行業職位描述幾乎係冇可能。角色可以共同承擔。只要 按照規例將安排記錄在案,呢個就唔係問題。 ─── 原書第 20 頁 ───</p>
+<p>* 設計者(Designer)係指決定某樣嘢實際上點樣運作嘅人,而唔係單純決定佢喺觀眾眼中呈現成點 嘅人。 佈景設計師可能製作一個設計,但製作經理同承辦商/工場先至決定佢點樣被支撐、運輸、建造、 上油漆等等。 燈光設計師可能唔會參與實際細節,所以燈光吊架(lighting rig)設計嘅負責人可能係首席電機師, 而唔係創造燈光效果嘅人。 CDM 2015 對人施加嘅責任,大部分(甚至全部)已包含喺 LOLER、PUWER、2005 年高空工作規 例及其他行業特定法例對僱主嘅要求之中。CDM 嘅意義在於協調各個角色,確保維持一個安全健 康嘅工作場所,以及大部分高風險活動由受過適當培訓、具技能同經驗嘅人安全並按計劃執行。 娛樂行業好多人投訴冇獲得安全工作所需嘅時間。呢條規例可以紓緩呢啲憂慮,因為佢對客戶 (client)施加責任,確保向執行工作嘅人提供足夠時間同資源。因此,佢要求一名合資格人士聯同相 關承辦商及供應商規劃製作。好多時工作有規劃,但開始之後未必有管理,而且往往冇同製作上其 他責任人協調。 我哋行業大部分僱主已經做緊 CDM 2015 要求嘅所有嘢。不過,CDM 2015 要求制定一個計劃,並 且要跟從嗰個計劃。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-12.png" alt="PDF 第 12 頁原始頁面"></details>
+    </article><article class="page-card" id="page-13" data-page="13">
+      <div class="page-kicker"><span>PDF PAGE 13</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><h4>有關娛樂行業 CDM 2015 嘅更多資訊同指引,可瀏覽 http://www.hse.gov.uk/entertainment/ cdm‑2015/index.htm</h4></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-13.png" alt="PDF 第 13 頁原始頁面"></details>
+    </article></div>
+    </section><section class="chapter" id="chapter-8" data-title="風險評估 RISK ASSESSMENT">
+      <header class="chapter-head"><div class="chapter-no">08</div><div><p>COURSE NOTE CHAPTER</p><h2>風險評估</h2><h3>RISK ASSESSMENT</h3></div><div class="chapter-range">PDF 14–15</div></header>
+      <div class="chapter-pages"><article class="page-card" id="page-14" data-page="14">
+      <div class="page-kicker"><span>PDF PAGE 14</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>風險評估</p>
+<h4>RISK ASSESSMENT ─── 原書第 22 頁 ───</h4>
+<p>風險評估(RISK ASSESSMENT) 所有工作活動必須進行風險評估。呢個係僱主同自僱人士嘅責任。 查核涵蓋有關工作嘅法例。 風險 = 危害嚴重程度 × 發生可能性 (RISK = HAZARD SEVERITY X LIKELIHOOD OF OCCUR‑ RENCE) 要進行風險評估,首先搵出存在嘅危害。 危害(hazard)係指有潛力造成傷害嘅事物。 嗰個傷害可以有幾嚴重?識別邊個、傷害程度幾大、以及佢哋可能點樣受傷害。 因此呢個可以包 括長期健康風險,亦包括身體受傷。 評估員必須識別危害造成傷害嘅可能性有幾大。 危害可以點樣被消除、減至最低或受控? 而家仲有冇剩餘風險?呢啲風險點樣控制? 風險(RISK)係危害造成傷害嘅可能性,加上該傷害嘅嚴重程度。 如果存在「重大」風險(例如死亡、嚴重受傷、健康風險),評估必須記錄在案。 喺「安全系統」內嘅例行工作中,重大風險唔太可能出現。當有新情況 ⸺ 新人手、新職務、設備 改變、場地改變等等 ⸺ 危害以至風險都可能改變。 無論咩情況,風險評估都應考慮最壞情況、最高可能性 ⸺ 即致命受傷嘅可能。 喺吊掛工作中,大部分風險可以透過使用受過培訓、勝任嘅人員,加上安全工作系統(包括足夠及勝 任嘅監督)減至可接受水平。 安全工作系統係一份記錄咗點樣安全執行工作嘅程序 ⸺ 即「施工方法說明書」(method state‑ ment)。施工方法說明書可以喺風險評估完成後設計,亦可以同步進行。 如果風險評估由同危害共事嘅人做,唔單止會更準確,亦更具成本效益。HSaW 法案中「合理可 行」(reasonably practicable)嘅定義,意味住喺健康與安全利益所需同僱主合理提供之間,應有一 個公平嘅平衡。 ─── 原書第 24 頁 ───</p>
+<p>識別危害、佢可以點樣造成傷害、傷害發生嘅可能性有幾大、對邊個造成傷害以及點解會發生。 風險唔一定只源自工作活動本身。之後就可以考慮一系列將風險減至最低嘅控制措施。原則係喺 唔使用任何特別措施(防護衣物或裝備等)嘅情況下,透過設計工序去完全避免風險,盡量移除或控制 風險。 一旦識別咗危害同控制方法,並設計好控制措施,就需要評估剩餘風險。 呢個喺好多方面都係風險評估嘅關鍵。針對風險嘅初步評估及控制措施陳述,係控制風險嘅第一 步。第二階段係研究點樣將剩餘風險降至可接受水平。 使用 PPE(個人防護裝備)應該係最後手段,而唔係首選。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-14.png" alt="PDF 第 14 頁原始頁面"></details>
+    </article><article class="page-card" id="page-15" data-page="15">
+      <div class="page-kicker"><span>PDF PAGE 15</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>─── 原書第 25 頁 ───</p>
+<p>用矩陣識別嚴重程度同可能性 (USING A MATRIX TO IDENTIFY SEVERITY AND LIKELI‑ HOOD) 用下面嘅量表,由高處墮下造成嘅傷害可以好大,例如 5 分。 發生嘅可能性大概唔算高,例如 3 分。 要計算風險,我哋將兩者相乘。結果 15(5×3)⸺ 呢個數值嘅可能最高值係 25。 因此我哋顯示咗風險其實唔算太大,雖然如果需要更仔細分析,可以用 1 至 10 甚至更高嘅分值。之 後可以設定措施去控制風險。 一般建議用 1 至 5 分制。風險分數可以分成幾個等級:低風險、中風險 ⸺ 可能係 10 至 15 分,以 及高風險 ⸺ 可能係 15 分以上嘅任何分數;15 分或以上被視為危險,喺採取進一步行動之前不得 進行。 風險矩陣示例(EXAMPLE RISK MATRIX) (矩陣圖表) 記錄評估並冇規定嘅方式。 僱主需要能夠記錄評估結果以符合法律要求,同時亦有助於監督工作、評估培訓需要、所需設備, 以及監察安全系統。 下頁附有一個典型嘅風險評估範本。 佢列出重要項目,例如日期、進行評估嘅人、危害、控制措施及剩餘風險。佢識別負責人以及涵蓋 有關工作嘅法例。 風險評估經常被視為一項繁重嘅工作;其實唔係,竅門在於保持簡單,並同工作成比例。高風險工作 = 詳細風險評估。 好多規劃同監督工作嘅人喺不知不覺間已經經歷咗呢個過程;風險評估只係將佢正式化,提供一個 紀錄,以及工作進行期間可以跟從嘅嘢。 將風險評估(或由佢衍生嘅簡化文件)交畀執行工作嘅主管。一份存檔後就被忽略嘅風險評估係冇 意義。 ─── 原書第 27 頁 ───</p>
+<p>(風險評估表格範本 ⸺ 橫向頁面,OCR 為鏡像文字,內容為: 風險評估表:評估人、日期、活動; 欄目包括:危害(HAZARD)、風險評級(H/M/L 高/中/低)、邊個受影響(WHO AFFECTED)、現 有控制措施(CONTROLS IN PLACE)、需要採取嘅進一步行動以減低風險(FURTHER ACTION REQUIRED TO REDUCE RISK)、負責人(Person responsible)、覆檢日期(Review date)、簽 署(由代表僱主進行評估嘅人簽署)、適用規例:高空工作規例、工作電力規例、PUWER、LOLER 等) ─── 原書第 28 頁 ───</p>
+<p>(風險評估空白表格 ⸺ 橫向頁面,欄目同上: 風險評估(RISK ASSESSMENT) 活動(Activity) 評 估人(Assessment made by)、日期(Date) 危害(HAZARD)、(H/M/L)、邊個受影響(WHO AF‑ FECTED)、現有控制措施(CONTROLS IN PLACE)、需要採取嘅進一步行動以減低風險(FUR‑ THER ACTION REQUIRED TO REDUCE RISK)、負責人、覆檢日期、簽署 適用規例(Regula‑ tions applicable))</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-15.png" alt="PDF 第 15 頁原始頁面"></details>
+    </article></div>
+    </section><section class="chapter" id="chapter-9" data-title="工作設備提供及使用規例 PUWER 1998">
+      <header class="chapter-head"><div class="chapter-no">09</div><div><p>COURSE NOTE CHAPTER</p><h2>工作設備提供及使用規例</h2><h3>PUWER 1998</h3></div><div class="chapter-range">PDF 16–16</div></header>
+      <div class="chapter-pages"><article class="page-card" id="page-16" data-page="16">
+      <div class="page-kicker"><span>PDF PAGE 16</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><h4>工作設備提供及使用規例(PUWER)</h4>
+<h4>PUWER 1998 ─── 原書第 30 頁 ───</h4>
+<p>1998 年工作設備提供及使用規例(PUWER) (PROVISION AND USE OF WORK EQUIPMENT REGULATIONS 1998) 規管工作設備使用嘅歐洲指令係《工作設備指令》(Work Equipment Directive);英國最初喺 1992 年以《工作設備提供及使用規例》(P.U.W.E.R.)立法實施,並喺 94/96 年指令修訂之後,於 1998 年擴充。 1998 年工作設備提供及使用規例背後嘅理念,係確保僱主及自僱人士提供畀僱員喺工作中使用嘅 所有機械、設備同工具都適合用途、使用安全,並得到保養以維持使用安全。 目的係工作設備不應引致健康與安全風險,無論佢嘅年齡、功能或產地。 (起重設備、其使用及保養由 1998 年起重作業及起重設備規例專門規管。) 實施《機械指令》嘅 2008 年機械供應(安全)規例針對設備製造商及供應商,而 1998 年 PUWER 規例就針對工作設備嘅僱主同使用者。 規例包括培訓同指導,亦要求僱主進行適當及充分嘅風險評估,以確定檢查之間嘅間距(與管理規例 掛鈎)。規例具體詳述需要確定係咪需要或採用計劃性、預防性定按狀態嘅保養。 《機械指令》所指明嘅措施層級須按次序採用: ‧ 設備嘅設計特點應以物理方式防止風險 ‧ 如 固定措施不可行,須考慮輔助護罩或屏障 ‧ 如物理防護不可能,採用保護裝置及 PPE ‧ 監督、培 訓、指導及發展安全文化 大部分情況下,需要結合至少兩項上述措施。 工作設備嘅定義係工作中使用嘅設備。即使係簡單嘅嘢,例如伸縮梯或套筒扳手,都係工作設備,更 複雜嘅機器或機械設備亦然。電氣設備工具及其供電電纜、配電設備、變壓器同工地發電機嘅設 計、建造及保養亦包括在內。工作照明、通道設備(梯、塔式工作台及棚架)以及用於通道嘅流動 機械設備亦包括在內。 ─── 原書第 31 頁 ───</p>
+<p>規例輔以一份 HSE 認可實務守則(Approved Code of Practice,ACoP),佢構成現行最佳實務嘅基 礎。喺法庭案件中,被告通常須證明佢符合規例,所採用嘅方法相等於 ACoP 所訂下嘅最佳實務。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-16.png" alt="PDF 第 16 頁原始頁面"></details>
+    </article></div>
+    </section><section class="chapter" id="chapter-10" data-title="起重作業及起重設備規例 LOLER 1998">
+      <header class="chapter-head"><div class="chapter-no">10</div><div><p>COURSE NOTE CHAPTER</p><h2>起重作業及起重設備規例</h2><h3>LOLER 1998</h3></div><div class="chapter-range">PDF 17–22</div></header>
+      <div class="chapter-pages"><article class="page-card" id="page-17" data-page="17">
+      <div class="page-kicker"><span>PDF PAGE 17</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><h4>起重作業及起重設備規例(LOLER)</h4>
+<h4>LOLER 1998 ─── 原書第 32 頁 ───</h4>
+<p>起重作業及起重設備規例(LOLER) (THE LIFTING OPERATIONS AND LIFTING EQUIPMENT REGULATIONS) 1998 年起重作業及起重設備規例係根據工作健康與安全法制定,源自歐共體有關工作設備使用嘅 修訂指令(95/63/EC)。佢喺 1998 年 12 月 5 日生效。 1998 年工作設備提供及使用規例處理所有工作設備(包括起重設備)嘅安全事宜,但 LOLER 係一層 額外規例,喺任何 PUWER 要求之上,詳細涵蓋所有起重設備。 呢啲規例簡化並取代咗大部分舊有「起重」法例,適用於英國任何工作範疇內嘅所有起重設備同起 重作業。「工作活動」唔一定意味住牟利或受薪工作。 規例將執行責任放喺僱主身上,而且同大部分歐共體法例一樣,係「以風險為本、目標為導向」。 達成呢啲目標嘅實際方法就留畀個別僱主決定。 LOLER 施加嘅責任,並唔會取消或影響 1974 年工作健康與安全法或據其制定嘅任何規例對僱主或 僱員施加嘅任何責任。 安全係目標,落實責任係手段。規例對僱主同自僱人士施加責任,亦對透過監督或影響起重設備使 用方式而控制工作中起重設備使用嘅人施加責任。 規例不適用於供應起重設備作銷售或租購用途嘅僱主。 強烈建議讀者取得認可實務守則(ACoP)L113,ISBN 0‑7176‑1628‑2,可向 HSE Books 及 The Sta‑ tionery Office(HMSO)購買。 HSE 喺認可實務守則內嘅指引有兩點值得注意: * 如果法律程序基於違反 ACoP 所依據嘅規例,被告需要證明佢已遵守實務守則,或以其他方式達到 其要求。 呢樣嘢可能好難證明,因為規例往往涵蓋廣泛而唔具體。 * ACoP 訂出用嚟判斷合規性嘅標準。 ─── 原書第 34 頁 ───</p>
+<p>1998 年起重作業及起重設備規例 (THE LIFTING OPERATIONS AND LIFTING EQUIPMENT REGULATIONS 1998) 規例摘要: 第 1–3 條 引稱、釋義及適用範圍 起重設備嘅定義係用於提升或下降荷載嘅工作設備,包括用於錨固、固定或支撐該設備嘅附件。 起重「配件」(lifting accessory,或「獨立」起重配件)指用嚟將荷載連接到起重機械(或支撐該機 械)嘅設備,係本身唔能夠提供動力或運動嘅設備。(例如吊索、卸扣同桁架) 第 4 條 強度及穩定性 起重設備必須有足夠嘅強度同穩定性,特別係安裝點或固定點嘅應力。 荷載本身嘅每一部分,或用於起吊佢嘅任何嘢,都必須有足夠強度。 包括適當物料、正確選擇及安全使用(包括建築物/結構嘅結構充分性同穩定性、場地狀況等),並適 用於起重系統內每一個組件。 有好多規例都適用於「工作活動」。責任在於僱主或個人遵守與所做工作相關嘅規例。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-17.png" alt="PDF 第 17 頁原始頁面"></details>
+    </article><article class="page-card" id="page-18" data-page="18">
+      <div class="page-kicker"><span>PDF PAGE 18</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>第 5 條 用於吊人嘅起重設備 呢條規例原意係適用於礦井嘅升降捲揚設備。不過,其思路可應用於娛樂行業用嚟吊人嘅起重裝 置。 「載人」設備必須有合適安全措施,不得令人被困、被壓或被撞擊,或跌出。如有人被困,佢哋 不得暴露於危險之中,並且要容易及安全被救出。 如果防止「載具」下墜嘅後備方法不可行,懸吊組件必須採用合適嘅安全係數(safety factor)。任 何呢啲組件必須每日檢驗。 原本並非設計用嚟載人嘅設備,如果喺設計同執行上符合詳述嘅準則,並且冇其他可行方法,可以使 用。 第 6 條 起重設備嘅定位及安裝 呢條涵蓋設備安裝時嘅危害,包括荷載嘅穩固。 具體嚟講,佢要求起重設備嘅安裝或定位方式,須將 以下風險減至合理可行嘅最低程度:荷載撞擊人、擺動、飄移、自由下墜或意外釋放,並喺其他方 面保持安全。 ─── 原書第 35 頁 ───</p>
+<p>如果荷載下方有人,必須使用(額外措施)。額外措施可以係「超額設計」(over engineering),例如 使用冗餘懸吊或安裝後備懸吊。另見第 8 條。 第 7 條 起重設備嘅標示 呢條要求喺所有用於起吊荷載嘅設備或配件上,清晰及永久標示安全工作負荷(Safe Working Load),包括任何可能降低 SWL/WLL 嘅配置。 須標示設備同組件喺各種配置(起吊角度等)下嘅 SWL,亦須充分標示所有組件,以識別佢哋安全使 用嘅任何特定特性。呢個適用於主環(master links,O 形環)及類似組件,佢哋需要特別小心選擇,以 確保喺唔同起吊角度下有適當強度。 用於吊人嘅設備,其識別及 SWL 必須清晰無歧義;類似但「不」用於吊人嘅設備必須被識別出嚟。 第 8 條 起重作業嘅組織 呢條規例訂明,每名僱主須確保每項起重作業都由合資格人士妥善規劃、得到適當監督,並以安全 方式執行。 計劃應以風險評估為基礎,並由勝任人員按照計劃執行。呢個意味住要有以往類似作業嘅經驗。 複雜作業嘅計劃應包括準備階段 ⸺ 設計、選擇及應用適當設備,以及作業階段 ⸺ 現場工作。 ACoP 指引訂明,計劃需要處理風險評估所識別嘅危害,以及所需嘅程序同資源。 呢條規例適用於荷載嘅提升或下降。 規例列出監督起重作業時需要考慮嘅 12 點: * 喺懸吊荷載下工作 ⸺ 預防措施及安全保障 * 能見度 ⸺ 起重期間工人之間溝通嘅需要 * 掛載 或卸載/穩固荷載 ⸺ 所需嘅適當設備同技能 * 作業進行嘅環境 * 作業位置 ⸺ 淨空高度或其他 限制因素 * 傾覆 ⸺ 造成不穩定嘅因素 * 鄰近危害 ⸺ 結構物同障礙物 * 因危害而降級使用設備 ⸺ 針對故障採用更高安全係數 * 吊人 ⸺ 額外預防措施及操作安全 * 超載 ⸺ 防止超載,除非 測試需要 * 使用前檢查 ⸺ 提供資訊同培訓,令使用者可以喺使用前檢查設備 * 設備嘅持續安全同 完好 ⸺ 適當儲存及保養</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-18.png" alt="PDF 第 18 頁原始頁面"></details>
+    </article><article class="page-card" id="page-19" data-page="19">
+      <div class="page-kicker"><span>PDF PAGE 19</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>─── 原書第 36 頁 ───</p>
+<p>第 9 條 檢查(Inspection) 所有設備同裝置喺投入使用之前,必須由合資格人士徹底檢驗,除非設備係全新,或附有日期喺過去 12 個月內嘅 EC 符合性聲明(證書)。 任何安全取決於安裝條件嘅設備,喺首次使用之前,以及喺新位置重新組裝之後,必須由合資格人士 徹底檢驗,確保佢組裝及安裝正確,並保持使用安全。 每名僱主須確保「暴露於會導致劣化並可能造成危險情況嘅條件」嘅起重設備按以下方式徹底檢 驗。 進行徹底檢驗有兩種方式,可以係: @ 起重配件及用於吊人嘅設備至少每 6 個月徹底檢驗一次,以及 @ 所有其他起重設備至少每 12 個 月徹底檢驗一次。 或者 @ 按照一套正式、書面嘅檢查計劃進行。 如適合用途,喺徹底檢驗之間,亦可由合資格人士按合適間距進行檢查。 當出現可能影響任何起重設備安全嘅特殊情況時,所有設備必須隨時徹底檢驗。上述所有安排,都 係為咗確保健康與安全狀況得以維持,任何劣化都可以及時被發現同糾正。 檢查間距必須符合規例,並留有足夠時間去發現同糾正任何可能影響設備持續安全嘅狀況。 所有喺「業務以外」使用嘅起重設備(例如租用設備,或通常喺其他地點使用嘅設備),必須附有檢查 紀錄。規例訂明,僱主須確保任何起重設備都唔會離開佢嘅業務(或者,如從他人業務取得,喺佢業務 中使用),除非附有實物證據,證明本條例要求嘅最後一次徹底檢驗已經進行。 如果設備從未使用過,而僱主持有該設備日期喺過去 12 個月內嘅符合性聲明,則首次使用前無需檢 查。 ─── 原書第 37 頁 ───</p>
+<p>第 10 條 報告/缺陷(Reports/Defects) 任何根據第 9 條進行徹底檢驗嘅人,如發現任何構成或可能構成人身危險嘅缺陷,必須立即通知僱 主。 佢必須以書面(或「同等安全嘅方式」)作出簽署報告,載有規例要求嘅資料(附表 1 ⸺ 徹底檢驗報 告須載嘅資料)。 報告必須盡快轉交委託進行檢驗嘅人,或設備租用/借用嘅出處人,兩種情況都要盡快。 如果合資格人士認為存在現有、可能發生或迫在眉睫嘅嚴重人身傷害風險,報告必須盡快送交執法 機關。 進行檢查嘅人亦須立即通知僱主任何可能成為人身危險嘅缺陷,並盡快以書面記錄檢查。 獲通知嘅僱主須確保起重設備嘅缺陷得到糾正,或者如果缺陷存在但尚未構成危險(考慮徹底檢驗 報告中有關缺陷變成危險所需時間嘅任何細節,以及防止危險發生所需嘅任何維修),先採取相應行 動。 (practicable 嘅定義通常理解為可行或可能。) 第 11 條 資料及紀錄嘅保存 合資格人士向僱主作出嘅報告必須可供查閱:證書或符合性聲明(即「出世紙」)須保存至僱主停用 該設備為止;徹底檢驗報告須保存至報告作出後 2 年。 安全取決於安裝條件嘅設備,以及喺上次檢驗地點以外拆卸再組裝嘅設備,報告必須保存至僱主停 止喺報告所指地點使用該設備為止。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-19.png" alt="PDF 第 19 頁原始頁面"></details>
+    </article><article class="page-card" id="page-20" data-page="20">
+      <div class="page-kicker"><span>PDF PAGE 20</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>第 12 及 13 條 豁免(國防部等) 第 14–18 條 現有規例嘅修訂、撤銷及廢除。 原則係喺首次使用前確立安全,然後喺使用期間確保持續安全。例如,「商用」卸扣嘅使用並冇被 規例排除。只要設備由合資格人士指定及使用,並照樣接受檢查同檢驗,LOLER 係容許嘅。 ─── 原書第 38 頁 ───</p>
+<p>安全係數與安全工作負荷 (SAFETY FACTORS AND SAFE WORKING LOADS) 設計起重設備時,設計師同工程師嘅目標係製造一件安全、可靠嘅物品,能夠承受其設計用途而對 安全冇疑問。 設計會考慮物品喺使用中承受嘅應力同應變。 原型會經過測試以了解物料特性。 測試顯示物料強度可以點樣被預測,以確保使用安全。 安全工作負荷(Safe Working Load,SWL)由僱主嘅合資格人士確定,係法律上可施加於物品嘅最 大荷載。呢個可能已由供應商標明,僱主可決定係咪想進一步調低。 工作負荷極限(Working Load Limit,WLL)係製造商嘅設計負荷極限。有時因為特別危險嘅條件 或環境,需要將 SWL 定得比 WLL「低」。(見上文)呢個會由合資格人士喺檢驗報告中指明。SWL 永遠不會為咗補償磨損或損壞而調低。 「安全係數」(Safety Factor,又稱「使用係數」Coefficient of Utilisation 或「工作係數」Work‑ ing Coefficient)就起重設備而言,通常表示為對抗斷裂嘅係數,例如 5:1。呢個意思係使用中施加 嘅最大荷載永遠只會係物料斷裂負荷嘅五分之一。 應用於鋼結構或其他支撐結構嘅係數會低好多, 而且往往係針對指定撓度(deflection)而非斷裂。 安全係數(Safety factor) 安全係數與安全工作負荷(圖) 對抗斷裂嘅安全係數 5:1:應付「不可預見嘅情況」(The unforeseen) 物料最低斷裂負荷 ÷ 安全工作負荷 2000 ÷ 400 公斤 = 5:1 安全係數 例:6mm 鋼絲繩,最低斷裂負荷(MBL)= 2000 公斤。 所需安全係數(FoS)例如 5:1, 安全工作負荷因 此係 2000 公斤 ÷ 5 = 400 公斤。 ─── 原書第 40 頁 ───</p>
+<p>檢查或測試起重設備嘅合資格人士(Competent Person)。 (起重設備工程師協會 LEEA)嘅定義係 一個: 具備對所測試、檢驗或發證設備嘅實踐及理論知識同經驗,使佢能夠發現檢驗旨在發現嘅缺陷或弱 點,並評估佢哋對設備安全嘅重要性嘅人。 合資格人士應有足夠成熟度,喺需要時尋求專家意見同協助,使佢能夠作出必要判斷,並清楚自己可 以喺幾大程度上接納其他人嘅輔助意見。 合資格人士必須能夠有信心咁證明一件物品有冇明顯缺陷,以及喺各方面是否適合設備所需嘅用 途。 (LEEA 認為,勝任能力可以係一種企業責任。) (圖:知識 Knowledge + 技能 Skill + 經驗 Experience = 勝任能力 Competence) 勝任能力係知識、技能同經驗嘅融合。 每項特質提升,勝任能力都會提升。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-20.png" alt="PDF 第 20 頁原始頁面"></details>
+    </article><article class="page-card" id="page-21" data-page="21">
+      <div class="page-kicker"><span>PDF PAGE 21</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>─── 原書第 41 頁 ───</p>
+<p>監督(Supervision) 監督唔一定意味住有人要每分每秒睇實啲工作,但監督嘅程度必須同做嘢嗰啲人嘅勝任程度相稱。 監督嘅需要(圖) 足夠嘅監督係法律要求。好多檢控案件都係基於缺乏監督 ⸺ 留低冇經驗或者唔知情嘅人,喺超出 佢哋勝任範圍嘅事情上做決定。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-21.png" alt="PDF 第 21 頁原始頁面"></details>
+    </article><article class="page-card" id="page-22" data-page="22">
+      <div class="page-kicker"><span>PDF PAGE 22</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>起重原理、力與計算</p>
+<h4>PRINCIPLES OF LIFTING, FORCES AND CALCULATIONS ─── 原書第 42 頁 ───</h4>
+<p>起重原理、力與計算 (PRINCIPLES OF LIFTING, FORCES AND CALCULATIONS) 一般嚟講,起重就只係對抗重力將荷載提升。喺一個起重系統中,除咗荷載本身之外,仲有額外嘅力 需要考慮同克服,例如起重設備產生嘅摩擦力、重力對荷載嘅影響,以及起吊角度施加嘅力。將呢 啲額外、不理想嘅力或作用減至最低,作業就會越有效率。 ‧ 確定荷載嘅重量(或荷載配置)。 ‧ 規劃工作 ⸺ 包括拆卸同人員安全。唔好怕搵人請教。 ‧ 考慮吊掛工作嘅安全通道、時間表同實際情況。 ‧ 檢查基本原理:重心、荷載完整性同穩定性、 淨空高度等。 ‧ 喺腦入面預演成件工作,直至涵蓋所有可能性。 ‧ 如有需要,寫低你嘅起重計劃。 ‧ 安排起吊盡量接近垂直。 ‧ 確保支撐結構、起重設備同荷載能夠承受起重作業施加嘅力。 ‧ 留意系統中一項或多項故障嘅可能後果。可以係組件故障、荷載塌散,或支撐結構失效。 ‧ 確保 起重設備使用正確,並已採取所有必要安全措施。 ‧ 安裝 ⸺ 如有需要試行。檢討並喺需要時修 改。 ‧ 永遠要有「後備方案」(Plan B)。 因此,喺起吊之前了解荷載產生嘅影響好重要。 ‧ 荷載嘅重量同重心。呢個唔需要準確到一公斤,但必須同任務成比例,例如 5%。舉例,對一個 1000 公斤嘅支撐點嚟講,準確到最近 50 公斤大概完全可以接受。但對一個 100 公斤嘅支撐,就建 議用計算核實到最近 5 公斤。 ‧ 荷載嘅結構完整性(或缺乏)⸺ 佢造工好唔好、能否支撐自身重 量、固定件是否足夠? ‧ 可用嚟穩固或支撐荷載嘅方法 ⸺ 吊索、吊環螺栓。 ‧ 起吊可能對佢 造成嘅影響,例如吊索造成嘅壓縮等等。 無論咩情況,荷載必須安全穩妥咁被承載,不得令支撐結構、起重設備或荷載本身超載。 「動態」荷載(通常係用動力設備起吊嘅荷載)永遠會比靜態荷載「重」⸺ 使用起吊速度約每分 鐘 4 米嘅標準電鏈吊機起吊時,應假設設備同支撐結構承受嘅荷載增加 25%。 如果吊掛做得差,結構再穩固都唔安全;如果屋頂結構弱,擔心設備強度亦冇乜意義。 ─── 原書第 43 頁 ───</p>
+<p>重要嘅係採取「整件工作」嘅視野,預留不可預見嘅情況同容錯空間。設備可以更換,人命不可 以。 研究顯示,好多涉及起重設備嘅意外,如果對簡單起重原理有更好理解,都本可避免。 安全工作負荷不得超過,起重作業必須安排到冇任何器具負荷超過其 SWL,荷載或器具亦不會變得 不穩定。 力(FORCES) W × a = b × E (槓桿原理圖) 50% / 50%(荷載平均分佈圖)</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-22.png" alt="PDF 第 22 頁原始頁面"></details>
+    </article></div>
+    </section><section class="chapter" id="chapter-11" data-title="起重原理、力與計算 LIFTING PRINCIPLES, FORCES &amp; CALCULATIONS">
+      <header class="chapter-head"><div class="chapter-no">11</div><div><p>COURSE NOTE CHAPTER</p><h2>起重原理、力與計算</h2><h3>LIFTING PRINCIPLES, FORCES &amp; CALCULATIONS</h3></div><div class="chapter-range">PDF 23–26</div></header>
+      <div class="chapter-pages"><article class="page-card" id="page-23" data-page="23">
+      <div class="page-kicker"><span>PDF PAGE 23</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>─── 原書第 44 頁 ───</p>
+<p>荷載分佈(LOAD DISTRIBUTION) 均佈荷載(Uniformly distributed load,UDL) (圖) 中點荷載(Centre point load) (圖) 呢兩種係大部分桁架俾出嘅基本荷載條件:均佈同中點。 例:W=100 公斤,a=4 米,L=6 米。A 點荷載 = 100×4÷6 = 66.6 公斤 上圖:點樣計算簡支樑支撐點嘅荷載 (多支撐點荷載分佈係數圖: 兩點:0.5 / 0.5 三點:0.187 / 0.625 / 0.187(近似) 四點:0.133 / 0.367 / 0.367 / 0.133 五點:0.098 / 0.286 / 0.232 / 0.286 / 0.098) 上圖:均勻承托、兩端有支撐(即兩端冇懸臂)嘅均佈荷載樑或桿件上,每個支撐點嘅荷載。 ─── 原書第 45 頁 ───</p>
+<p>中型桁架荷載表(MEDIUM DUTY TRUSS LOAD TABLE) 12 米跨度上嘅均佈荷載(UDL)= 1275 公斤 均佈荷載(UDL)(圖) 1275 公斤 「容許荷載係可以安全施加於桁架嘅最大靜態等效荷載。並未計入 動態荷載。」⋯⋯加 25% 中點荷載(Centre point load)(圖) 「容許荷載係可以安全施加於桁架嘅最大靜態等效荷載。並未 計入動態荷載。」⋯⋯加 25% 三分點荷載(Third point load)(圖) 478 公斤 478 公斤 四分點荷載(Quarter point load)(圖) 319 公斤 319 公斤 319 公斤 三分點同四分點荷載 ⸺ 同字面唔完全一樣⋯⋯ ─── 原書第 47 頁 ───</p>
+<p>起吊與下降作業(LIFTING AND LOWERING OPERATIONS) 假設所有準備性吊掛已完成,下一步就係起吊。 係咪由「一個」人發出指令控制成個作業? 所有參與嘅人知唔知道將會發生乜嘢? 與工作冇直接關 係嘅人可唔可以進入該範圍? 荷載移動期間,任何人都不得進入荷載下方範圍。 有冇足夠淨空高度?有冇嘢可能被勾住? 執行桁架一章示例檢查清單建議嘅檢查。所有接駁位有冇檢查扭緊?所有吊索同固定件有冇檢查? 荷載穩唔穩固?荷載或設備上面有冇留低可能跌落嘅嘢? 使用手拉鏈條葫蘆同電鏈摩打嘅基本原則喺相關章節有講,呢度撮要: 確保所有起重機械運行方向一致。如使用手動設備,檢查並「預演」作業,確保所有人一齊行動,並 讓工作人員事先熟習。準備好經常停低調平結構。重型起吊可考慮使用荷載監測。 清楚警告即將開始起吊。 平均咁起吊結構。 永遠喺荷載啱啱離地時停一停,俾荷載「安定」並自行對中。咁樣可以確保一切按計劃運作,並喺 加上更多荷載前糾正任何問題。呢個時候可以固定拉尺、繫上輔助高空移動嘅「導向繩」(tag lines)、鋼絲梯、安全系統等等。如果其他工種需要喺結構或荷載上工作,而家可以交畀佢哋,準備 好再檢查一次。 按需要繼續起吊,留意任何掛喺結構上嘅嘢(電纜、布幕)可能影響佢嘅位置或安全。 留意荷載唔好卡住或勾住任何嘢;你可能有幾噸嘅起重能力,但你想用喺荷載上,而唔係用嚟吊起舞 台一角、露台或其他突出物。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-23.png" alt="PDF 第 23 頁原始頁面"></details>
+    </article><article class="page-card" id="page-24" data-page="24">
+      <div class="page-kicker"><span>PDF PAGE 24</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>達到「定位」(trim)高度後,任何所需嘅後備懸吊應盡快接上,而且一定要喺任何人需要喺荷載上或 荷載下方工作之前完成。 避免反覆「寸動」(inching)摩打,用量度喺一次起吊內完成定位。 動力起重器具唔即時使用時要 隔離電源。 發出荷載已穩固嘅確認,下方工作方可恢復。 ─── 原書第 48 頁 ───</p>
+<p>呢啲要點大部分都可以理解為 LOLER 嘅要求。 下降應該係起吊過程嘅逆轉。 作業前嘅準備至關重要;大部分情況下,必須徹底檢查荷載,確保由起吊至今冇任何改變。 起吊「之後」加上嘅任何電纜、布幕或設備,都應該評估以確保起重設備冇超載。「逆轉」原則喺 呢方面往往好有用,因為額外設備應以同佢起吊或裝上時一樣嘅方式下降或拆除,咁樣就可以消除 有關額外重量等嘅任何疑問。 準備工作範圍下方,檢查荷載有一條暢通嘅「下降路徑」。準備任何所需嘅支撐,並通知其他人擬 定嘅行動方案。設置圍欄、告示,以及採取任何預防措施防止人員進入荷載下方。 完成呢啲準備後,可以拆除或清理後備懸吊,以免佢哋勾住荷載(或摩打);應安排「監察員」(spot‑ ters)睇實荷載,並檢查起重器具(葫蘆、絞盤、摩打)確保控制正常運作。 所有準備完成後,應由「一個」人指揮,並聽取監察員嘅意見。應發出清晰可聞嘅警告,示意荷載即 將下降。 主要下降過程如可能應一氣呵成,而唔好停停開開。接近地面或所需位置時,停低作業,確保一切已 為最後着地或搬運準備好。 負責人應該睇到荷載下方嘅範圍。如果要將荷載「着地」,小心保持水平,並用墊木或支撐防止吊 索被壓住。 荷載靜止或着地後,電動設備應隔離電源直至再次需要。規劃解索同拆卸工作,並盡量保持工作範 圍整潔,冇散落嘅螺絲螺栓、吊索卸扣等。 吊掛及起重設備嘅拆除,應只喺範圍內剩低與吊掛直接有關嘅人員時先開始,理想係喺所有佈景/燈 光/桁架等移走之後。 拆除作業應使用所有高空工作及安全系統 ⸺ 拆除喺某程度上係風險最大嘅時候。 要趕工嘅心態雖然好可以理解,但應予以勸阻。少少事前考慮往往可以將呢個風險降至可接受水 平,並確保所有人盡快完工,而冇任何受傷或損壞。 唔好忘記「動態」效應喺下降荷載時同起吊時一樣適用。每次停同開都會透過荷載路徑產生衝擊 荷載。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-24.png" alt="PDF 第 24 頁原始頁面"></details>
+    </article><article class="page-card" id="page-25" data-page="25">
+      <div class="page-kicker"><span>PDF PAGE 25</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>桁架</p>
+<h4>TRUSSES ─── 原書第 51 頁 ───</h4>
+<p>桁架(TRUSSES) 基本嚟講,支撐點之間嘅距離、桁架自身重量同載重,會決定應使用邊種桁架。呢個可以由承載 150 公斤嘅 5 米跨度「展覽桁架」,到喺 24 米跨度承載 2000 公斤嘅重型桁架。 桁架本質上係兩條梯形樑(ladder‑beams)以支撐撐開。梯形樑可以垂直排列形成方形截面桁架, 或傾斜形成三角形截面。所用物料、主要構件(弦桿 chords)之間嘅距離同接駁方法,構成桁架大部 分強度。斜撐構件(斜向、水平及垂直)嘅尺寸提供其餘強度。 桁架嘅使用受相當常識性嘅工程原理規管。 桁架必須永遠按照製造商嘅指示使用。 (圖:斜撐 diagonal bracing、弦桿 chord、跨度 span、高度 height) 斜撐必須同施加於桁架嘅荷載喺同一平面。對於垂直荷載,斜撐必須喺桁架嘅兩側面。如果荷載係 水平施加於桁架,斜撐可能需要喺桁架嘅頂面同底面。 有啲桁架三面都有斜撐。使用呢啲桁架時,必須確保對於垂直荷載,兩個有斜撐嘅面位於垂直平 面。 桁架設計成透過接駁位傳遞荷載,所以所有接駁必須用原設計嘅組件妥善完成。銷或螺栓絕不可 遺漏、即興替代或用第二樣嘢代替。弦桿末端、連接板嘅損壞,或插銷(spigot)或叉形接頭(fork end)孔嘅損壞,會令接駁無法有效運作,並削弱桁架嘅承載能力。 桁架一般以兩種方式之一連接:用受拉螺栓透過連接板將節段栓接,或者用插銷或叉形接頭配剪力 銷連接弦桿。接駁位極為重要,因為佢哋必須同桁架一樣堅固,並有效傳遞荷載。 絕不可混用不同製造商嘅桁架或不同類型嘅桁架。喺同一跨度內混合不同設計類型(例如用轉接板 將輕型駁中型)係絕對不可考慮。 ─── 原書第 52 頁 ───</p>
+<p>(圖:節點 A NODE POINT / 非節點 NOT A NODE POINT) 由於桁架嘅設計令所有構件都有特定功能,損壞一條構件可以顯著影響成條桁架嘅強度。主弦桿或 斜撐嘅彎曲、壓扁、鑿損同扭曲,已足以構成理由將桁架隔離,直至由合資格人士檢查並維修或更 換。 上圖嘅桁架係側躺,加載前必須旋轉 90 度。檢查製造商係咪要求斜撐圖案(之字形 zig‑zag‑zig)連 續。檢查斜撐係咪需要喺特定平面,以配合你心目中嘅用途。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-25.png" alt="PDF 第 25 頁原始頁面"></details>
+    </article><article class="page-card" id="page-26" data-page="26">
+      <div class="page-kicker"><span>PDF PAGE 26</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>─── 原書第 53 頁 ───</p>
+<p>桁架設計成喺節點(node points,即構件相交嘅點)承載荷載。桁架嘅強度同剛度來自構件、弦桿 同斜撐構件受拉伸長或沿軸向受壓縮短。任何令構件偏離直線嘅嘢,都可能削弱整體結構。 節點(Nodes)(圖) 荷載應施加於節點 使用時,點荷載應施加喺桁架支撐點附近。懸臂(cantilevers)可以喺桁架內產生可能削弱佢嘅力; 如可能出現顯著懸臂,應向製造商尋求指引。 確保吊索冇壓扁桁架弦桿、冇吊住下弦桿(因為節點通常喺上弦桿)、亦冇拉扯斜撐上嘅焊縫或焊 縫下方。 右圖:吊桁架嘅一些方法。呢啲會喺課程中討論;有啲喺某啲情況下可以接受,有啲就唔適合薄壁弦 桿嘅桁架。 吊索應該係軟性,放喺節點或者盡可能貼近節點嘅位置,而且唔好用會大幅增加桁架受力嘅方式吊 掛。 繞纏弦桿(產生摩擦力並保持桁架垂直)係好做法,但亦可能對斜撐施力。 用兩條吊索代替一條吊桁架可以提供一定冗餘 ⸺ 如果一條吊索失效,仲有一條可以作為最後手段 支撐桁架。 ─── 原書第 55 頁 ───</p>
+<p>桁架嘅吊索方法(Slinging trusses) 吊桁架好少有一種「正確」方法。你需要視乎桁架、吊索同荷載性質選擇合適方法。 如果輕型桁架嘅弦桿係薄壁,或者佢嘅節點唔係相對而設,考慮到吊索可以產生嘅壓扁力,選擇合適 嘅吊索方法就極為重要。 (圖:用一條吊索吊三角桁架) 節點之間有 50mm 側向斜撐嘅重型桁架受力會較細,因為對呢啲力嘅方向有更大阻力。 靜態荷載(唔郁嘅荷載)吊好之後唔會再受力增加。 被起吊嘅桁架,或者支撐吊機、絞盤或滑輪嘅桁架,喺起吊或下降動作開始或停止時會受力增加。 因此揀選吊索方法/形式時,必須考慮呢一點。 一般嚟講,跟從桁架製造商嘅指示。 絕不可超過相關荷載表內嘅容許荷載。 (圖示:喺卸扣位置取得 60° 夾角。 喺節點位置繞纏上弦桿。 喺節點位置勒住下弦桿。 × 唔好咁樣 吊方形桁架) 上圖:吊索可以對桁架施加嘅力嘅例子。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-26.png" alt="PDF 第 26 頁原始頁面"></details>
+    </article></div>
+    </section><section class="chapter" id="chapter-12" data-title="桁架 TRUSS">
+      <header class="chapter-head"><div class="chapter-no">12</div><div><p>COURSE NOTE CHAPTER</p><h2>桁架</h2><h3>TRUSS</h3></div><div class="chapter-range">PDF 27–32</div></header>
+      <div class="chapter-pages"><article class="page-card" id="page-27" data-page="27">
+      <div class="page-kicker"><span>PDF PAGE 27</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>─── 原書第 56 頁 ───</p>
+<p>桁架錯位接駁(mis‑noding)可以喺兩條桁架駁埋一齊、而桁架嘅連續斜撐圖案被打斷時發生,令荷 載無法再透過桁架正常傳遞。呢個可以導致嚴重嘅結構後果,甚至結構倒塌。要注意嘅係,視乎桁 架類型,有啲桁架喺組裝時未必會出現錯位接駁。如果你對使用某製造商桁架嘅任何一點有疑問, 請記得諮詢製造商。 以下係一啲要留意嘅基本要點: 斜撐圖案被打斷(Brace pattern is broken)(圖) (第 56 頁續) 已出現錯位接駁(Mis‑noding has occured)× 斜撐圖案連貫。受力正常(Brace pattern follows. Forces OK)✓ 斜撐圖案唔連貫,但垂直末端構件容許力傳遞(Brace pattern does not follow BUT vertical end members allow forces to flow)✓ ─── 原書第 57 頁 ───</p>
+<p>桁架嘅損壞(Damage to trusses) 損壞可以喺運輸同粗暴搬運中造成,亦可以因超載/超跨度、過度扭緊固定裝置同配件、接駁不 良、吊索時鋼絲繩吊索壓損弦桿並屈曲幼細嘅斜撐管,或者攀爬輕型垂直桁架而造成。 較重型嘅桁架,損壞往往由搬運同儲存不當造成(用撬棍敲打屈曲構件、用綁喺桁架上嘅貨帶拉扯 等)、過度扭緊固定裝置同配件,以及組裝期間超跨度。 鋁材嘅局部損壞最常由吊鈎夾、鋼絲繩吊索、棚架配件,以及用叉車搬運桁架節段同成條桁架造 成。 絕不可喺桁架上鑽孔。絕不可自行維修或焊接桁架。 桁架嘅任何損壞都應視為潛在危險,請諮詢製造商意見。必須遵守製造商嘅荷載數據同操作指示。 大部分製造商都好樂意討論同就佢哋產品嘅使用提供意見,好多仲為較複雜嘅配置或用途提供設計 服務。 ─── 原書第 59 頁 ───</p>
+<p>輕型桁架(LIGHT DUTY TRUSS) 305 MM 高 × 305 MM 闊 (技術規格表) 主弦桿直徑 50.8MM,壁厚 10swg;接駁尺寸 M16 × 45mm 8.8 級 斜弦桿直徑 25.4MM,壁厚 10swg 接駁方法:高強度(H.T.)螺母及螺栓 所有產品由持證/認證焊工按 BS 8118 《鋁材結構使用》焊製。 重量與尺寸(WEIGHTS AND DIMENSIONS) 描述 尺寸(毫米) 5 呎節段 4 米節段 3 米節段 2 米節 段 2000 MM × 305 MM × 305 MM 1 米節段 1000 MM × 305 MM × 305 MM 角位節段 (請注 意所有⋯⋯) 輕型桁架荷載表(LIGHT DUTY TRUSS LOAD TABLE) 輕型桁架最適合天花高度或貨車空間有限嘅應用。佢係支撐一般燈光嘅流行方案,跨度可達 14 米。輕型桁架有兩個尺寸:標準 305mm 高 × 305mm 闊,以及 305mm 高 × 457mm 闊嘅變化 型。 我哋為產品嘅物料同工藝缺陷提供保用,只要客戶擁有該產品(以正確使用及每年保用檢查為前 提)。其他條款及細則適用 ⸺ 詳情請聯絡 TFL。 UNITS 3 ‑ 6, KINGSTON INDUSTRIAL ESTATE, 81 ‑ 86, GLOVER STREET, BIRMINGHAM B9 4EN ENGLAND 電話:+44 (0) 121 772 5234 傳真:+44 (0) 121 772 5231 電郵:info@totalfabs.com www.totalfabs.com</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-27.png" alt="PDF 第 27 頁原始頁面"></details>
+    </article><article class="page-card" id="page-28" data-page="28">
+      <div class="page-kicker"><span>PDF PAGE 28</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>─── 原書第 60 頁 ───</p>
+<p>KRASENBRINK + BASTIANS INGENIEURE(工程師行) LITE BEAM MKIII 單 跨 樑 嘅 容 許 荷 載 (zulässige Belastung eines Einfeldträgers / permissible loads single‑ span‑girder) (荷載表,數值包括:36.5、315.6、209.2、140.3、132.2、117.3、104.6 等) ▨ = 剪力主導(Querkraft maßgebend / shear is limiting) ▢ = 彎矩主導(Biegemoment maßgebend / bending moment is limiting) 均佈荷載(gleichmäßig verteilte Last / distributed load) 中央單點荷載(mittige Einzellast / central single load) 三分點單點荷載(Einzellast in den Drittelspunkten / single load third points) ─── 原書第 61 頁 ───</p>
+<p>TOTAL FABRICATIONS 技術規格 中型桁架(MEDIUM DUTY TRUSS) 521 MM 高 × 521 MM 闊 主弦桿直徑 50.8MM,壁厚 10swg;接駁尺寸 M16 × 45mm 8.8 級 斜弦桿直徑 25.4MM,壁厚 10swg 接駁方法:高強度螺母及螺栓 所有產品由持證/認證焊工按 BS 8118《鋁材結構使用》焊 製。 重量與尺寸 3 米節段 2 米節段 (下略) 高承載力加上結構緊湊,令中型桁架成為大部分一般應用嘅理想選擇,跨度可達 18 米。中型桁架嘅 三角形變化型可以尖頂朝上或朝下使用;呢個係掛布幕或橫額嘅實用特點,亦係需要圓形配置時嘅 熱門選擇。 我哋為產品嘅物料同工藝缺陷提供保用,只要客戶擁有該產品(以正確使用及每年保用檢查為前 提)。其他條款及細則適用 ⸺ 詳情請聯絡 TFL。 ─── 原書第 63 頁 ───</p>
+<p>吊掛桁架時嘅示例檢查清單 (EXAMPLE CHECKLIST WHEN RIGGING TRUSSES) 呢份示例檢查清單適用於吊掛及起吊桁架(等),然後先交畀其他部門。 勾選(Tick): □ 桁架操作手冊喺現場可供參考 □ 桁架節段嘅數量同類型正確 □ 確認桁架、角塊及配件適合使 用 □ 桁架嘅緊固件類型正確、齊全及狀態良好 □ 懸吊點之間嘅跨度喺該桁架類型嘅設計跨度之 內 □ 桁架上嘅吊索位置喺節點 □ 荷載/跨度喺相關荷載表嘅限制之內 □ 所有接駁正確穩固(螺母/ 螺栓、桁架銷/R 夾) □ 五金件(吊樑等)穩固 □ 冇工具或設備留喺桁架上或桁架內可能跌落 □ 起 吊作業按照施工方法說明書執行 □ 後備懸吊已經/未有安裝 (第 63 頁續) □ 防墮設備可以/不可以 喺呢條桁架上使用 簽署(Signature)⋯⋯⋯⋯⋯ 日期(DATE)⋯⋯⋯⋯⋯ 代表安裝吊掛承辦商(On behalf of installing rigging contractor)</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-28.png" alt="PDF 第 28 頁原始頁面"></details>
+    </article><article class="page-card" id="page-29" data-page="29">
+      <div class="page-kicker"><span>PDF PAGE 29</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>─── 原書第 64 頁 ───</p>
+<p>輕型桁架(LIGHTWEIGHT TRUSSES) 而家市面上有好多輕型桁架。 展覽及貿易展市場想要一種外觀好睇、跨度合理、可以做展台結構、而且組裝簡單嘅結構系統。 設計參數從來冇超出大約 8 米跨度上每米 8 公斤(約)嘅均佈荷載好多。由於薄壁合金管嘅特性,加 上佢哋相對細嘅結構截面,承載能力比較大型嘅桁架有限。 如果荷載同跨度喺合理限度內,呢啲桁架可以以「長排」(而非長跨度)嘅形式安全使用,例如展覽嘅 布幕或橫額。問題喺桁架(用三個或以上吊機)起吊唔平均時開始。跨度變成槓桿,可以造成嚴重損 壞。因此,喺呢啲情況下,一般用電鏈摩打好過用手拉鏈條葫蘆。另一個常見問題係,一個跨度最初 吊得夠安全,但之後被唔知情或者唔在乎嘅人加咗額外荷載,可能係吊掛員離場之後。 用地面支撐(ground support)呢類系統好直接,因為系統輕。大約 4 米高以下嘅簡單四腳、六腳 結構,唔使起重設備都好容易人手搭建同拆卸。如果為咗喺一端裝腳而抬起一條長水平跨度,槓桿 作用可以造成彎曲,特別係腳同水平構件相接嘅角位。好多時需要某種起重設備將較大嘅水平框 架或格柵(grid)升到可以裝「腳」嘅高度。裝好塔腳之後,可以輕輕放低結構並檢查,先至移走起重 設備。咁樣做可以保持力係垂直,大幅減低不穩定風險。只要起吊平均、避免任何支撐(「飛掛」 或地面支撐)超載,桁架就唔會受到不當荷載。檢查完成後,結構可以交畀其他承辦商加裝燈光、音 響、展示物料等。呢類結構加上嘅荷載好容易監察,亦可以用圖則標明吊掛員唔喺場時結構嘅「禁 區」。 而家有幾種輕型系統採用「自爬式」(self climbing)塔原理,利用電鏈摩打或絞盤。呢個確保水平 桁架保持水平、塔腳永遠垂直,幾乎消除所有穩定性風險。必須遵守製造商嘅荷載資料;呢點喺呢 度尤其重要,因為每個製造商搭建系統嘅方式可能好唔同。 ─── 原書第 65 頁 ───</p>
+<p>地面支撐(GROUND SUPPORT)(室內使用*) 「地面支撐」有幾種方式,但佢哋全部依賴幾個基本原則。 使用地面支撐結構可以係解決吊掛問題嘅簡單方案。 地面支撐必須永遠有穩固嘅立足點。例如,喺用「腳」支撐嘅舞台上使用任何地面支撐,都需要特 別小心。可能需要額外嘅「腳」同水平構件去分散荷載喺舞台上嘅集中「腳印」(footprint),舞台 腳本身亦需要一定嘅荷載分散。 必須核實你嘅重量確認喺該類地板嘅安全承載能力之內。喺承托良好嘅地板上嘅輕型塔下面,幾塊 優質夾板可能已經足夠,但每個情況都需要唔同嘅解決方案。 系統嘅累計荷載、任何附帶荷載(例如佈景或結構物)、觀眾或公眾等,全部都要考慮。進行風險評 估同設計系統時,可能需要結構工程師嘅服務。 地面支撐必須保持垂直。呢個可能意味住要用穩定器(甚至室內都要拉纜風)。 吊機或塔之間嘅高度差,或者桁架唔水平,可以令塔被推離或拉離垂直。兩塔、三塔同四塔系統嘅 缺點係:一旦一個支撐失效,後果會好嚴重。使用冗餘塔,並將桁架保持喺其懸臂能力之內,係良好做 法。咁樣如果一個支撐失效,會有足夠剛度防止突然全面倒塌。 確保系統嘅剛度以及垂直、水平狀態嘅需要,點強調都唔為過。 每種類型有自己嘅特性,但只要遵守操作指示同設計承載力,使用地面支撐可以比「飛掛」(flying) 更直接。 較大型系統必須有場地結構報告同準備工作,任何情況下都可能建議做。 最常見嘅地面支撐類型有: 重型燈光架:除非製造商容許,否則唔好用嚟支撐桁架 「搖上式」(Wind up)塔:輕型桁架系統,檢查 承載力。 Superlift/升降塔:受高度、承載力同穩定性限制(不可室外使用)。 地面支撐塔:有外伸支</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-29.png" alt="PDF 第 29 頁原始頁面"></details>
+    </article><article class="page-card" id="page-30" data-page="30">
+      <div class="page-kicker"><span>PDF PAGE 30</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>架、拉纜風嘅塔,或內置壓載嘅塔。 專門設計嘅「自爬式」桁架系統。 屋頂系統:專門設計嘅系統, 唔一定用桁架。 最後兩種通常使用「傳統」吊掛用嘅電鏈摩打。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-30.png" alt="PDF 第 30 頁原始頁面"></details>
+    </article><article class="page-card" id="page-31" data-page="31">
+      <div class="page-kicker"><span>PDF PAGE 31</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>電鏈吊機及摩打</p>
+<h4>CHAIN HOISTS AND MOTORS ─── 原書第 68 頁 ───</h4>
+<p>電鏈吊機及摩打(CHAIN HOISTS AND MOTORS) 手拉鏈條葫蘆(HAND CHAIN BLOCKS) 手拉鏈條葫蘆(chain blocks、chain hoists)係好有用嘅工具,因為佢哋唔依賴電力、相對輕便、 易於使用。 如果需要多過一個人先至拉得起或放得低荷載,就要懷疑個葫蘆損壞咗,或者荷載超過葫蘆嘅 SWL/ WLL。絕不可將鏈條「回鈎」纏繞荷載 ⸺ 咁樣會損壞鏈條同吊鈎 ⸺ 應該用吊索加卸扣。絕 不可跌落葫蘆,並要善待鏈條。除任何法定檢驗外,定期目視檢查至關重要。 移動中嘅手拉鏈可以割斷電纜、刮花桁架/燈桿;錯位嘅手拉鏈環喺拉得太快時可以卡住。當大量 鬆弛鏈條積聚喺地面時就可能發生,並會損壞鏈環同葫蘆。喺移動鏈條可能造成損壞嘅地方使用保 護墊料。 同手拉葫蘆一齊用鏈袋時,確保鏈袋唔會被移動嘅鏈條割破(執拾鏈條時先裝上 ⸺ 即鏈條唔再移 動嘅時候)。 使用手拉鏈好長(例如 30 米)嘅葫蘆時,小心手拉鏈嘅重量。佢可能會喺自身重量下開始移動,令葫 蘆運作、荷載移動。 動力起重設備相關嘅動態效應,喺手拉葫蘆上幾乎唔存在,所以脆弱或「有彈性」嘅荷載往往用佢 哋處理得更好。微調亦比動力設備容易得多,呢點好有用。 用多過一個葫蘆吊一條桁架時,必須監察起吊過程,確保荷載保持水平。人拉嘅速度永遠唔同;三個 以上單位一齊操作時,好容易「屈曲」桁架。一個葫蘆或吊掛點可以輕易超載;如果人手或時間有 限,電鏈摩打可能更安全。 下降時尤其相關 ⸺ 最慢嘅吊機永遠會承受更多荷載,作業必須小心監察。一般嚟講,摩打係較安 全嘅選擇。 使用手拉葫蘆時,使用後備懸吊或系統冗餘,同使用電鏈摩打時一樣重要。 手拉葫蘆屬起重設備,喺檢查、徹底檢驗同測試方面,須按照 LOLER 第 9 條處理。 ─── 原書第 69 頁 ───</p>
+<p>電鏈吊機(ELECTRIC CHAIN HOISTS) 直至 90 年代後期,有兩家製造商主導娛樂行業市場,生產可以沿自己鏈條向上爬嘅吊機。兩者嘅改 裝都得以實現,係因為吊機嘅結構:佢哋採用摩打同齒輪箱(喺吊機受載時)圍繞鏈條平衡嘅設計。 呢兩款就係 Columbus McKinnon 嘅 Lodestar 同 Verlinde 嘅 Stagemaker。雖然呢啲吊機仍 然常見,但今日市場上有好多其他專門嘅「娛樂」吊機:Chainmaster、Liftket、GIS、Hitachi、 Coffing、Loadguard、Donati。其中有啲係「貼牌」產品,但至少有 5 種唔同類型可供選擇。 呢啲吊機係為「場館」(arena)吊掛而構思,因為唔使將吊機拉上屋頂或格柵。吊掛員可以掛好鏈 條(用鉛垂線定位),喺地面完成吊點,快好多,要拉上去嘅重量亦少好多。 所有吊機(無論係咪娛樂行業用)採用嘅原理都一樣:有凹槽嘅荷載輪透過齒輪箱由電動摩打驅動鏈 條。斷電時由制動器(brake)承持荷載。 摩打經低壓控制電路由接觸器(contactor)切換,接觸器可以喺機上,亦可以喺留喺地面嘅控制器 內。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-31.png" alt="PDF 第 31 頁原始頁面"></details>
+    </article><article class="page-card" id="page-32" data-page="32">
+      <div class="page-kicker"><span>PDF PAGE 32</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>低壓電路為限位開關同制動器供電,而直接控制式(舊款「Litachain」Verlinde 或 Coffing)就操 作電磁制動器。幾家製造商提供「單電纜」吊機,因為有時每個吊機用一條電纜方便得多。 「低壓」控制喺入貨等期間嘅局部(「pickle」手控)控制方面有優勢,而使用「主電壓手控」 (mains pickles)就有好多電路保護問題。 Lodestar 同部分 Verlinde 吊機有容易調校嘅限位開關,防止吊機喺任一方向用盡鏈條。良好做法 係喺運輸前將 Lodestar 吊機鏈條行離限位。如果到達下限位並停留喺嗰點,運輸震動有可能「跳 掣」,令吊機行錯方向、用盡鏈條或損毀限位開關裝置。 任何吊機必須配備某種超載裝置,防止吊機吊起超過佢 SWL 嘅嘢。Verlinde 用打滑機構作為 起吊限制裝置兼超載保護,可以調校。Lodestar 用一個喺驅動齒輪中央、廠校嘅裝置,專利名為 「Protector」,不可調校。兩者對保護建築物、吊機、荷載同人命都有價值。超載值一般係安全 工作負荷嘅 125% 至 140%。 每種類型都有佢嘅優點同擁躉,但我哋需要嘅係一件可靠、有效完成工作、保養最少嘅產品。 ─── 原書第 71 頁 ───</p>
+<p>吊機控制(HOIST CONTROL) 娛樂行業對工業電鏈吊機嘅改良使用,需要成組操作吊機。成組使用吊機一旦出事 ⸺ 無論係吊機 故障定結構失效 ⸺ 都有潛在嚴重後果。 當考慮到動態荷載嘅分擔同數值時,使用多個吊機就變得複雜。參照一個邏輯化嘅吊機控制面板嚟 設置起吊,有助呢個過程。 所有系統都應包括緊急停止功能,將控制器同輸入電源隔離。電源必須可以喺控制器隔離,系統 最少應有超載同漏電保護。「按住操作」(hold to run)嘅主「Go」掣起到「安全握把」(dead man’s handle)作用,進一步提高系統安全。 控制器有兩種基本類型。「Lodestar」式,控制低壓吊機;以及「直接」式(例如 ShowPro),將主電 壓切換到吊機。直接式意味住除非按下「Go」掣,否則吊機供電電纜冇電流。 大部分控制器設計成以 4 路或 6 路模組操作吊機。好多可以串聯,控制多達 32 個吊機。較複雜嘅 控制器通常基於 4 路或 8 路模組嘅「模組化」使用,可能加入簡單編程功能;而「智能」吊機(例如 Chainmaster 或 Cyberhoist),吊機編碼器同其他機上裝置(例如超載同鬆鏈檢測器)嘅以太網數據 電纜,令系統可以由手提電腦或 PC 操作。 一般嚟講,最好令所有吊機動作盡量簡單直接。特殊效果通常靠保持動作簡單、但做得好嚟達成。 目前趨勢係將電鏈摩打同鋼絲繩絞盤當作以往嘅平衡重吊桿(counterweight sets)咁使用,做受 控、可重複嘅移動。優點好多:唔使搬平衡重、吊掛非常靈活、設置速度快、成本低,只係其中幾 項。從安全角度睇,智能吊機係未來方向,基本電鏈吊機系統就繼續做主力。 吊機控制器同電纜嘅保養需要電工嘅能力,而控制系統就越嚟越需要電子工程師同自動化專家去照 顧。 控制器、手掣同電纜應接受徹底檢驗同保養,特別係巡演使用。控制器喺現場做嘅劣質維修,一旦 出事可以導致嚴重問題。超額設計雖然貴、可能唔吸引,但長遠往往有回報。控制器一開始越堅 固、越專業越好。控制器組件(接觸器、變壓器、斷路器等)需要盡量「粗壯」,並有優質嘅接駁同 安裝五金。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-32.png" alt="PDF 第 32 頁原始頁面"></details>
+    </article></div>
+    </section><section class="chapter" id="chapter-13" data-title="電鏈吊機及摩打 ELECTRIC CHAIN HOISTS &amp; MOTORS">
+      <header class="chapter-head"><div class="chapter-no">13</div><div><p>COURSE NOTE CHAPTER</p><h2>電鏈吊機及摩打</h2><h3>ELECTRIC CHAIN HOISTS &amp; MOTORS</h3></div><div class="chapter-range">PDF 33–36</div></header>
+      <div class="chapter-pages"><article class="page-card" id="page-33" data-page="33">
+      <div class="page-kicker"><span>PDF PAGE 33</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>─── 原書第 72 頁 ───</p>
+<p>一般嚟講,Lodestar 會有一個「紅色」400v 4 針 16A 插頭同一個「黃色」3 針 110v 插座。Ver‑ linde 或其他直接控制吊機只有一個「紅色」4 針 16A 插頭。新協議係:喺英國,低壓(間接)控制吊 機,主電源(紅色)同控制(黃色)都用 4 針 16 安培連接器。其他方案 ⸺ 例如美國用 Hubbell 連接 器、歐洲用 Harting 19 針連接器 ⸺ 就冇呢個問題。 主電源方面,延續 CEE17 慣例。大部分 8 路以下嘅控制器用 32 安培 400v 5 極(3P+N+E)輸入連接 器。要小心考慮 32 安培標準:幾家歐洲製造商採用最佳做法,為 4 路控制模組配 16 安培 5 極連接 器 ⸺ 電氣上非常好,但當你所有主電都係 32 安培時就有啲麻煩! 一般一噸吊機嘅滿載電流大約 2.5 至 3.5 安培。起動時嘅衝擊電流因此約為該數字嘅 3 至 4 倍 ⸺ 可能係 16 安培。使用好多兩噸吊機時,因為用較大嘅電動摩打,電力需求會增加。一個 2000 公斤 Verlinde 額定 1.8 kW,衝擊電流約 18 安培。一個兩匹馬力嘅 RR 型 Lodestar 峰值約 16 安 培(50 Hz)。 電纜應該相當重型、導體截面足夠(吊機供電電纜至少 1.5mm²),並配上符合適當標準嘅優質插頭 插座。用途會決定電纜規格,但吊機同控制電纜嘅耐用性同應力消除永遠重要。端接可以由非電工 喺「巡演路上」輕易檢查;插座上可以標明電纜長度。 喺英國,工作電力規例(Electricity at Work Regulations)適用於所有吊機供電電纜同控制器。吊 機控制系統嘅所有接線、維修同測試,都應使用合資格電工嘅服務。 根據《機械指令》,將電鏈吊機同控制器整合,會令使用者成為「製造商」。技術上,呢個意味住好 似為電鏈吊機裝配鏈條一樣,使用者應發出符合《機械指令》嘅符合性證書並加上 CE 標誌。整合 中至少會有兩家(甚至更多)製造商嘅產品,而且往往以個別製造商冇預想過嘅方式整合,所以做整合 嘅人就成為責任人。 ─── 原書第 73 頁 ───</p>
+<p>(圖片) Liftket 或 Chainmaster 吊機。 Verlinde Stagemaker。 CM Lodestar 吊機。 ─── 原書第 75 頁 ───</p>
+<p>左圖:典型嘅電鏈吊機「直接」控制系統,冇低壓控制電路。吊機只用三相供電電纜。 16 安培「分 電」電纜 吊機控制器(HOIST CONTROLLER) 多芯電纜 32 安培 CEE17 5 針輸入連接器,接主電 源 「直接」控制(”DIRECT” CONTROL) 吊機 1(Hoist 1) 吊機 2(Hoist 2) 400v 右圖:典型嘅電鏈吊機「間接」控制系統,使用低壓控制電路。吊機一般用一條多芯電纜,或者第二 條低壓電纜。 緊急停止(E stop) 低壓控制電纜,4 針黃色插頭 16 安培 CEE17,4 針黃色插頭 16 安 培 CEE 17,4 針紅色插座 (第 75 頁續) 32 安培 CEE17 5 針輸入連接器,接主電源 吊機低壓控制器 (24 – 110 伏特) (LOW VOLTAGE CONTROLLER FOR HOISTS (24 ‑ 110 volt))</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-33.png" alt="PDF 第 33 頁原始頁面"></details>
+    </article><article class="page-card" id="page-34" data-page="34">
+      <div class="page-kicker"><span>PDF PAGE 34</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>繩索與繩結</p>
+<h4>ROPES AND KNOTS ─── 原書第 76 頁 ───</h4>
+<p>(繩索與繩結 ROPES AND KNOTS) 同吊掛員相關嘅三種主要繩索結構: ‧ 絞合繩(Stranded rope):傳統 3 股或 4 股天然及人造纖維 ‧ 芯鞘結構(Core and sheath):登山 及繩索作業用嘅「Kernmantle」結構 ‧ 編織繩(Braided ropes):外編織層同內編織層都設計成 承載。 現代繩索由人造纖維製成,聚酯(polyester)同聚丙烯(polypropylene)最常見,仲有尼龍同專門纖 維,例如耐熱嘅芳綸(aramid)同對位芳綸(para‑aramid),例如 kevlar。所有纖維都有令佢哋適合 或較唔適合某啲工作嘅特性。 喺娛樂行業,我哋關心嘅係柔軟度、耐磨性、打結後嘅強度同耐熱性。 天然纖維而家通常係劍麻(sisal),偶爾係大麻(hemp)。馬尼拉麻(Manilla)通常用類似雜酚油嘅防 水劑處理,由於致癌,喺歐盟被禁止。大麻繩曾經係同尺寸下強度最好嘅繩;而家有一種合成大麻繩, 外觀手感似大麻繩,強度至少一樣。佢其實係聚丙烯,但用短纖維(staple fibres)製造,而唔係較平嘅 裂膜(split film)類型。短纖紡聚丙烯有良好嘅耐磨同耐熱特性,而且相對平。裂膜類就平,但唔耐 摩擦或局部熱力。 繩嘅直徑對安全拖拉至關重要。繩到大約 14mm 直徑先至可以有良好握持,理想係 16mm – 24mm。所以要考慮安全操作、可打結性同重量之間嘅取捨,通常 11mm – 14mm 嘅繩係最佳折 衷。 由於繩索喺劇場吊掛嘅使用方式(高空、滑輪、繩結),BS 7905 及 7906 建議娛樂吊掛用不少於 8:1 嘅安全係數。 纖維繩用嘅滑輪(sheave)直徑應至少係繩直徑嘅 8 倍,甚至可以去到 10 倍或以上。 d d:D d × 8 = 最小 D 纖維繩嘅滑輪直徑 ─── 原書第 77 頁 ───</p>
+<p>繩結會令即使全新嘅繩削弱多達 50%,原因係繩結引致嘅纖維變形。對繩纖維造成較少損害嘅繩結 效率較高;細小、緊縮嘅繩結會令繩越拉越弱,因為纖維變形增加。 繩索必須小心保養。以鬆散繩圈儲存、離地、遠離陽光直射同輻射熱。唔好踩喺繩上;將佢哋整齊 收納,避開人流。沙礫或其他微粒滲入繩內,會比繩外類似物質嘅磨損更快令繩由內部磨蝕。 割傷或磨損應定期有系統咁檢驗。承載繩索屬起重設備,受 LOLER 要求規管。呢個要求每條繩都 可識別,並按照規例徹底檢驗。 固定安裝嘅繩索可以定期調換位置以「分散」磨損。滑輪、繫繩栓或磨蝕邊緣造成嘅持續重複磨 損,可能集中喺同一位置。往往只需將繩掉轉方向,已可顯著延長壽命。受潮(天然纖維)同酸/鹼(人 造纖維)會嚴重影響繩嘅強度同安全。濕繩比乾繩更易磨損。摩擦產生嘅熱力會影響、最終熔化人 造纖維繩。聚酯約喺 250°C 熔化。任何人造纖維繩都不應喺超過 80°C 嘅溫度下使用。 「攀山」繩(”CLIMBING” ROPES) 因為好多人將吊掛同攀爬聯想埋一齊,「攀山」繩需要特別一提。工業上將繩用於工作活動,要求 佢哋連同必要文件採購,通常嚟自 PPE 專門供應商,而唔係零售店。 「動力繩」(Dynamic lines) 唔適合喺娛樂場地永久安裝作設備懸吊用途。直徑範圍 9mm – 13.5mm,用作拖拉繩太幼難以握 持,而且佢哋嘅彈性令佢哋唔適合該用途。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-34.png" alt="PDF 第 34 頁原始頁面"></details>
+    </article><article class="page-card" id="page-35" data-page="35">
+      <div class="page-kicker"><span>PDF PAGE 35</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>「攀山」繩基本上有三種: 1)動力繩(Dynamic ropes)係吸能繩,先至係真正嘅「攀山」繩。呢啲繩除咗喺垂直環境中用適當 設備同技術做防墮之外,唔應該用嚟做任何其他嘢。動力繩有一個經常被忽略嘅特點:佢哋以全繩 長度吸收墮下嘅力。 2)低延伸繩(Low stretch ropes)係繩索作業同救援情況用嘅繩。呢啲一般係聚酰胺(尼龍);符合 EN1891 A 類嘅繩喺受載下會延伸 2.5% – 5%(即 20 米長會伸到 21 米)。呢啲繩並非設計嚟吸收 墮下產生嘅力,絕不可用於可能由高於錨點位置墮下嘅情況。 3)仲有樹藝工作及類似活動用嘅繩。佢哋強度嘅高比例喺繩鞘,唔似其他繩嘅繩鞘通常只係保護 性。 ─── 原書第 79 頁 ───</p>
+<p>吊掛用繩結(Knots for rigging) 關於繩結嘅書好多,所以呢度只描述對吊掛員最有用同必需嘅三種。 稱人結(Bowline)係最常用嘅繩圈結之一。如果繩圈預計會重載,稱人結其實唔係特別穩固,效率只 有大約 65%。 稱人結(The Bowline)(圖) 好多人用「兔仔」記法學:繩尾當兔仔,繩圈當佢個窿:兔仔由窿出嚟,繞 過樹後面,再返入個窿。 留返大約 10 倍繩徑嘅繩尾,避免繩結鬆脫;或者將繩尾繞過繩結、穿返入繩圈鎖住佢。 雙套結(clove hitch)係強而穩固嘅繩結,前提係用某種方法固定繩尾。 呢個結效率大約 80%;喺最 後收緊之前,喺桿或管上多繞幾圈,可以獲得更大抓持力。 8 字結(figure eight)係強繩結;用繩彎(on the bight)打,可以造出一個受載下唔會過度收緊嘅堅固 繩圈。對於可以長期保持打好嘅繩圈,呢個係拖拉繩嘅理想繩結。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-35.png" alt="PDF 第 35 頁原始頁面"></details>
+    </article><article class="page-card" id="page-36" data-page="36">
+      <div class="page-kicker"><span>PDF PAGE 36</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>鋼絲繩、吊索及端接</p>
+<h4>STEEL WIRE ROPE, SLINGS AND TERMINATIONS ─── 原書第 80 頁 ───</h4>
+<p>人造纖維吊索:圓形吊索(MAN MADE FIBRE SLINGS: ROUNDSLINGS) 常被稱為「roundslings」,呢啲吊索用途廣泛、柔軟、輕便。按 BS EN 1492‑2:2000 製造,由連 續嘅聚酯纖維圈(由 SWL/識別標籤嘅藍色底色顯示)套喺織帶套管內構成。圈內纖維越多,吊索越 強。圓形吊索有標準尺寸,周長由 1 至 24 米。 歐洲人造纖維吊索採用嘅安全係數係 7:1。 標準吊索嘅安全工作負荷由套管顏色表示(紫色 = 1000 公斤,綠色 = 2000 公斤,黃色 = 3000 公斤), 不過為娛樂行業生產嘅圓形吊索套管通常係黑色。荷載資料必須靠標籤確認。 必須有標籤列明 SWL、序號同荷載資料。藍色標籤遺失或模糊嘅吊索唔好用。吊索由製造商逐條 編號,並附「符合性證書」供應。 佢哋需要使用前目視檢查有冇割傷、磨損同熱損壞,但喺娛樂行業使用時一般唔受化學品影響。接 觸強鹼(例如強力漂白劑)係危險,但喺我哋行業唔會經常遇到。 聚酯受紫外線影響,不過圓形吊索嘅承載纖維受套管保護。除非你長期室外使用吊索,否則紫外線 應該唔成問題。 任何吊索如果套管穿窿露出白色紗芯,就要銷毀;如果係側縫式,要留意縫線嘅完整性。任何唔係水 嘅污漬或濕潤(聞下佢)都應該係銷毀丟棄嘅理由。相對嚟講,吊索好平,冒險使用任何受損纖維吊索 完全冇道理。 喺鋼樑上使用圓形吊索,如果邊緣睇落夠利,可能需要「軟墊」(softening)保護吊索免受切割作 用。喺桁架或其他荷載周圍,留意尖銳突出物、吊耳、螺栓等。 起吊超過吊索 SWL 一半左右嘅荷載時,應避免圓形吊索自身重疊繞纏。纖維會試圖切入下層。 絕不可將圓形吊索打結,或者用「勒式」互相串連 ⸺ 用卸扣連接佢哋,並盡量令佢哋平放,唔好扭 曲或者揸埋一舊。 如果佢哋喺可能發熱嘅燈光設備附近使用,要小心。聚酯嘅建議工作溫度通常引述為攝氏 85 度。 所有非鋼制吊掛器材要遠離煙火、燒焊同切割碟作業。 ─── 原書第 81 頁 ───</p>
+<p>近年燈光燈具嘅進步,產生窄束、近平行嘅光束,已被證實可產生足以熔化人造纖維嘅熱力。要小 心避免呢類暴露。 圓形吊索嘅「繞纏」最小直徑應大於 16mm,先可以發揮吊索 100% 強度。圓形吊索應可以平展 咁橫過卸扣,冇太多「揸埋」。市面有「護索」(sling saver)卸扣,令纖維可以平展使用,但呢啲喺 開放籃式吊掛好難用。用嗰種手法時,「吊墜」卸扣可以喺主卸扣嘅弓部夾住吊索。如果似乎會發 生,用大啲嘅卸扣、加一個卸扣,或者將圓形吊索換成鋼索。卸扣銷嘅螺紋端亦可以割傷或夾住圓 形吊索套管。 避免用膠紙將圓形吊索固定成某個形態 ⸺ 咁樣會令磨損集中喺一個位置。「鬆」用吊索可確保 磨損分散喺成條吊索。 鋼絲繩(STEEL WIRE ROPE) 喺娛樂行業,幾乎每種吊掛作業都會用到鋼絲繩。鋼絲繩通常係簡單結構,公稱直徑 3mm 至 13mm 範圍。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-36.png" alt="PDF 第 36 頁原始頁面"></details>
+    </article></div>
+    </section><section class="chapter" id="chapter-14" data-title="繩索與繩結 ROPES &amp; KNOTS">
+      <header class="chapter-head"><div class="chapter-no">14</div><div><p>COURSE NOTE CHAPTER</p><h2>繩索與繩結</h2><h3>ROPES &amp; KNOTS</h3></div><div class="chapter-range">PDF 37–38</div></header>
+      <div class="chapter-pages"><article class="page-card" id="page-37" data-page="37">
+      <div class="page-kicker"><span>PDF PAGE 37</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>一般用途嘅繩同吊索採用 5:1 嘅防斷裂安全係數。 所有永久安裝嘅高空吊掛首選 8:1(BS 7906:1)。 鋼絲/股嘅結構同捻向一般係 6×7 或 7×7,或 6×19,配鋼絲芯或纖維芯。繩嘅柔軟度隨所用鋼絲 數目增加,但暴露於磨損嘅表面積同所需柔軟度之間有一定關係。 所有鋼絲繩都係由鋼絲捻成股,股再(通常順時針)捻成成品繩。股圍繞一個芯捻合,芯可以係纖維股 或者一條獨立鋼絲繩。芯支撐住啲股,並幫助平順分佈張力/扭力荷載。鋼芯繩嘅好處係更耐壓、 受載下更唔易壓扁,從強度同耐用角度睇更抵。 要使用鋼絲繩,就要識得有效咁端接佢哋,同時保留鋼絲嘅大部分強度。 就娛樂行業應用嘅所有實際用途而言,楔形插座(wedge sockets)係最強。 Talurit 或「套圈壓固」(ferrule secured)繩眼端接係最常見嘅實用替代。 「子彈」式(Strandvise 或 QuickTerm)自動接頭可能適合纖維芯鋼絲繩,跟製造商指示。子彈式 而家有 CE 標誌版本,並附起重用符合性證書。 造繩眼端接嘅另一方法係鋼絲繩夾(wire rope grips)。如果繩夾係新供應,或者 2004 年起更換現 有端接時使用,應首選 BSEN13411‑5 標準。BSEN13411‑5 標準取代 DIN 1142。 ─── 原書第 82 頁 ───</p>
+<p>BS EN 13411‑5 鋼絲繩夾(WIRE ROPE GRIPS) 喺鋼絲繩繩圈上安裝適當數目嘅繩夾。 最貼近套環(thimble)嗰個先鬆鬆哋固定。 其餘繩夾相隔 6 個繩徑。 平均扭緊繩夾至所需扭矩,令繩嘅活端同死端保持平直平行。 施加荷載後,再將螺母扭 緊至所需扭矩。 BSEN 同 DIN 繩夾「必須」正確安裝,見圖表。呢個包括(理論上)喺塗油脂承面上用正確扭矩設 定、初次受載後檢查再扭緊,以及按所選繩徑使用正確數目。使用繩夾有缺點:佢哋會勾住鋼結構 同附近物件、樣衰、需要保養。 理論上,佢哋唔應該重複使用,或者(重新定位等時)重新裝返落同一段繩上。 鋼絲繩絕不可用任何形式嘅鋼絲繩夾駁長(除非用兩個正確製作嘅繩眼互扣)。鋼絲繩夾不得用嚟 製作起重吊索嘅繩眼(有別於例如佈景用嘅「懸吊索」或絞盤上嘅懸吊鋼索)。必須按所用繩嘅公 稱直徑選擇正確尺寸繩夾。 (表:繩夾公稱尺寸 | 扭緊扭矩 Nm | 繩夾數目) * 呢個等同繩嘅最大公稱直徑。中間公稱直徑嘅繩,用大一級嘅繩夾尺寸。 公稱尺寸 5 只適用於公 稱繩徑 5 mm。 BSEN13411‑5 鋼絲繩夾 (必須能承受繩 MBL 80% 嘅荷載 5 分鐘) ─── 原書第 83 頁 ───</p>
+<p>對稱楔形插座(SYMMETRICAL WEDGE SOCKETS) 符合 EN 13411‑7 嘅楔形插座,正確安裝時效率 80–95%。佢哋形狀對稱,由一個帶 U 形叉/銷嘅空 心插座構成,適用於 4mm 直徑或以上嘅鋼絲繩。 插座由焊接嘅鋼壓件製成,連一個鑄造楔子,裝入鋼絲繩端接繩圈內,再拉返入插座。 鋼絲死端應同繩嘅主幹平行伸出。繩尾長度應至少等於插座長度。繩尾用一個 BSEN13411‑5 繩 夾固定喺活繩上,距離為楔子(唔係插座)長度嘅 40%。 楔子長度(wedge length) 繩尾繩夾 = 楔子長度嘅 40% 楔子靠(荷載將)楔子壓向插座內壁嚟固定。 力越大,楔子嘅作用越大。 楔形插座唔容易調校,可能較適合永久安裝,而唔係需要經常調校長度嘅繩。佢哋相對平、非常堅 固,做長期安裝端接時好值得投資。 鋼絲繩部分端接相對強度範圍嘅例子: 機械壓接(Mechanical splice)90% 楔形插座(Wedge socket)85%+</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-37.png" alt="PDF 第 37 頁原始頁面"></details>
+    </article><article class="page-card" id="page-38" data-page="38">
+      <div class="page-kicker"><span>PDF PAGE 38</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>黑色鋼絲繩(BLACK WIRE ROPE) 市面有彈性良好嘅黑色鍍鋅繩,應優先於其他染黑方式。用乳膠漆油鋼絲繩可以引發內部腐蝕。 PVC 包膠鋼絲繩不應用於滑輪或絞盤。 繩上所有互相接觸或接觸端接裝置(套圈、繩夾等)嘅部分,必須除去 PVC 包膠。 ─── 原書第 85 頁 ───</p>
+<p>(「子彈」式接頭安裝步驟圖解) 當佢哋合埋一齊時,如圖所示,佢哋會滑過主體。如果電纜另一端已經端接或固定,你需要喺呢個階 段做呢一步。 其餘兩個組件可以喺呢個階段扣埋一齊。 而家小心將電纜切割乾淨嘅一端插入 6mm 至主體窄端嘅「導入杯」(pilot cup)。確保電纜同死 端冇油脂或污染物,否則可能導致失效。 推入鋼絲之前,除去你嘅第一個膠紙記號(如有用),然後一下均勻推到底,直至到達你嘅第二個記 號。 最終組裝會係咁樣。如果你嘅第二個記號較高,鋼絲會由主體伸出。如有需要,死端之後可以再沿 電纜上移。 完全推到底之後,可以除去第二個膠紙記號。 Oflints 2006 年 9 月 11 日 使用「子彈」式接頭時,唔需要將繩嘅死端回綁(dog)或做繩圈;測試發現,最重要嘅係預留足夠長 度,俾佢喺打滑時有得沿繩滑動。喺受張力時將死端回綁到主繩可能削弱端接;將繩圈回綁或直接 綁到「提環」(bail)可能將荷載由夾爪轉移到裝置主體。 隨時間過去,鋼絲繩上嘅鍍鋅層可以塞住子彈式夾爪上嘅橫紋齒,降低抓持力。目視檢查好難,所以 喺唔同鋼絲繩上重用呢啲裝置時要謹慎。 雖然子彈式喺絕大多數應用中使用都冇問題,但高空使用時,建議用 Reutlinger 裝置,因為兩者之 中,Reutlinger 經過更高標準嘅測試。兩種裝置都唔係為起重(吊運)應用而設。 ─── 原書第 86 頁 ───</p>
+<p>(Reutlinger 說明書圖解) 鋼索固定器 80 SV II 型 (Drahtseilhalter Typ 80 SV II / Cable Holder Type 80 SV II) 使用固定器之前: 必須檢查外殼同螺紋接頭之間嘅連接是否牢固! (Vor Gebrauch des Drahtseil‑ halters, ist die Verklebung zwischen Hülse und Gewindeanschluß zu überprüfen!) 焊封繩端(verschlossenes Seilende / Soldered end) 繩索喺出口管(plunger)嘅出繩角度,任何情況下都不得超過 5°(見圖) (The cable exit angle may never exceed 5°) 最大 5°(5° max) 由出口管望入去: 只有喺見到呢個結構時,固定器先至正常運作(見圖) 第一層鋼珠(1. Kugelebene / first level of balls) 第二層鋼珠(2. Kugelebene / second level of balls) 詞彙表(GLOSSAR / GLOSSARY) 本手冊中會見到以下術語同縮寫: DSH = 鋼索固定器 kg = 公斤 mm = 毫米 plunger(出口管)= 由固定器伸出嘅管,鋼索由此穿入 本手冊嘅更多副本、證書以及有關可預見誤用嘅注意事項,可由我哋網站 www.reutlinger.de 下 載。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-38.png" alt="PDF 第 38 頁原始頁面"></details>
+    </article></div>
+    </section><section class="chapter" id="chapter-15" data-title="鋼絲繩、吊索及端接 WIRE ROPE, SLINGS &amp; TERMINATIONS">
+      <header class="chapter-head"><div class="chapter-no">15</div><div><p>COURSE NOTE CHAPTER</p><h2>鋼絲繩、吊索及端接</h2><h3>WIRE ROPE, SLINGS &amp; TERMINATIONS</h3></div><div class="chapter-range">PDF 39–43</div></header>
+      <div class="chapter-pages"><article class="page-card" id="page-39" data-page="39">
+      <div class="page-kicker"><span>PDF PAGE 39</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>─── 原書第 88 頁 ───</p>
+<p>鋼絲繩吊索(WIRE ROPE SLINGS) (為防止)利邊造成(損壞),或防止吊索損壞樑 ⸺ 用軟墊包裹時,確保墊料覆蓋所有接觸點(例如 「勒式」時要包住成條樑一圈)。 雖然唔係成日有明文規定,但用鋼絲繩吊索做勒式吊掛時,將 SWL 減 20% 係良好做法。「鋼索」 同任何其他吊索一樣有使用方式係數(mode factors),確保你知道自己用緊乜、有咩限制。 配鋁套圈嘅纖維芯鋼絲繩最高工作溫度係 100°C。 (聚酯圓形吊索,大部分製造商建議上限 85°C。) 使用鋼絲繩吊索 ⸺ 安全建議 ‧ 使用前檢驗所有吊索,棄用任何有缺陷嘅。 ‧ 唔好用有嚴重扭結(kink)嘅吊索。 ‧ 鋼絲繩吊索 應以合適墊料保護,免受荷載利邊損害。 ‧ 鋼絲繩吊索要遠離燒焊、打磨同火焰切割作業。 ‧ 唔 用時,鋼絲繩吊索應存放喺乾燥倉庫,防止腐蝕。定期為吊索上潤滑油有價值。 鋼絲繩吊索屬起重配件,必須由合資格人士按照書面檢驗計劃、或至少每 6 個月徹底檢驗一次。每 條使用中嘅鋼絲繩吊索,都需要有 LOLER 要求嘅徹底檢驗報告。 ─── 原書第 91 頁 ───</p>
+<p>用籃式吊掛裝設電鏈摩打或其他設備,意味住要用卸扣或其他配件連接吊索,然後再掛上起重設 備。噉樣會有跌落物件、裝錯位,或者純粹攰嘅風險。 多年嚟,吊掛員發展出喺高空以最合乎人體工學嘅方式處理設備嘅方法。呢個包括用拖拉繩 (hauling line)加預先組裝,以減低跌嘢風險,避免反覆將設備吊上吊落。 吊掛員造點嘅最基本方法係「開放」籃式(open basket)。 「開放籃式」(THE ’OPEN BASKET’) 拖拉繩(Hauling line)(圖) 1. 打開「底」卸扣(base shackle),放一條鋼索入去。 2. 將「吊墜」卸扣(drop shackle)放喺底 卸扣嘅螺紋一側。將螺紋銷扭返入去。 3. 將吊鈎掛上底卸扣嘅銷。 4. 用稱人結繩圈,綁喺卸扣銷 手扭位隔籬。 ─── 原書第 92 頁 ───</p>
+<p>裝好嘅「開放籃式」。(圖) 下圖:用圓形吊索嘅「開放」籃式。 用兩個卸扣防止吊索被吊墜卸扣夾住(右上圖),但要小心卸扣唔好過度夾住吊索。 用 O 形環(主環)可以消除呢個問題,但用更多器材、更重,潛在可以出問題嘅嘢亦更多。 ─── 原書第 93 頁 ───</p>
+<p>自然形成嘅 120° 勒角,需要將吊索 SWL 減 20%。 1000kg SWL 變成 800kgs 2000kg SWL 變成 1600kgs 3000kg SWL 變成 2400kgs (圖:因勒角導致嘅 SWL 折減) 「勒住」圓形吊索 ⸺ 最佳做法(最近鏡頭嗰個)係喺勒點位置吊索纖維唔受應力,承載力損失好 少。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-39.png" alt="PDF 第 39 頁原始頁面"></details>
+    </article><article class="page-card" id="page-40" data-page="40">
+      <div class="page-kicker"><span>PDF PAGE 40</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>─── 原書第 95 頁 ───</p>
+<p>錯(WRONG) 鋼絲繩勒住樑 ⸺ 確保套圈(或有用卸扣時嘅卸扣)冇被槓喺樑邊上。鋼絲繩最弱嘅 位置係佢離開套圈嘅地方,所以避免呢一點有任何彎曲。 錯(WRONG) 鋼絲繩跨過樑邊 ⸺ 受載時繩喺樑邊形成一個削弱強度嘅 90 度彎。確保用軟墊(例 如粗麻布 burlap)增加鋼絲繩跨過樑嘅半徑。 正確(CORRECT) 鋼絲繩下有足夠厚度嘅粗麻布,透過減少彎曲同樑邊嘅機械作用嚟保護鋼絲繩。 ’d’ D =&gt; 18 × d 盡量造出類似鋼絲繩滑輪嘅半徑 ⸺ 例如 20 × ’d’,即係用 10mm 鋼絲繩 時,想像一個 100mm 嘅滑輪。 ─── 原書第 96 頁 ───</p>
+<p>喺劇院格柵(grid)上方裝橋式吊掛。 用粗麻布保護纖維吊索,免受在場好多利邊損害,特別係斜向拉扯時: ° 齒形樑邊(castellated beam edges) ° 滑輪側板同角鐵 ° 固定螺栓同螺絲 兩名吊掛員喺格柵之中同上方使用「開放」技術。 一人承住摩打鏈條同吊點嘅重量,另一人將籃式鋼索繞樑固定。 完成嘅籃式吊掛。 留意粗麻布軟墊同長鋼索。 鋼索留到盡量長,以減少吊索角度,從而減少施加喺所繞格柵吊槽(drop channels)上嘅壓縮力。 ─── 原書第 97 頁 ───</p>
+<p>劇院格柵下方用纖維吊索嘅橋式吊掛。 左邊嘅開放籃式係為咗將吊點安全掛好;右邊嗰條「腿」係接駁好送上去、但遲啲先裝。 將輕荷載掛上梯形樑嘅經典方法(梯形樑係剛性時)。 重荷載咁樣吊,可以令梯形樑扭曲(並側向撓曲),除非好貼近起吊點。 ─── 原書第 99 頁 ───</p>
+<p>錯(Wrong):卸扣倒轉(銷朝上) 正確(Correct):卸扣銷朝下 卸扣太細 | 錯,絕不可將圓形吊索打結 | 好啲,但卸扣開口對呢條吊索嚟講真係太窄 ⸺ 要令吊索平 放,唔好被夾住 ─── 原書第 100 頁 ───</p>
+<p>繞纏代替勒式 ⸺ 用直徑大好多嘅卸扣保持強度 套環繩眼(thimble eye)對大卸扣嚟講太細;用細啲嘅卸扣去配合,但佢必須可以自由活動 吊環(hanging ring)用卸扣連住懸吊索(drift) 錯(Wrong):卸扣受側向荷載 正確(Correct):燈桿環(barrel ring)同卸扣,喺 6mm 鋼絲繩上正確回綁(dogged off) 正確(Correct):對稱楔形插座扣實喺燈桿環上,留意回綁(dog)安裝正確(另見鋼絲繩一節) ─── 原書第 101 頁 ───</p>
+<p>懸吊索用卸扣(銷穿繩眼)勒喺燈桿上。 可以做得更好 ⸺ 套圈屈喺燈桿上。 懸吊索繞纏加勒式 ⸺ 銷喺主索上,潛在不安全。 懸吊索雙重繞纏加勒式 ⸺ 銷穿繩眼,較安全。 懸吊索雙重繞纏加勒式 ⸺ 銷穿繩眼;鋼絲承擔全部工作,套圈冇受應力。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-40.png" alt="PDF 第 40 頁原始頁面"></details>
+    </article><article class="page-card" id="page-41" data-page="41">
+      <div class="page-kicker"><span>PDF PAGE 41</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>起重配件</p>
+<h4>LIFTING ACCESSORIES ─── 原書第 104 頁 ───</h4>
+<p>無標記,唔係 80 級(Grade 80) 不符合 EN818 冇 CE 標誌,不可用於起重 呢度每張鏈條相片都係錯誤同潛在危險 錯(WRONG) 一個吊鈎入面放兩件嘢 ⸺ 應該用卸扣將繩眼收集入吊鈎 正確(CORRECT) (左)一個繩眼可以放入吊鈎,但用卸扣更好。 (右)兩個吊索繩眼由卸扣(銷朝上)收 集。 ─── 原書第 105 頁 ───</p>
+<p>卸扣(SHACKLES) 卸扣有好多類型同尺寸。我哋其實只需要考慮兩種,都係「螺紋銷」(screw pin)類型。銷亦有用 鎖緊螺母加開口銷嘅款式,代替卸扣座上嘅螺紋孔。 「D 形」(Dee)卸扣用嚟「同一直線」(IN LINE)連接兩件嘢,荷載沿卸扣中線施加,受力點喺弓頂 (crown)中央同銷中央。可以將弓頂當成鏈環嘅一邊,銷當成簡支樑。D 形卸扣嘅設計係物料佈置 成承受直線荷載 ⸺ 例如,佢卸扣主體嘅物料會比同等尺寸嘅弓形卸扣按比例細。 「弓形」(bow)或「錨形」(anchor)卸扣設計成可承受直線荷載,或喺「弓」中線兩側通常最多 45° 嘅角度受載(以夾角計係 90°,即 45° 嘅「兩倍」)。一般嚟講,要用 D 形嘅地方可以用弓形代替, 但「不可」反過嚟。 卸扣必須標有 SWL/WLL、供識別嘅序號、CE 標誌,最好仲有製造商名。 任何卸扣有可見扭曲、屈曲或磨損嘅銷、螺紋唔順或其他變形(拉長),都應停用並銷毀。 唔好跌落或者掟卸扣,唔好當鎚仔用等等,絕不可用螺栓代替卸扣銷。 (圖:卸扣方向 ⸺ OK / NOT OK / 120° 某啲品牌 OK) 一般嚟講,重要嘅係確保卸扣唔會以超出設計嘅方式受「側向荷載」,或者將「腳」撐開、或對銷 施加張力。過大嘅套環同「迫爆」弓部/D 形弓頂都可以造成呢啲情況。 製造商必須提供佢哋卸扣可使用角度嘅資料。呢個各有不同,使用前應檢查。例如 Crosby 螺紋銷 弓形卸扣可以喺最多 120° 角度下以 100% SWL 使用。 銷只需用手扭緊,唔好再緊。如果需要確保銷嘅穩固,用鐵線「綁銷」(mouse),或者用螺栓式卸扣 加開口銷。「唔好」用扳手死力扭緊;鬆開時用短棒穿過銷孔。 卸扣通常只附批次符合性證書供應。卸扣屬起重配件,必須由合資格人士至少每 6 個月徹底檢驗一 次,並按 LOLER 規例以訂明方式保存報告,另加任何使用中檢查計劃。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-41.png" alt="PDF 第 41 頁原始頁面"></details>
+    </article><article class="page-card" id="page-42" data-page="42">
+      <div class="page-kicker"><span>PDF PAGE 42</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>─── 原書第 107 頁 ───</p>
+<p>鏈條吊索(CHAIN SLINGS) 鏈條吊索係工業主力。喺娛樂吊掛,佢哋主要用作直「腿」,通常作為調校橋式吊掛同後備懸吊嘅 方法。 用於起重吊索嘅鏈條應為「短環」(short link),並符合 BS EN 818,組件則符合 BS EN 1677。 吊索鏈條有「質量標記」:「08」、「8」或「T」。鏈條吊索嘅末端或接駁,必須用該鏈條系統嘅 專用組件製作。 有啲劇院有「斜接」(scarf)或端焊嘅低碳鋼鏈條。呢種鏈條唔准用於起重有幾個原因。所有鏈環 都設計成受拉承載,由受力點到受力點,好似卸扣一樣。「長環」鏈條繞任何樑或直徑 48mm 燈桿 (喉管)時施加嘅槓桿作用,可以非常危險。人哋成日用佢,係因為「長」環之間可以穿過卸扣或鈎環 (carbine hook)。能夠穿入短環鏈條環與環之間、作「吊索中段」連接嘅卸扣,物料直徑細到根本 冇可能同鏈條嘅 SWL/WLL 相配。佢亦可能夾住一個鏈環,造成非設計嘅受載方式。端焊鏈環嘅 焊縫位置,對安全起重嚟講啱啱喺最錯嘅地方。 鏈條絕不可打結、扭曲或跨過利邊。鏈環嘅損壞永遠會削弱強度,「彎曲」部分嘅損壞最嚴重。絕 不可使用有扭曲或屈曲鏈環嘅鏈條。有鑿痕、崩口同磨損嘅鏈環都應令你棄用佢哋。任何鏈環磨 損超過原直徑 10%,必須交合資格人士處理。(例如原直徑 10mm,檢驗時量得少過 9mm。) SWL/WLL 同序號必須好似任何其他吊索一樣標喺吊索上。 兩腿或以上嘅吊索組合,必須顯示吊索腿以角度使用時嘅 SWL。佢係起重配件,必須符合 LOLER。 角度以從垂直線量度嘅角度表示。(例如對稱兩腿吊索,從垂直 45 度,夾角就係 90 度。舊「三角 學」方法係評估吊索腿之間嘅角度。) 縮鏈扣(shortening clutches)非常有用,因為佢哋容許逐環調校,而且通常用得快。如果鏈條配有 縮鏈扣,確保你知道佢嘅設計用法。有唔同類型,點用唔一定容易判斷。80 級鏈條一般可以喺 ‑40 至 200 攝氏度使用而 WLL 冇損失。 以下幾頁關於長環鏈條喺吊掛中嘅安全使用 ⸺ 主要適用於 COLUMBUS McKINNON 製造嘅 STAC 鏈。 呢份指引亦可以喺 PLASA 網站嘅技術標準頁面搵到。 ─── 原書第 108 頁 ───</p>
+<p>(STAC 長環鏈)只以直拉受載。佢唔係以《機械指令》定義嘅方式用作起重配件。英國健康與安全 執行局已同意,只要佢質量可接受、並只以呢種方式使用,長環鏈條可以繼續作為呢種應用最合適 嘅工程方案使用。 長環鏈條嘅選擇 適合娛樂吊掛嘅長環鏈條應有適當尺寸同合適質量。呢類鏈條冇專屬嘅國家或國際標準。不過,8 級短環鏈條嘅歐洲標準可以改編用於呢個目的。以下規格已獲主要製造商協定,購買新鏈條時應予 指明。亦可用嚟評估已投入使用嘅鏈條。 鏈條規格 鏈條須符合 EN 818‑2,惟只有以下單一尺寸: 表 2a ⸺ 尺寸 (尺寸以毫米為單位) 公稱尺寸 | 物料直徑公差 (表格)</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-42.png" alt="PDF 第 42 頁原始頁面"></details>
+    </article><article class="page-card" id="page-43" data-page="43">
+      <div class="page-kicker"><span>PDF PAGE 43</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>─── 原書第 109 頁 ───</p>
+<p>表 5a ⸺ 工作負荷極限及測試要求 (表格) 總極限延伸率不得少於 15% 註: 表 2a 第 3 至 8 欄尺寸嘅計算基礎如下: 焊縫處最大直徑 ds max = 1.15 dn 公稱節距 冇指明 鏈條最小節距 Pmin = 6 dn 鏈條最大節距 Pmax = 7.6 dn 離焊縫處最小內闊 w1 = 1.7 dn 焊縫上 最大外闊 w2 = 4 dn 表 2a 所列尺寸為完整計算值,約至 0.1 mm。 鏈條額定值 用於高空吊掛時,WLL 應減 50%,以提供最少 8:1 嘅安全係數。 標記 每條甲板鏈(deck chain)必須可識別,並附有製造商標記。 儲存 唔用時,甲板鏈應放返妥善儲存。儲存地方應乾燥、冇有害污染、冇極端溫度。唔應該留喺其 他活動可能損壞佢哋嘅地方。 長環鏈條嘅檢查及標記 [定期] 長環鏈條唔係起重配件,但係工作設備,因此受 PUWER 嘅檢查要求規管。由於失效風險同 起重配件相似,建議甲板鏈嘅檢驗同檢查制度同起重配件一樣,即 LOLER 第 9 條嘅要求。 使用者應有方法核實甲板鏈已喺規定期限內檢查並確認適合使用,例如色碼、查閱檢查報告。 呢項檢查應由合資格人士進行。甲板鏈應處於合理乾淨狀態,檢查應喺充足照明下進行。如出現以 下任何缺陷,甲板鏈應停用: (1)標記模糊; (2)鏈條拉長:如鏈環有任何可見收窄,或環與環之間欠缺自由活動。見下方圖 1。 ─── 原書第 111 頁 ───</p>
+<p>長環鏈條喺娛樂吊掛嘅安全使用 (SAFE USE OF LONG LINK CHAIN IN ENTERTAINMENT RIGGING) (圖示) 唔好將「死」鏈環壓喺卸扣下面 保持鏈環平直 唔好用鏈環做橋式吊掛嘅根部,用卸扣去跨接 ─── 原書第 112 頁 ───</p>
+<p>(樑夾 BEAM CLAMPS)⋯⋯樑(圖 1)。 側向受載之前(要查清楚製造商指示)。好容易扭曲「I」形樑,並令(樑翼)變形。 有多家製造商生產設計成固定喺「I」形樑上嘅(樑夾)(見圖 2)。 佢哋係用於懸吊靜態荷載,不可用於起重。 花蘭螺絲(RIGGING SCREWS) 花蘭螺絲(rigging screws)應為有荷載額定嘅產品;張緊螺絲(straining screws)或花蘭(turn‑ buckles)一般唔會標 SWL 供應,除非特別訂購。 用於起重(包括懸吊)嘅花蘭螺絲應標有安全工作負荷、CE 標誌同序號。 橢圓眼(oval eyes)或 U 形叉(clevis)配件應優先於吊鈎或圓眼,因為佢哋更強、更穩固。 PATT.F 兩端橢圓眼 PATT.F 叉對叉(JAW &amp; JAW) PATT.O 橢圓眼對叉(OVAL EYE &amp; JAW)</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-43.png" alt="PDF 第 43 頁原始頁面"></details>
+    </article></div>
+    </section><section class="chapter" id="chapter-16" data-title="起重配件 LIFTING ACCESSORIES">
+      <header class="chapter-head"><div class="chapter-no">16</div><div><p>COURSE NOTE CHAPTER</p><h2>起重配件</h2><h3>LIFTING ACCESSORIES</h3></div><div class="chapter-range">PDF 44–48</div></header>
+      <div class="chapter-pages"><article class="page-card" id="page-44" data-page="44">
+      <div class="page-kicker"><span>PDF PAGE 44</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>─── 原書第 113 頁 ───</p>
+<p>登山及攀爬裝備(MOUNTAINEERING AND CLIMBING EQUIPMENT) 有好多器材係由(登山運動)「借用」過嚟。必須記住,上面標嘅數字係(斷裂)荷載,唔係安全工作負 荷。CE 標誌通常(係指 PPE 標準)。 呢類裝備可能係為自願活動(而非工作活動)設計,可能唔適合用作起重設備,好多時連 PPE 都唔 算。 可以用,但僱主應自行確信該裝備係合適。 有啲滑輪、繩抓(rope grabs)、上升器同下降器等非常有用,但喺工作中使用呢類裝備,唔一定好似 表面咁安全。 (有關下降器、鋼絲繩梯等資料,見高空工作一節。)</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-44.png" alt="PDF 第 44 頁原始頁面"></details>
+    </article><article class="page-card" id="page-45" data-page="45">
+      <div class="page-kicker"><span>PDF PAGE 45</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>吊掛作業</p>
+<h4>THE RIGGING OPERATION ─── 原書第 115 頁 ───</h4>
+<p>(吊掛作業 THE RIGGING OPERATION) 3. 上高空嘅通道及拖吊裝備 揀選最安全(唔一定最快)嘅通道方法(見高空工作一節),再揀選最安全、最便捷嘅將設備升到工作 位置嘅方法。 「開放籃式」技術可以用嚟拖吊好多嘢 ⸺ 裝一個滑輪(pulley block)就可以快而安全咁(吊運)。 (第 115 頁續) ⋯⋯甚至再加一個吊機,就可以吊起同穩固更大嘅重量。 ─── 原書第 116 頁 ───</p>
+<p>4. 檢查穩固程度及調校吊掛 (留意吊掛過程中被)卡住(嘅情況),常見喺天花開口邊緣、其他吊掛器材同樑邊。 檢查粗麻布或其他軟墊已固定、唔會滑走;執靚吊點周圍,檢查冇鬆散設備留喺高空。 (圖示) 分離籃式(Split basket) 「縮鏈扣」鏈條(”Clutch” chain) 加卸扣(Adding shackles) 橋式吊掛嘅調校方法。 5. 將吊掛交出以進行起吊 當你 100% 肯定吊點已正確連接、位置正確、可以安全受載,就叫出嚟或以其他方式通知地面吊掛 員。 確保佢哋明白你講緊邊個吊點。 6. 後備懸吊(Secondary suspensions) 後備懸吊喺吊掛員同安全專業人員之間引起好多討論。《娛樂場所技術標準》(Technical Stan‑ dards for Places of Entertainment)訂明,永久裝置嘅設計同安裝應該做到冇失效疑問,因此後備 懸吊通常應屬不必要。喺臨時裝置中,所用設備可能未經現場負荷測試或驗收,就應使用足夠嘅後 備懸吊或一定程度嘅冗餘。呢個應基於荷載、一個或多個懸吊失效嘅後果,以及可以做啲乜去防止 結構同懸吊設備嘅災難性倒塌。 後備懸吊(secondaries)或「保險」(safeties)好多時安裝得對動態因素欠缺考慮。如果(例如)一條 「兩摩打」桁架嘅主懸吊(失效),荷載喺被突然截停之前加速,喺鬆弛嘅後備懸吊中可能產生嘅動態 荷載可以好大。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-45.png" alt="PDF 第 45 頁原始頁面"></details>
+    </article><article class="page-card" id="page-46" data-page="46">
+      <div class="page-kicker"><span>PDF PAGE 46</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>─── 原書第 117 頁 ───</p>
+<p>所以最佳選擇係盡量多點支撐荷載或結構,或者由有適當安全係數嘅位置、用同等強度嘅器材支 撐。換句話講:用 2 噸吊機、掛喺 2 噸吊點上,去懸吊只重 1 噸嘅荷載,並用一種即使一處失效、結 構(例如桁架)仍能支撐荷載嘅方式。 使用後備懸吊嘅極差吊掛實例(圖) 物料 | 溫度 聚酯圓形吊索 | 85°C* 纖維芯鋼絲繩 | (100°C) 鋼芯鋼絲繩 | 100°C 鋁材損失 15% 強度 | 100°C Riggers(?)損失 45% | 200°C * 建築物火災溫度大約達 980°C 懸吊「冗餘」嘅圖示。熱力對懸吊器材同桁架嘅潛在影響。 跨度 1 喺桁架容許跨度之內 跨度 2 遠低於桁架設計跨度 後備懸吊(拉緊)(Secondary (taut)) 主懸 吊(起吊)(Primary (lifting)) 用三個吊機起吊一條桁架,但加上 4 條後備懸吊(圖)</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-46.png" alt="PDF 第 46 頁原始頁面"></details>
+    </article><article class="page-card" id="page-47" data-page="47">
+      <div class="page-kicker"><span>PDF PAGE 47</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><h4>2005 年高空工作規例</h4>
+<h4>THE WORK AT HEIGHT REGULATIONS 2005 ─── 原書第 118 頁 ───</h4>
+<p>(2005 年高空工作規例 THE WORK AT HEIGHT REGULATIONS 2005) 高空工作規例於 2005 年 4 月 6 日生效。同《工作設備指令》一樣,《高空工作指令》係歐盟每個 成員國都要實施嘅最低要求。 高空工作規例(WaHR)喺英國實施該指令,取代舊標準,適用於所有「高空」進行嘅工作。 整體嚟講,規例簡單講就係:凡可能,應避免高空工作。無法避免高空工作時,必須安全咁進行,並 「喺合適表面上、喺可接受嘅人體工學條件下」進行;必須使用喺整個高空工作過程中提供及維持 最高安全標準嘅工作設備。 設備類型應切合工作性質、可預見嘅使用條件,並必須容許人員安全走動。呢個意味住工作平台必 須夠大、夠強、水平及穩固。揀選時亦須考慮涉及人數,以及「人流」嘅可能頻率同持續時間。 呢啲要求適用於平台多過繩索作業;但同其他歐洲法例嘅英國實施一樣,規例係「目標導向」,細節 留畀為僱主設計工作方法同揀選設備嘅人。風險評估嘅使用被視為呢個過程嘅核心。 文件末尾有 19 條規例同 8 個附表。 重點訊息(KEY MESSAGES) 1. 規例係為咗保護你。 2. 除非你受到防止墮下後果嘅保護,否則高空工作屬違法(除非冇合理可行 嘅其他方法)。 3. 根據高空工作規例,你有個人法律責任舉報危險情況「以及」不安全活動。 4. 根 據 HSAW,你有個人法律責任使用提供畀你用嘅安全裝備,不得將自己或他人置於風險。 「高空工作」嘅定義: 喺任何人可能墮下嘅地方工作,包括地面或地面以下。 工作期間往返任何地方,涉及人員墮下足以造成人身傷害嘅距離嘅風險;但唔包括經永久工作場所 樓梯嘅通行。 就第 8 條規例及附表 2 – 6 而言,工作設備指任何喺工作中用作通道方法嘅嘢。 ─── 原書第 119 頁 ───</p>
+<p>第 4 條規例:組織及規劃 呢條規例同 LOLER 相似,要求僱主確保高空工作有妥善規劃(包括揀選適當設備)、有適當監督,並 以安全方式進行。 規劃包括應急規劃同救援計劃。 第 5 條規例:勝任能力 呢條規例訂明,僱主必須確保人員有能力組織、規劃、監督及參與任何工作活動,以及為高空工作 揀選設備。 規例包括學員須由合資格人士監督嘅要求。 高空工作規例下嘅合資格人士 合資格人士係指能夠證明自己有足夠專業或技術培訓、知識、實際經驗及權限¹嘅人,使佢能夠: ‧ 喺分配畀佢嘅責任層級上執行獲派職務; ‧ 明白與所考慮嘅工作(或設備)相關嘅任何潛在危害; ‧ 察覺該工作(或設備)中嘅任何技術缺陷或遺漏,認識呢啲缺陷或遺漏對健康與安全嘅影響,並能夠 指明糾正行動以減輕呢啲影響。 ¹ 註:「權限」指僱主授權該人執行某項職能或職務。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-47.png" alt="PDF 第 47 頁原始頁面"></details>
+    </article><article class="page-card" id="page-48" data-page="48">
+      <div class="page-kicker"><span>PDF PAGE 48</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>任何高空工作嘅人需要: ° 知道並明白高空工作規例下適用於佢個人嘅具體法律責任。 ° 明白邊個控制佢嘅活動,以及應使 用嘅溝通渠道。 ° 明白高空工作規例要求使用嘅防墮原則。 ° 能夠辨別安全同不安全嘅情況/活 動。 ° 明白點樣處理獲派任務相關嘅危害。 ° 就任務獲派嘅任何工作設備,受過正確使用同限制嘅 足夠培訓。 ° 明白需要檢查、並有能力檢查獲派安全裝備嘅妥善程度。 ° 明白以個人名義發放嘅裝 備嘅正確儲存、保養及檢查程序。 ° 明白安全工作程序,並能講出任務嘅正確程序、工作現行嘅應 急(包括救援)程序,以及自己喺其中嘅角色。 ° 知道舉報所發現任何缺陷、危害或不安全程序嘅程 序。 ─── 原書第 120 頁 ───</p>
+<p>第 6 條規例:風險嘅避免 (集體保護措施)優先於只保護個人嘅措施。 第 7 條規例:高空工作設備揀選嘅一般原則 揀選高空工作用嘅設備必須考慮: ‧ 集體保護措施優先於個人保護措施。 ‧ 工作條件及使用中對人員嘅風險。 ‧ 需通過嘅距離、 墮下距離及可能後果。 ‧ 使用嘅持續時間同頻率。 ‧ 疏散或救援嘅難易。 ‧ 安裝、使用、移 除,或由設備疏散或救援時嘅任何額外風險。 第 7 條規例第 2 部分要求僱主揀選嘅工作設備尺寸適合所進行嘅工作、強度足以承受任何可預見 荷載、容許安全通行,並符合第 6 條規例嘅一般要求。 第 8 條規例:工作設備嘅要求 附表 1:現有工作地方及高空工作進出通道嘅要求 附表 2:護欄、踢腳板、屏障等 附表 3:第 1 部分 工作平台;第 2 部分 棚架 附表 4:網、氣墊或非個人防墮系統一部分嘅集體防墮裝置 附表 5:第 1 部 分 個人防墮系統;第 2 部分 工作定位系統;第 3 部分 繩索作業技術;第 4 部分 防墮(fall arrest)系統; 第 5 部分 工作限制(work restraint)系統 附表 6:梯 附表 7:檢查報告須記錄嘅詳情 附表 8:被 2005 年高空工作規例取代嘅規例 第 9 條規例:脆弱表面 呢條規例協助防止人員跌穿屋頂表面同脆弱結構。 ─── 原書第 121 頁 ───</p>
+<p>佢嘅做法係要求(使用)合適平台或設備,令用作工作地方嘅表面唔會超載。規例指明,人嘅重量須由 合適平台或覆蓋物嘅支撐承擔,而唔係由脆弱表面本身承擔。 規例要求有足夠護欄同其他防止人員跌穿物料嘅方法,並喺接近脆弱表面嘅通道設置警告告示。 佈景同展台嘅天花、佈景以至一般舞台結構,全部都係呢條規例應用嘅例子。 第 10 條規例:墮下物件 僱主必須採取足夠措施,確保物件或物料不能從高處墮下。 如果咁樣唔合理可行,就必須採取措施防止任何人被可能造成傷害嘅墮下物料或物件擊中。規例亦 載有以下字句:「每名僱主須確保,喺可能對任何人造成傷害嘅情況下,不得從高處拋擲或傾倒任何 物料或物件。」 第 11 條規例:危險區域 呢個係一項明確要求:識別人員可能墮下一段距離、或物件可能墮下擊中人嘅區域。 呢啲區域必須喺合理可行範圍內「配備防止未經授權進入嘅裝置」,並「清晰標示」。 第 12 條規例:工作設備(高空工作用)嘅檢查 只適用於第 8 條規例(附表 2 – 6)指明嘅設備。 設備除非喺安裝或組裝後喺原位檢查過,否則不得使用。 一般嚟講,所有高空工作使用嘅設備必須以「合適間距」檢查,特別係喺會造成劣化嘅條件下使用 嘅設備。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-48.png" alt="PDF 第 48 頁原始頁面"></details>
+    </article></div>
+    </section><section class="chapter" id="chapter-17" data-title="吊掛作業 RIGGING OPERATIONS">
+      <header class="chapter-head"><div class="chapter-no">17</div><div><p>COURSE NOTE CHAPTER</p><h2>吊掛作業</h2><h3>RIGGING OPERATIONS</h3></div><div class="chapter-range">PDF 49–51</div></header>
+      <div class="chapter-pages"><article class="page-card" id="page-49" data-page="49">
+      <div class="page-kicker"><span>PDF PAGE 49</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>喺可能危及設備安全嘅「特殊情況」之後,亦應進行檢查。 即使上述已涵蓋,任何工作平台(流動式升降工作台 MEWP 或墮下距離不超過 2 米嘅平台除外),除 非喺七日內檢查過,否則不得使用。 LOLER 第 9(4) 條涵蓋嘅設備,唔可以喺冇高空工作規例下最後一次檢查嘅實物證據嘅情況下離開 「僱主業務」,或由他人業務帶入使用。呢個關乎工作定位同限制設備。 檢查紀錄保存至下一份紀錄作出為止。 WaHR 附表 7 載有檢查報告須載嘅細節。 呢條規例(第 12 條)要求報告喺進行檢查嘅同一工作時段內作出(以維持短間距),並喺 24 小時內提 交⋯⋯ ─── 原書第 122 頁 ───</p>
+<p>(第 13 條規例:⋯⋯永久護欄⋯⋯)自上次檢查以來嘅改變。 附表喺文件末尾,為每類設備指明最低標準。 建議讀者取得規例同指引文件,因為佢哋會構成好多高空工作風險評估同施工方法說明書嘅一部 分。 ─── 原書第 123 頁 ───</p>
+<p>高空工作通道嘅控制層級 (Hierarchy of control for access to work at height) 1. 消除高空工作嘅需要 ⸺ 用另一種方法 如果需要成立,按此次序使用: 2. 現有工作地方 ⸺ 格柵、天橋、樓座前沿 3. 有護欄嘅平台 ⸺ MEWP、棚架塔、Tallescope 升降梯台 4. 梯或人字梯 5. 如有墮下可能,使用防墮網或氣墊 6. 按此次序使用 PPE ⸺ 工作限 制、工作定位(+ 後備系統)、防墮(fall arrest) (第 123 頁續) 高空工作必須有規劃。 通道方法必須以減低風險為原則揀選。 有護欄系統嘅平台(永久或臨時)係首選通道方法。 用梯或人字梯做多過一項短暫工作,唔應考慮。 使用 PPE 通常意味住更多嘅規劃、技術水平同裝備管理。 所有高空工作都必須考慮應急措施,唔係淨係用 PPE 先要。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-49.png" alt="PDF 第 49 頁原始頁面"></details>
+    </article><article class="page-card" id="page-50" data-page="50">
+      <div class="page-kicker"><span>PDF PAGE 50</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>娛樂行業嘅高空工作</p>
+<h4>WORK AT HEIGHT IN THE ENTERTAINMENT INDUSTRY ─── 原書第 125 頁 ───</h4>
+<p>Tallescope 升降梯台(TALLESCOPES) 設計面世約 40 年後,Tallescope 喺劇院仍然係非常常見嘅高空工作通道方法。超過 10 年嚟,關於 技術人員留喺台上時將 Tallescope 橫移過舞台嘅可取性以至合法性,爭論不休。 呢個做法唔係想像中咁兒戲;風險評估清楚識別出疲勞,以及反覆垂直攀上落所增加嘅墮下風險。 因此,雖然接受技術人員留喺吊籃內移動機器會引入新危害,但咁做可以顯著減低風險。Talle‑ scope 唔係設計成咁樣用,但喺劇院以「流動」方式成功使用咗差唔多成個歷史。 由於 90 年代後期一宗事件 ⸺ 一名地方當局執法人員目睹有人喺舞台上移動載人嘅 Tallescope, 導致發出禁制通知 ⸺ ABTT 就劇院行業點樣可以繼續安全使用 Tallescope 徵詢 HSE 意見。事 後睇返,行業應該係「話畀」HSE 知而唔係「問」佢哋。不過,經過長時間諮詢,ABTT 喺 2011 年 6 月宣佈,喺符合多項嚴格條件嘅前提下,移動載人 Tallescope 為 HSE 以至地方當局所接受。 「流動」使用嘅條件包括對 Tallescope 嘅改裝,以及使用 ABTT《劇院及類似娛樂場所高空工作 通道設備嘅揀選及使用實務守則》。 具體條件係: ‧ 嚴格遵守 ABTT 實務守則第 5 節。 ‧ 包括使用者嘅記錄在案培訓,以及所需嘅最低人手數目。 ‧ 加裝垂直「推/拉」桿以方便移動 ‧ 每邊加裝及使用 2 支外伸支架(outriggers) ‧ 加裝 4 個有 制動嘅腳輪,取代原廠供應嘅款式 ‧ 有涵蓋 Tallescope 使用嘅有效救援計劃。 ─── 原書第 126 頁 ───</p>
+<p>Tallescope 救援 最合理嘅選擇,似乎係識別一個同使用中嘅 Tallescope 吊籃高度相近嘅承載平台。前往該平台嘅 路線需要保持暢通,以便 Tallescope 可以快速移到平台;喺平台上最少需要兩個人去救出傷者。 Tallescope 可以固定以防傾側。 可能仍需要某種起重裝置去救出傷者,但呢個可以預先裝喺伸手可及嘅範圍,令行動喺相對安全下 進行。 唔係每個場地都適合呢個方法,但大部分有吊景塔(fly tower)嘅傳統劇院大概都可以考慮。 「動力通道」(’POWERED ACCESS’) 流動式升降工作台(MEWP)同個人工作平台(IWP)顯然係最實用嘅通道方法。除非操作員喺相關 特定環境有培訓同經驗,否則佢哋可以好危險。除咗最大或最現代化嘅劇院,MEWP 喺劇院多數唔 適合。不過,市面有大量 IWP 同較細嘅機器可能適合。以前好難搵到夠細或者夠輕、上到好多舞 台嘅機器,但而家有好多輕巧、靈活嘅輕型型號。 必須非常小心確定舞台可承受嘅荷載,特別係同時有重型佈景、或者喺輕型或加建舞台上。 必須仔細考慮燈槽陷阱(dip‑traps)、電纜槽、建造物料嘅轉變(例如亞加力板)嘅存在。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-50.png" alt="PDF 第 50 頁原始頁面"></details>
+    </article><article class="page-card" id="page-51" data-page="51">
+      <div class="page-kicker"><span>PDF PAGE 51</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>─── 原書第 127 頁 ───</p>
+<p>格柵與張力鋼索格網(GRIDS AND TENSION WIRE GRIDS) 喺高空時,唔好攜帶或喺口袋放任何可能跌落嘅嘢。改善格柵安全嘅簡單方法,係保持佢乾淨企理, 並確保照明良好。 通往格柵及類似區域嘅通道梯應盡量短,必要時應設有防墮系統。確保你知道格柵嘅緊急出口喺 邊。 考慮格柵嘅容許荷載,特別係幾個人同時喺格柵上工作時。移動電鏈吊機或分載樑(spreader beams)好容易對格柵結構造成高點荷載。張力鋼索格網通常標有每平方米或每格(bay)嘅荷載;雖 然一般低過劇院或錄影廠嘅傳統格柵,開工之前必須考慮呢啲資料。 小心臨時封板嘅通道口同開口。格柵邊緣同任何空隙或高低變化,應有妥善建造嘅護欄同踢腳板。 無法改善嘅障礙物同頭部受傷危害,應加標記同軟墊。呢個包括通往格柵嘅通道,以及格柵上同周 邊區域。 提供合適嘅容器,俾人員上格柵前放低口袋入面嘅嘢。 用高邊托盤或夠穩陣嘅桶裝工作設備或物料,唔好用紙皮箱!使用工具時,適當時用工具繩(lanyard) 綁實。 盡量「從設計上消除」喺高空使用工具或細小零件嘅需要。用繩升降工具同輕型物料。摩打嘅鏈 袋係拉工具上去嘅理想選擇。 為格柵工作建立安全制度。任何人上格柵工作,都要有一套佢哋必須跟從嘅既定程序。 呢啲可以係工作許可證制度,或者舞台層面一個簡單嘅閃燈,表示格柵有工作進行中、舞台屬危險 區域。 嗰陣時,對因工作需要而必須喺下面嘅人,可以實施安全帽規則 ⸺ 但「唔係」為咗俾佢哋可以繼 續喺危害下面工作。 ─── 原書第 128 頁 ───</p>
+<p>法律一般要求僱主實行「安全工作系統」。 安全工作系統可以定義為:喺合適嘅環境同工作場所中,整合人、物品同物質,以產生並維持可接受 嘅安全標準。喺呢個系統中,應適當考慮可預見嘅緊急情況,並提供足夠設施。 因此,高空工作只應喺佢係完成工作嘅唯一方法時先進行。通道應限於受過培訓嘅人,方法應記錄 在案並受監督,確保佢保持合適。健康與安全法例訂明必須採取嘅措施,透過良好管理避免及減低 風險,包括記錄書面安排同程序。 ‧ 制定記錄在案嘅高空工作方法及風險評估。 ‧ 教育工人同管理層有關方法,進一步減低風險。 ‧ 透過有關該方法同現行最佳做法嘅資訊,防止或減少意外。 ‧ 制定並使用合適嘅防墮及救援系 統。 規劃工作(PLANNING THE WORK) 喺一個跌嘢可以殺死人、滑倒可以導致墮下嘅環境工作,係嚴重風險。諗高空工作之前,先考慮以 下各項: ‧ 究竟需唔需要做呢項工作 ⸺ 可唔可以唔使高空工作就做到? ‧ 所需嘅勝任能力,包括點落返 嚟,以及出事點算。 ‧ 需要幾多人,特別係出事嗰陣? ‧ 作業會唔會涉及用繩將物品或物料吊上吊 落? ‧ 需唔需要圍封下方範圍? ‧ 現場有冇安全帽,畀必須喺圍欄內嘅人? ‧ 所需設備喺唔喺現 場? ‧ 佢係咪適合該工作?可唔可以正確安裝? ‧ 做嘢嗰啲人有冇使用佢嘅適當培訓? ‧ 佢有冇檢 查過?喺現場現有情況下使用安唔安全? 當呢啲問題有滿意答案、風險評估亦已完成,工作先可以開始。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-51.png" alt="PDF 第 51 頁原始頁面"></details>
+    </article></div>
+    </section><section class="chapter" id="chapter-18" data-title="2005 年高空工作規例 WORK AT HEIGHT REGULATIONS 2005">
+      <header class="chapter-head"><div class="chapter-no">18</div><div><p>COURSE NOTE CHAPTER</p><h2>2005 年高空工作規例</h2><h3>WORK AT HEIGHT REGULATIONS 2005</h3></div><div class="chapter-range">PDF 52–54</div></header>
+      <div class="chapter-pages"><article class="page-card" id="page-52" data-page="52">
+      <div class="page-kicker"><span>PDF PAGE 52</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>個人防護裝備</p>
+<h4>PERSONAL PROTECTIVE EQUIPMENT ─── 原書第 130 頁 ───</h4>
+<p>(個人防護裝備 PERSONAL PROTECTIVE EQUIPMENT) 具體嘅 PPE 培訓應包括理解裝備點運作、佢嘅設計用途、使用前檢查、儲存,以及報告損壞或缺 陷。資訊同圖解必不可少,例如展開後嘅挽索長度,以及理解水平救生繩系統涉及嘅墮下係數(fall factors)。 法律要求僱員正確使用工作設備,並喺健康與安全管理上與僱主合作。 防墮及工作定位 PPE 係「複雜」PPE(歐盟指令第 3 類)。呢類 PPE 係設計嚟防範致命危險。 呢類 PPE 必須按 PPE 指令(從而按相應 EN 標準)有 CE 標誌。「公告機構」(Notified bodies) ⸺ 有能力按相應標準(例如防墮安全帶嘅 EN 361)測試產品 ⸺ 由歐盟各地政府委任。 CE 標誌連「公告機構」編號示例:CE 0123 PFPS 係「個人防墮保護系統」(Personal Fall Protection System)嘅常用縮寫,通常由幾件組合 嘅 PPE 元件構成,共同促成安全工作系統。 防墮、限制與工作定位作為 PFPS (FALL ARREST, RESTRAINT AND WORK POSITIONING AS PFPS) 防止墮下顯然好過截停墮下。因此,按所需保護類型正確指定裝備至關重要。 高空工作使用嘅裝備類型有三類。 要令工人喺物理上遠離危害,可以用工作限制(work restraint)。呢個可以係一條簡單嘅腰帶,配一 條有錨定嘅挽索,令工人無法接近邊緣。墮下因此被防止發生。 要減低由懸吊結構墮下嘅風險,可以用工作定位系統(system in constant tension,持續受拉嘅系 統)支撐工人。呢類系統喺主系統失效可導致墮下嘅情況下,需要後備懸吊。繩索作業屬於呢一 類。 ─── 原書第 131 頁 ───</p>
+<p>當工人無法以防止墮下嘅方法(按次序:現有工作地方、有護欄嘅通道機械/工作平台、或安全網) 受保護時,就必須使用個人防墮裝備作為最後手段。呢個係為咗喺墮下可能發生時保護工人免受 傷害。防墮(fall arrest)唔係防止墮下;佢只係減輕墮下嘅後果,係其他工程控制用盡之後嘅最後手 段。 ─── 原書第 132 頁 ───</p>
+<p>PPE 及 PFPS 嘅錨點(ANCHOR POINTS FOR PPE AND PFPS) (錨點嘅)強度同可靠性必須得到保證。防墮錨點嘅適用標準係 EN795(分 5 部分 A–E),要求錨點最 低強度 12kN。 喺娛樂行業,PFPS 嘅錨點往往需要由使用者自行創造。最簡單嘅方法係用吊索繞纏建築結構嘅部 分。 鋁桁架、棚架同燈桿好少能夠達到防墮錨點嘅標準。如果考慮咁做,應尋求具體工程意見,確保有 關結構能承受截停墮下所產生嘅力。必須考慮載重同防墮力嘅組合。 亦必須仔細考慮打算用同一結構做 PFPS 錨點嘅人數。 喺燈光桁架或桁架系統上使用專有嘅水平救生繩/防墮系統,需要結構工程師分析,以及桁架製造商 批准。單純扣上一條直接固定喺桁架上、或穿過吊機下方主環嘅水平繩,好少會足夠。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-52.png" alt="PDF 第 52 頁原始頁面"></details>
+    </article><article class="page-card" id="page-53" data-page="53">
+      <div class="page-kicker"><span>PDF PAGE 53</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>安全做法(Safe practices): 1. 每次使用前後都要檢查 2. 調校安全帶貼合身體 3. 確保你知道應該用邊啲錨點 4. 確保你嘅連 接方法唔會妨礙你做緊嘅工作 5. 識得並且每次用完都正確儲存裝備 6. 確保你明白損壞嘅裝備係 咩樣 7. 永遠保持連接住工作限制或防墮系統 8. 永遠使用合適嘅裝備,為任務提供最大嘅防墮保護 9. 永遠錨定喺盡量高嘅位置,並檢查墮下距離適合你嘅方法 10. 只使用來源同過往歷史清楚嘅裝備 11. 明白救援計劃同你喺其中嘅角色 不安全做法(Unsafe Practises): 1. 唔好用損壞嘅裝備 2. 唔好用借返嚟嘅裝備 3. 唔好用不合適嘅錨點 4. 未受培訓唔好用裝備 5. 唔好將冇保護嘅連接方法跨過利邊或磨蝕性邊緣 6. 唔好調校挽索長度 7. 唔好錯誤使用裝備 8. 唔 好用過期裝備(一般係製造日期起 10 年) ─── 原書第 133 頁 ───</p>
+<p>工作限制(WORK RESTRAINT) 限制可以防止工人進入危險區域,因此係優先選擇,因為佢防止墮下發生,而唔係處理墮下嘅後果。 高空工作 PPE 嘅用法(圖片由 Petzl 提供) 防墮(FALL ARREST)係使用 PPE 作為控制措施嘅層級中最後一層。 防墮處理墮下嘅後果,因此必須考慮由此產生嘅力。 佢需要全身安全帶,並使用一個喺墮下後令使用者保持直立(或者更好 ⸺ 坐姿)嘅連接點。 大部分情況下首選「胸骨點」(sternal point)(A),不過有時用背部連接點(兩肩胛骨之間)有助令挽 索唔阻手阻腳。 工作定位(WORK POSITIONING)(B)意思係使用者嘅裝備處於受拉狀態,一旦連接到錨點,墮下就 不可能發生。 不過,工人完全依賴嗰個錨點。如果系統失效,就會墮下。 因此,如對頁所示,喺呢啲情況下使用工作定位系統時,一個獨立嘅防墮系統必不可少。 好多製造商生產嘅安全帶,同時有防墮同工作定位/限制嘅連接點。 未受訓嘅使用者經常將防墮挽索接到較低嘅連接點,咁樣可以造成內傷,並有墮下後倒吊嘅風險。 ─── 原書第 134 頁 ───</p>
+<p>高空工作 PPE 嘅用法(USES OF PPE FOR WORK AT HEIGHT) 水平防墮繩(例如 Latchway ⸺ 永久,Checkmate 或 Grillon ⸺ 臨時) 垂直防墮繩(例如鋼絲繩系統 ⸺ 永久,或 ASAP 或 Rocker 配繩 ⸺ 臨時) 工作限制、工作定位及防墮示例 圖片由 Petzl 提供 工作定位(Work positioning) 工作限制(Work restraint)</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-53.png" alt="PDF 第 53 頁原始頁面"></details>
+    </article><article class="page-card" id="page-54" data-page="54">
+      <div class="page-kicker"><span>PDF PAGE 54</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>─── 原書第 135 頁 ───</p>
+<p>防墮用安全帶(HARNESSES FOR FALL ARREST) PPE 必須由僱主提供(HSaW 法案要求自僱人士以僱主身份經營業務),並且必須有合適嘅質量同設 計。 符合 EN361 嘅防墮安全帶必須係全身安全帶,連接點喺胸前或兩肩胛骨之間。有啲加設「抱桿 帶」(pole‑strap)工作定位連接點(不可接防墮挽索)喺髖部、後方限制點,以及攜帶裝備嘅「裝備 架」。 防墮採用嘅標準確保身體所受嘅衝擊力同系統錨固保持喺 6 kN 以下。要達到呢一點,防墮系統必 須符合訂明嘅各項標準並正確使用。 防墮用嘅勢能吸收挽索必須合規,而且必須接到安全帶嘅胸骨(上胸)或背部(上背)連接點。 透過使用標準,裝備嘅性能得到保證,墮下時會將身體同裝備所受嘅力減至 6 kN 以下。 (第 135 頁 續) 簡單嘅工作定位(透過限制暴露於一開始就可能墮下嘅情況嚟減低風險)可以同防墮系統一齊使 用,喺前往工作位置途中,以及設置或解除工作定位系統時提供「重疊」保護。 將防墮挽索配工作定位安全帶(「坐式」或「沿繩下降式」安全帶)使用係危險。 應優先使用為工作活動設計嘅防墮系統,而唔係攀石裝備。雖然攀山安全帶睇落好似做到,但佢係 為另一種目的設計。「運動」安全帶係為自願活動設計。僱主(或自僱人士)承擔嘅責任,同一個放 工去攀石嘅人根本上唔同。 工作定位係一種容許喺受拉/懸吊狀態下雙手自由工作嘅技術。 繩索作業屬於呢一類;呢種技術喺工業界廣泛使用,有完善嘅實務守則,並喺 2005 年高空工作規例 中受規管。 工作定位一般依靠錨點同挽索去支撐一個人。如果工作定位系統任何部分嘅失效會引致墮下風險, 法律就要求使用合適嘅後備(back‑up)系統作為工作定位系統嘅一部分。呢個可以係防墮系統,或 者另一個適當安裝嘅工作定位系統。 ─── 原書第 136 頁 ───</p>
+<p>(頭盔 HELMETS) 呢類頭盔嘅標準係 EN 12492。有唔少符合 EN 397 嘅頭盔有通風,但佢哋嘅下巴帶唔係為高空工 作而設計。 輕型頭盔透過吸收墮下物件(或使用者可能撞到嘅物件)嘅力嚟保護頭部。因此頭盔需要一條固定 帶同頭托,設計成能承受呢啲力,並防止頭盔喺墮下時移位。 呢個通常喺佩戴者墮下時盔簷撞到邊緣、或者掃過物件時發生。如果使用者被頭盔纏住或吊住,帶 或頭托必須喺有勒頸風險之前斷開。 繩索作業技術員頭盔,符合 EN 12492:通風盔殼,堅固下巴帶 為高空工作設計嘅頭盔,符合 EN397:通風,有堅固下巴帶,並符合建造業一般要求嘅標準。 工業/建造業頭盔,符合 EN397:密封盔殼,冇下巴帶或下巴帶喺極低拉力下斷開。冇下巴帶,不適合 高空工作及攀爬通道。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-54.png" alt="PDF 第 54 頁原始頁面"></details>
+    </article></div>
+    </section><section class="chapter" id="chapter-19" data-title="娛樂行業的高空工作 WORK AT HEIGHT IN ENTERTAINMENT">
+      <header class="chapter-head"><div class="chapter-no">19</div><div><p>COURSE NOTE CHAPTER</p><h2>娛樂行業的高空工作</h2><h3>WORK AT HEIGHT IN ENTERTAINMENT</h3></div><div class="chapter-range">PDF 55–57</div></header>
+      <div class="chapter-pages"><article class="page-card" id="page-55" data-page="55">
+      <div class="page-kicker"><span>PDF PAGE 55</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>─── 原書第 137 頁 ───</p>
+<p>防墮系統嘅連接器(CONNECTORS FOR FALL ARREST SYSTEMS) 用嚟將挽索接到安全帶、將挽索接到錨點嘅連接器,應符合 EN362,並有適合當前工作嘅設計。一 般呢啲連接器會係鈎環(karabiners),但同樣可以係「快速接環」(maillon rapide)或其他符合標 準並有 CE 標誌嘅類似裝置。 市面有好多設計同款式,但要達到 EN362 標準,連接器必須需要至少兩個連續動作先開到。呢個防 止使用中意外打開;「自動」款式令使用者較唔容易唔記得閂門同鎖定機構。 棚架鈎(scaffold hooks,原本係消防員雲梯鈎)經常被濫用。製造商非常清楚表明:佢哋只可以沿鈎 脊方向、喺水平構件上受載。佢哋唔應該用喺垂直構件(例如扶手支柱)上,亦唔應該用喺幼細物料 (例如鋼絲繩)上 ⸺ 磨蝕可以令軟合金鈎流失物料。佢哋唔應該喺挽索上做勒式,如果挽索要對摺 回鈎,必須非常小心。鈎附帶嘅資料會指明正確應用。 防墮挽索(FALL ARREST LANYARDS) 防墮挽索必須將人所受嘅制動力減至 6 kN 以下。由於「複雜」設計嘅 PPE 按 PPE 指令有 CE 標 誌,勢能吸收器必須符合 EN 355。 挽索必須用適當連接器,並有效接到安全帶同適當錨點或安全系統。 挽索最大長度係 2 米;好多時用短好多嘅挽索更好。勢能吸收器展開時,挽索會變長,所需嘅淨空距 離亦增加。製造商嘅意見同指示對安全使用必不可少。呢度冇可能準確詳述每種挽索類型嘅所有 必要預防措施,每種都有自己嘅特性同需要。 正確使用挽索同連接器至關重要。如果喺結構鋼上發生長距離滑動式墮下,「棚架鈎」所受嘅衝擊 荷載可以整斷佢哋。大部分棚架鈎或梯鈎設計成只可接到同鈎成直角嘅大直徑圓形截面。 挽索應永遠接到盡量高嘅位置,並只喺第二條挽索或其他裝置已展開時先移除。(例如用兩條挽索 「跳飛機」交替前進) 爬到高過防墮裝置嘅位置係危險;一旦墮下,可以產生防墮系統、安全帶或裝置以及錨點或支撐結 構都唔係設計嚟承受嘅力。 挽索絕不可加長或改裝。 ─── 原書第 139 頁 ───</p>
+<p>(圖解) 使用 1 米 Absorbica 挽索 淨空距離以最近嘅障礙物計,唔係以地面計 (Clearance to nearest obstruction, not the ground) ─── 原書第 140 頁 ───</p>
+<p>(裝備清單圖) 1. 30kN 錨點吊索,符合 EN 795B 2. 螺旋鎖鋼鈎環,符合 EN 362 3. 雙動作鋼鈎環,符合 EN 362 4. 扭鎖鋼鈎環,符合 EN 362 5. 1 米「Y」形防墮織帶挽索,連內置勢能吸收器,符合 EN 355 6. 2 米可 調工作定位/限制繩挽索,符合 EN 358 7. 防墮安全帶,符合 EN 361,連工作定位及限制連接點 8. 工 業攀爬頭盔,符合 EN 397 或 EN 12492</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-55.png" alt="PDF 第 55 頁原始頁面"></details>
+    </article><article class="page-card" id="page-56" data-page="56">
+      <div class="page-kicker"><span>PDF PAGE 56</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>─── 原書第 141 頁 ───</p>
+<p>雙叉挽索嘅「回鈎」(”BACK HOOKING” WITH TWIN LANYARDS) (將唔用嗰叉鈎返落挽索上)有潛在極大危險,因為鈎返轉頭嘅挽索可能阻止勢能吸收器伸長,從而令 佢失效。 咁樣會產生潛在超過系統組件承受能力嘅力,除咗人身傷害之外,仲有災難性失效嘅風險。 測試顯示,將 2 米挽索回鈎時,呢種情況喺安全帶位置產生超過 16 kN 嘅力。 關鍵係挽索長度相對勢能吸收器展開長度嘅關係,但顯然墮下距離(墮下係數 fall factor)會決定勢 能吸收器伸展幾多。墮下係數 0.25 大概唔使擔心,但墮下係數 1 加 2 米挽索就好可能發生呢種情 況。 挽索長度/淨空距離(LANYARD LENGTH/CLEARANCE) 大部分 2 米挽索需要超過 5.5 米嘅墮下距離先能安全截停墮下。 將挽索長度、勢能吸收器最大展開長度、使用者由安全帶連接點到腳底嘅高度加埋,再加 1 米安全 餘量。 用 1 米挽索嘅圖解見前頁。 防墮衝擊力對結構嘅影響(FALL ARREST IMPACT FORCES ON STRUCTURES) 使用勢能吸收挽索嘅衝擊力可能超過錨點強度,甚至推翻輕型結構。錨點位置預期會有 4 kN – 6 kN。 符合 EN 355 嘅勢能吸收器會喺 2.5kN 開始展開。 符合 EN 標準(例如 EN795A)嘅防墮錨點,需要能夠喺墮下時最可預測嘅方向抵受 12kN(1200 公 斤)。 單純從穩定性角度,呢個已排除喺大部分可移動結構(例如佈景車、棚架塔同桁架)上發生係數 2 嘅 墮下。 墮下係數 0.25 或以下可能喺好多結構嘅承受能力之內,但喺嗰啲數值下,已經接近限制(restraint) 多過防墮,所以嚴格嚟講唔需要勢能吸收挽索。 ─── 原書第 142 頁 ───</p>
+<p>慣性捲軸防墮裝置(FALL ARREST INERTIA REEL DEVICES) (呢類)裝置,佢確實可以避免繩索救援嘅需要。 呢啲裝置通常有 136 公斤嘅荷載限制,使用者不可自行保養。 佢哋應每年由製造商檢查同保養。 如果曾用嚟承受墮下,裝置應交回製造商報廢。裝置上通常有磨損指示器。 絕不可讓裝置自行「捲入」;佢會喺上限鎖死,並損壞裝置,可能無法修復。 如果固定安裝、由幾個人定期使用,可以喺鈎上綁一條由地面操作嘅繩,令鋼絲或織帶喺受拉下輕 輕縮回。 呢條繩需要同裝置嘅繩一樣長,直徑至少 5mm。 呢條繩會令一般使用更方便,因為一個人解扣後,第二個人就可以上。 垂直繩防墮系統(VERTICAL ROPE FALL ARREST SYSTEMS) 使用呢類繩系統比其他垂直防墮方法有幾個優點。佢哋使用上非常靈活多變。 繩係特定類型(強度、直徑同結構),必須配合所用防墮裝置指定;繩嘅損壞容易發現,更換又平又 易。 缺點係: a)繩可以被利邊割損,永遠需要保護去消除呢個危害。 b)如果工人唔係直接喺錨點下方時墮下,擺</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-56.png" alt="PDF 第 56 頁原始頁面"></details>
+    </article><article class="page-card" id="page-57" data-page="57">
+      <div class="page-kicker"><span>PDF PAGE 57</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>盪式墮下喺某啲情況下可能有受傷風險。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-57.png" alt="PDF 第 57 頁原始頁面"></details>
+    </article></div>
+    </section><section class="chapter" id="chapter-20" data-title="個人防護裝備 PERSONAL PROTECTIVE EQUIPMENT">
+      <header class="chapter-head"><div class="chapter-no">20</div><div><p>COURSE NOTE CHAPTER</p><h2>個人防護裝備</h2><h3>PERSONAL PROTECTIVE EQUIPMENT</h3></div><div class="chapter-range">PDF 58–61</div></header>
+      <div class="chapter-pages"><article class="page-card" id="page-58" data-page="58">
+      <div class="page-kicker"><span>PDF PAGE 58</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>救援</p>
+<h4>RESCUE ─── 原書第 144 頁 ───</h4>
+<p>救援(RESCUE) 用 PPE 規劃高空工作嘅一部分,係評估救回墮下工人嘅方法同風險。執行救援嘅危害,可能超過(墮 下)對工人同救援者(嘅危害)。必須講明:好多情況下,最佳嘅防墮形式係使用通道設備,而唔係防墮 裝備。呢個符合預防原則 ⸺ 從根本消除攀爬嘅需要。 有時為咗實際,攀爬通道係必要。建築物嘅比例、吊點位置(例如)同可用通道,往往意味住動力通道 唔係可行選項。場地嘅地板可能承受唔到重量、門唔夠大等等。有時需要接近用傳統方法到達唔 到嘅懸吊結構。特別係佈景嘅位置同結構,往往令傳統通道困難。按定義,喺咁困難嘅情況下救回 墮下嘅人,唔會容易。 安排員工高空工作嘅僱主,必須透過風險評估檢視真正嘅危害。防墮作為控制措施只處理墮下本 身;安全系統應包括救援規劃。呢個本身需要制定救援方法同提供適當資源。計劃需要考慮可能涉 及嘅工人數目同佢哋嘅經驗。必須確保快速、有效嘅救援。 救援計劃(RESCUE PLANS) 救援計劃應喺高空工作開始之前議定。 風險評估有助制定救援計劃;計劃會因場地同條件而異。任何情況改變時,都應覆檢。呢個可能係 每日,而且視乎唔同部門進行嘅工作,可能同時有多過一個計劃運作。 而家已被接受嘅係:僱主唔應該依賴緊急服務,當僱員高空工作時,應提供內部救援設施。 緊急服務喺好多情況下可能幫唔到,例如土木工程嘅繩上工作、展覽館屋頂空間嘅吊掛等。 儘管如此,開工之前應核實召喚救護車服務嘅方法已經到位。 救援技術需要定期練習,並包括場地或可能遇到嘅情況所需嘅各種變化。 唔同嘅定位高度、佈景、結構、舞台高度同格柵結構,可能對採用嘅方法有重大影響。救援方法可 能唔包括「繩索救援」技術、可以好簡單,但喺高空工作進行期間,現場必須有足夠數目、受過適 當方法培訓嘅人員。 ─── 原書第 145 頁 ───</p>
+<p>所揀選嘅救援裝備(如有)應喺開工前檢查,並存放喺適當、容易取用嘅位置。 每節工作開始前,做一個簡單嘅工具箱講話(tool‑box talk),確保所有參與者明白救援計劃,係良好 做法。呢個提供機會提醒工人計劃嘅工作方法,同埋佢點樣同現有救援方法配合。如果工作以未經 規劃嘅方式進行,救援計劃可能無效。 理解懸吊暈厥/懸吊不耐(SUSPENSION SYNCOPE / INTOLERANCE) 根據 HaSaWA,僱主有責任向僱員提供工作中健康與安全風險嘅資訊。一旦發生無法自行脫困嘅 墮下,有幾點要注意。 喺安全帶中懸吊,即使冇墮下發生,都可以喺短至十分鐘內引致昏厥。呢個係因為懸吊令血液積聚 喺小腿。低血壓令心率減慢,令人昏厥(syncope)。雙腿可以容納成人總血量約 60%。昏厥後嘅倒 下,係身體嘗試將血液(從而氧氣)恢復供應腦部嘅方式。一旦處於躺臥姿勢,血液循環回復正常,通 常冇損害。 如果有人喺安全帶中失去知覺,情況可以好嚴重:懸吊嘅傷者失去知覺後 10 分鐘內可以死亡。 喺準備救援期間,將清醒傷者嘅腿抬高(用吊索或類似物),令大腿高於水平,可能有助情況。(見左圖)</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-58.png" alt="PDF 第 58 頁原始頁面"></details>
+    </article><article class="page-card" id="page-59" data-page="59">
+      <div class="page-kicker"><span>PDF PAGE 59</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>如果傷者已經失去知覺,只有喺墮下發生喺之前大約 10 分鐘內先可以咁做,原因下文解釋。 清醒嘅傷者可以郁動腳趾幫助防止血液積聚。呢個活動足以令小腿肌肉將血液沿小腿靜脈向上擠 壓,並可充分幫助循環,防止暈厥出現。 2008 年,HSE 對所謂「懸吊創傷」(suspension trauma)嘅已發表醫學證據做咗一次審視。 HSE 目前嘅建議係跟從標準急救「ABC」程序,傷者失去知覺時使用復原臥式(recovery posi‑ tion)。 傷勢應按 ABC 程序考慮 ⸺ 檢查氣道暢通之後,就要處理流血傷口。 快速救援必不可少。理想目標係大約 10 分鐘內將懸吊人士送到醫療專業人員可以接觸嘅位置。 ─── 原書第 146 頁 ───</p>
+<p>(⋯⋯令)醫護人員可以接觸到傷者。 (Syncope 意思係昏厥,讀音「sin‑co‑pee」。) 救援培訓唔係基本意識培訓,而係一項專門技能,可能需要特殊裝備、工作制度、定期檢討同練習, 確保技能保持純熟。當工作活動有懸吊創傷風險時,救援人員同裝備必須可以隨時候命。 意外發生時,計劃必須已經到位;發現有人懸吊兼失去知覺嗰陣,唔係先嚟諗點樣放低人嘅時候。 救援主要係僱主嘅責任,因為係僱主決定使用可能導致墮下嘅方法。救援方法視乎工作性質、工作 場所同所用裝備。 緊急服務往往冇裝備應付喺相對難以接近位置工作嘅人。假設消防處可以處理不可預見嘅事故係 唔夠。不過,良好做法係邀請緊急服務到訪高空工作屬常規活動嘅工作場所,令佢哋喺需要響應時 了解場地狀況,亦可以向僱主提供意見。 風險評估突顯邊度會使用防墮同工作定位技術,亦必須考慮傷者可能需要由乜嘢情況下救出。挽索 或防墮裝置嘅長度同類型,可能對特定情況下合適嘅救援方法有重大影響。 喺娛樂行業,可能需要救人嘅裝備同情況範圍好廣,例如: 梯(固定及臨時,用或唔用 PPE) 燈光橋及貓道 燈光柱(booms) 佈景及結構 燈光桁架或格柵系統 挽 索(織帶或繩製嘅防墮或工作定位挽索) 慣性捲軸裝置(可縮回鋼絲或織帶) 水平防墮繩(專有嘅繩或 織帶系統) 垂直防墮繩系統(繩抓系統,例如 ASAP) 水平防墮鋼絲系統(「Latchway」類系統) 防墮 網(通常好難由網中救人) 每種情況都需要考慮,包括: ‧ 用嚟升起或放低傷者嘅錨點(例如:唔可以係墮下時已受損嗰個) ‧ 救援者安全接近傷者嘅通道 ‧ 周圍環境(例如黑暗、嘈吵) ─── 原書第 147 頁 ───</p>
+<p>‧ 傷者嘅狀況(例如傷勢嘅性質同程度) ‧ PPE 嘅狀況(例如安全帶用唔用得?定係喺墮下時已損 壞?) 如果因為傷者某程度上失去行動能力,「自行救援」(或協助下自行救援)⸺ 用吊索或腳踏帶脫離 懸吊、返回安全位置 ⸺ 唔係選項,就需要他人救援。風險最低嘅技術通常係經動力通道。如果唔 可行,非動力通道可能係一個選項。最後(因為執行上一般更危險),可能需要「繩索救援」。 「繩索救援」有三種主要方法: (1)由上方位置(放低傷者)⋯⋯ (2)⋯⋯(救援者)與傷者一同(下降)⋯⋯ (第 147 頁續) ‧ 遙距將傷者 接到救援系統,通常由上方位置 ‧ 救援者下降解開傷者,並與傷者一同繼續下降 ‧ 救援者下降到傷 者位置,由救援隊放低(或升起)傷者同救援者 繩索救援有好多考慮因素,最重要包括: ‧ 保持救援裝備狀態良好、隨時可用 ‧ 救援者點樣安全接近、將傷者接上救援系統 ‧ 救援之 前、期間及之後所需嘅急救 ‧ 使用適合當前任務嘅錨點同裝備 ‧ 傷者 PPE 喺用於救援之前嘅狀</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-59.png" alt="PDF 第 59 頁原始頁面"></details>
+    </article><article class="page-card" id="page-60" data-page="60">
+      <div class="page-kicker"><span>PDF PAGE 60</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>況 ‧ 救援期間能夠同傷者講嘢、見到傷者 ‧ 救援行動中造成繩索嚴重磨損同割損嘅邊緣 ‧ 避免 系統各部分同錨點承受「衝擊荷載」 ‧ 到達地面後嘅程序 ⸺ 點樣保持坐姿同氣道暢通 ‧ 讓救 援者有定期機會練習救援技術 救援程序可能係咁樣: ‧ 墮下發生,發出警報 ‧ 如需救援,立即召喚緊急醫療服務 ‧ 決定採用邊個(預先訂定嘅)救援方法 ‧ 以受控方式執行救援 ‧ 監察傷者狀況(如有能力及需要,提供急救) ‧ 將懸吊嘅情況告知緊急醫 療服務 ‧ 確保即使表面無恙嘅傷者都即時獲得醫療照顧 ‧ 報告及檢討事件,改善方法、汲取經驗 墮下唔會經常發生,但使用防墮裝備時,可能性係存在;需要一個有效嘅救援計劃,防止可能致命嘅情 況出現。 呢個可能係一個涉及好少裝備或技術嘅簡單方案,但合適嘅技術需要喺開工之前考慮,而且每次工 作方法或工作環境改變時都要重新考慮。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-60.png" alt="PDF 第 60 頁原始頁面"></details>
+    </article><article class="page-card" id="page-61" data-page="61">
+      <div class="page-kicker"><span>PDF PAGE 61</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><h4>PPE 檢查</h4>
+<h4>INSPECTION OF PPE ─── 原書第 149 頁 ───</h4>
+<p>PPE 檢查表示例(EXAMPLE PPE INSPECTION SHEET) 檢查日期 | 受檢 PPE 嘅位置 物品(Item)| 序號或批號 | 評語(詳述任何可能對任何人健康或安全構成風險嘅事項)| 首次使用日期 * | 檢查人 防墮安全帶 工作定位挽索 防墮挽索 勢能吸收器(如獨立) 頭盔 限制腰帶 錨點吊索 螺旋鎖鈎環 合金 螺旋鎖鈎環 自動上鎖鈎環 雙動作鈎環 棚架鈎(如獨立) 為其進行檢查嘅人 | 地址 進行檢查嘅人 | 地址 簽署 認為需要採取嘅任何進一步行動詳情。 * 日期 1 = 購買日期;日期 2 = 投入使用日期 下次檢查日期 因評語欄任何事項而採取嘅任何行動詳情。 檢查報告須載嘅細節(2005 年高空工作規例): 1. 為其進行檢查嘅人嘅姓名及地址。 2. 受檢工作設備嘅位置。 3. 受檢工作設備嘅描述。 4. 檢 查嘅日期及時間。 5. 任何可能對任何人健康或安全構成風險嘅事項詳情。 6. 因所識別任何事項 而採取嘅任何行動詳情。 7. 認為需要採取嘅任何進一步行動詳情。 8. 作出報告嘅人嘅姓名及職 位。 ─── 原書第 150 頁 ───</p>
+<p>PPE 檢查表格 ⸺ 安全帶(PPE INSPECTION FORM – HARNESS) (Petzl 製造商檢查表格示例) 歷史檢查(HISTORICAL CHECK) ⸺ 組件曾承受係數 1 墮下產生嘅力 ⸺ 組件已超過 10 年⋯⋯ (製造商聲明:對於組件歷史檢查資料嘅遺漏或不準確,概不負責⋯⋯) 安全組件目視檢查(VISUAL CHECK OF THE SAFETY COMPONENTS) 織帶狀況(割傷、磨損、 燒傷、化學品痕跡、其他損壞) 承載縫線狀況(割斷、磨損或抽起嘅線) 連接點狀況(變形、痕跡、 磨損、腐蝕) 調節扣狀況(變形、痕跡、磨損、腐蝕) 連接器嘅狀況及兼容性(見連接器表格) 保護組 件狀況(繫入點嘅管狀保護套、大腿保護) 舒適組件檢查(CHECK OF COMFORT COMPONENTS) 腰帶同腿環軟墊、背部支撐、分載帶、 裝備環、織帶收納環嘅狀況 非承載縫線狀況 操作檢查(OPERATIONAL CHECK) 檢查織帶正確穿過扣具 核實 FAST 快扣彈簧嘅功能 調節扣嘅 操作 製造商安全帶檢查清單示例。 任何曾承受係數 1 或以上墮下嘅物品,或曾跌落嘅金屬部件,一律棄用。 任何超過 10 年嘅紡織組件,一律棄用。 查核製造商有關 5 年以上壽命同檢查間距嘅資料。 至少每 12 個月檢查一次;挽索同其他部件可能需要更頻密檢查。 摘錄自 BS8437 2005(工作場所個人防墮系統及裝備嘅揀選、使用及保養實務守則):「所有承載裝 備喺每次使用前必須進行目視及觸覺檢查,確保佢處於安全狀態並正常運作。應向製造商取得檢查 方法嘅指引,並嚴格遵從。」</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-61.png" alt="PDF 第 61 頁原始頁面"></details>
+    </article></div>
+    </section><section class="chapter" id="chapter-21" data-title="救援、PPE 檢查及參考資料 RESCUE, PPE INSPECTION &amp; REFERENCES">
+      <header class="chapter-head"><div class="chapter-no">21</div><div><p>COURSE NOTE CHAPTER</p><h2>救援、PPE 檢查及參考資料</h2><h3>RESCUE, PPE INSPECTION &amp; REFERENCES</h3></div><div class="chapter-range">PDF 62–64</div></header>
+      <div class="chapter-pages"><article class="page-card" id="page-62" data-page="62">
+      <div class="page-kicker"><span>PDF PAGE 62</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>─── 原書第 151 頁 ───</p>
+<p>一個例子,說明喺場地使用自己嘅 PPE(相對於使用設計好嘅系統)時,幾容易唔記得墮下係數。 吊掛員坐喺樑上,經背部連接點接到一條 1 米挽索。 錨點係一條幼吊索,接到挽索嘅「棚架」鈎。 棚架鈎受側向荷載係真實可能。 呢個至少係墮下係數 2,因此會產生大約 5kN 嘅力(由勢能吸收器限制喺 6kN),但會令挽索展開多 達 700mm,結果一旦墮下,吊掛員對腳可能離地面只有 500mm。 大概更好嘅做法,係喺佢身後嘅屋頂桁架上用工作定位挽索 ⸺ 咁樣可以防止墮下發生。 屋頂桁架弱得多,唔係一個好嘅防墮錨點,但作為工作定位或限制錨點就完全可以接受。 呢度一名吊掛員用防墮挽索接到水平繩。因為爬到高過條繩並唔可行,用工作定位挽索仲好。 由於墮下係數係零(錨點高於使用者)、系統以限制方式運作,唔需要勢能吸收器。呢度用工作定位 挽索嘅話,墮下距離會少過一米。</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-62.png" alt="PDF 第 62 頁原始頁面"></details>
+    </article><article class="page-card" id="page-63" data-page="63">
+      <div class="page-kicker"><span>PDF PAGE 63</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>延伸閱讀及參考資料</p>
+<h4>FURTHER READING AND REFERENCES ─── 原書第 152 頁 ───</h4>
+<p>(延伸閱讀及參考資料 FURTHER READING AND REFERENCES) LOLER 認可實務守則 L113 2005 年高空工作規例 1992 年 PPE 規例 國家吊掛證書手冊(PLASA)ISBN 978‑0‑9557035‑0‑8 http://www.plasa.org/pd/qualifications/ ⸺ 國家吊掛證書資料 http:// www.plasa.org/technical 《The Stage Rigging Handbook》,J. Glerum(美國)ISBN 0‑8093‑ 1318‑9 《Entertainment Rigging》,Harry Donovan(美國)ISBN 0‑9723381‑0‑1 《Aluminium structures in the entertainment industry》,Peter Hind,ISBN 1 904031 06 4 《Temporary demountable structures》,結構工程師學會(英國) 起重設備工程師協會(LEEA)《起重設備安全 使用實務守則》 《2008 年娛樂場所技術標準》英國(DSA)ISBN 978‑1‑904031‑53‑6 英國劇院技 術人員協會(ABTT)實務守則:「Flying」、「Wire ropes」(英國) ABTT《劇院及類似娛樂場所 高空工作通道設備嘅揀選及使用實務守則》(英國) HSE 刊物 INDG 367《織帶及繩防墮裝備嘅檢 查》2003 HSE 刊物 ETIS6 1998《廣播及娛樂行業嘅高空工作》 《活動安全指南》HSG 195 HSE INDG401《高空工作規例指引》 《An introduction to rigging in the entertainment indus‑ try》,Chris Higgs,ISBN 1904031 12 《Rigging in the entertainment industry: Regulations and practice》,Chris Higgs,ISBN 1 904031 21 8 英國/歐洲標準(BRITISH/EUROPEAN STANDARDS) (歐洲標準「Euronorms」⸺「EN」⸺ 喺英國冇同等標準時,自動採納為英國標準「BS EN」) BS 7905‑1 表演、廣播及類似應用所用起重設備嘅規格 BS 7905‑2 表演、廣播及類似應用所用桁 架及塔嘅規格 ─── 原書第 154 頁 ───</p>
+<p>(標準列表表格 ⸺ 影像模糊,無法辨識文字)</p></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-63.png" alt="PDF 第 63 頁原始頁面"></details>
+    </article><article class="page-card" id="page-64" data-page="64">
+      <div class="page-kicker"><span>PDF PAGE 64</span><a href="#top">回頁首 ↑</a></div>
+      <div class="page-text"><p>實用繩結</p>
+<h4>USEFUL KNOTS ─── 原書第 158 頁 ───</h4>
+<h4>實用繩結(USEFUL KNOTS) 打稱人結(TYING A BOWLINE)(圖解) ─── 原書第 160 頁 ───</h4>
+<h4>三日娛樂行業吊掛課程 (THREE DAY RIGGING FOR THE ENTERTAINMENT INDUSTRY) (封 底)</h4></div>
+      <details class="source-page"><summary>查看原始頁面影像 View original page</summary><img loading="lazy" src="assets/page-64.png" alt="PDF 第 64 頁原始頁面"></details>
+    </article></div>
+    </section></main></div>
+<footer><div class="inner"><div><h2>TRAINING NOTES</h2><p>本網頁內容依據上傳的《三日娛樂行業吊掛課程筆記》製作；原書版權屬 Total Training 所有。譯本標示僅供個人學習用途，不得複製或傳播。</p></div><p>網頁設計依照 SiteSafe Style Reference：Signal Blue 主視覺、白色內容頁、無陰影平面卡片、膠囊控制與 Safety Yellow 危險條紋。</p></div></footer>
+<script>
+const q=document.getElementById('search');
+const cards=[...document.querySelectorAll('.page-card')];
+const chapters=[...document.querySelectorAll('.chapter')];
+const no=document.getElementById('noResults');
+const resultsBox=document.getElementById('searchResults');
+const statusEl=document.getElementById('searchStatus');
+const chapterFilter=document.getElementById('chapterFilter');
+const tip=document.getElementById('interactionTip');
+let results=[], current=-1, opened=false;
+
+const normalize=s=>s.normalize('NFKC').toLowerCase().replace(/[\s\u3000]+/g,' ').replace(/[，。；：、（）()「」『』“”‘’·・,.;:!?！？—–-]+/g,' ').trim();
+const escapeHtml=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+const chapterFor=card=>card.closest('.chapter');
+const chapterTitle=card=>{const ch=chapterFor(card);return ch?.querySelector('.chapter-head h2')?.textContent.trim()||''};
+const index=cards.map(card=>({card,page:Number(card.dataset.page),chapterId:chapterFor(card)?.id||'',chapter:chapterTitle(card),raw:card.querySelector('.page-text')?.innerText||'',text:normalize(card.querySelector('.page-text')?.innerText||'')}));
+chapters.forEach(ch=>{const title=ch.querySelector('.chapter-head h2')?.textContent.trim();if(title){const o=document.createElement('option');o.value=ch.id;o.textContent=`${ch.querySelector('.chapter-no')?.textContent.trim()} · ${title}`;chapterFilter.appendChild(o)}});
+
+function termsFromQuery(value){
+  const quoted=[...value.matchAll(/["「](.*?)["」]/g)].map(m=>normalize(m[1])).filter(Boolean);
+  const rest=normalize(value.replace(/["「].*?["」]/g,' ')).split(' ').filter(Boolean);
+  return [...new Set([...quoted,...rest])];
+}
+function scoreItem(item,terms,phrase){
+  if(!terms.length)return 0;
+  if(terms.some(t=>!item.text.includes(t)))return -1;
+  let score=0;
+  if(phrase&&item.text.includes(phrase))score+=100;
+  for(const t of terms){
+    const hits=item.text.split(t).length-1;
+    score+=Math.min(hits,12)*5;
+    if(normalize(item.chapter).includes(t))score+=30;
+    if(item.text.startsWith(t))score+=10;
+  }
+  return score;
+}
+function snippet(raw,terms){
+  const low=normalize(raw); let pos=Infinity, found='';
+  for(const t of terms){const p=low.indexOf(t);if(p>=0&&p<pos){pos=p;found=t}}
+  const originalPos=found?raw.toLowerCase().indexOf(found.toLowerCase()):-1;
+  const start=Math.max(0,(originalPos>=0?originalPos:0)-70), end=Math.min(raw.length,start+210);
+  let s=(start?'…':'')+raw.slice(start,end).replace(/\s+/g,' ')+(end<raw.length?'…':'');
+  let safe=escapeHtml(s);
+  terms.sort((a,b)=>b.length-a.length).forEach(t=>{if(!t)return;safe=safe.replace(new RegExp(t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi'),m=>`<mark>${m}</mark>`)});
+  return safe;
+}
+function runSearch(){
+  const value=q.value.trim(), terms=termsFromQuery(value), phrase=normalize(value), chapter=chapterFilter.value;
+  cards.forEach(c=>{c.style.display='';c.classList.remove('search-hit','current-hit')});
+  chapters.forEach(ch=>ch.style.display='');
+  results=[]; current=-1;
+  if(!terms.length){resultsBox.classList.remove('open');resultsBox.innerHTML='';statusEl.textContent='輸入關鍵字開始搜尋';no.style.display='none';return}
+  results=index.filter(x=>!chapter||x.chapterId===chapter).map(x=>({...x,score:scoreItem(x,terms,phrase)})).filter(x=>x.score>=0).sort((a,b)=>b.score-a.score||a.page-b.page);
+  cards.forEach(c=>c.style.display='none');
+  chapters.forEach(ch=>ch.style.display='none');
+  results.forEach(r=>{r.card.style.display='';r.card.classList.add('search-hit');chapterFor(r.card).style.display=''});
+  no.style.display=results.length?'none':'block';
+  statusEl.textContent=results.length?`${results.length} 個符合頁面`:'找不到結果';
+  resultsBox.innerHTML=results.slice(0,80).map((r,i)=>`<button class="result-item" data-i="${i}" role="option"><span class="result-meta"><span>${escapeHtml(r.chapter)}</span><span>PDF ${r.page}</span></span><span class="result-snippet">${snippet(r.raw,[...terms])}</span></button>`).join('');
+  resultsBox.classList.toggle('open',results.length>0);
+}
+function go(i){
+  if(!results.length)return; current=(i+results.length)%results.length;
+  cards.forEach(c=>c.classList.remove('current-hit'));resultsBox.querySelectorAll('.result-item').forEach(x=>x.classList.remove('active'));
+  const r=results[current];r.card.classList.add('current-hit');
+  const btn=resultsBox.querySelector(`[data-i="${current}"]`);if(btn){btn.classList.add('active');btn.scrollIntoView({block:'nearest'})}
+  r.card.scrollIntoView({behavior:'smooth',block:'start'});statusEl.textContent=`${current+1} / ${results.length} · PDF ${r.page}`;
+  tip.classList.add('show');setTimeout(()=>tip.classList.remove('show'),1200);
+}
+let debounce;q.addEventListener('input',()=>{clearTimeout(debounce);debounce=setTimeout(runSearch,120)});chapterFilter.addEventListener('change',runSearch);
+resultsBox.addEventListener('click',e=>{const b=e.target.closest('.result-item');if(b)go(Number(b.dataset.i))});
+document.getElementById('prevHit').onclick=()=>go(current-1);document.getElementById('nextHit').onclick=()=>go(current+1);
+q.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();go(e.shiftKey?current-1:current+1)}if(e.key==='Escape'){resultsBox.classList.remove('open');q.blur()}});
+document.addEventListener('click',e=>{if(!e.target.closest('.search-shell'))resultsBox.classList.remove('open')});q.addEventListener('focus',()=>{if(results.length)resultsBox.classList.add('open')});
+
+document.getElementById('expand').onclick=e=>{opened=!opened;document.querySelectorAll('details').forEach(d=>d.open=opened);e.target.textContent=opened?'收合原頁':'展開原頁'};
+addEventListener('scroll',()=>{const h=document.documentElement;document.getElementById('progress').style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%'});
+const observer=new IntersectionObserver(entries=>entries.forEach(x=>{if(x.isIntersecting){document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+x.target.id))}}),{rootMargin:'-20% 0px -70%'});chapters.forEach(ch=>observer.observe(ch));
+</script></body></html>
